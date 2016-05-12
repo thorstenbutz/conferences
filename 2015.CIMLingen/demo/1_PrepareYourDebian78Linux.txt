@@ -1,0 +1,38 @@
+# OMI binary
+wget https://collaboration.opengroup.org/omi/documents/32721/omi-1.0.8.1.packages.tar.gz
+tar xvf omi-1.0.8.1.packages.tar.gz
+
+# OMI source code
+# wget https://collaboration.opengroup.org/omi/documents/32721/omi-1.0.8-1.tar.gz
+# tar xvf omi-1.0.8-1.tar.gz
+
+# Copy/Download DSC package to Linux host, Official Donwload (MSI) 
+# http://www.microsoft.com/en-us/download/details.aspx?id=46919
+tar xvf DSCLinuxPackages1.0.tar
+
+# Check current OS
+lsb_release -a
+
+# Check OpenSSL version, Version 0.9.8 or 1.0 required
+openssl version
+
+# Install required software, e.g. Curl:
+apt-get install curl -y # Prerequisite
+
+# Check if package is part of your (debian) distribution 
+apt-cache policy omiserver
+apt-cache policy dsc
+
+## Install OMI daemon
+dpkg -i omi-1.0.8-1.pkg/omiserver-1.0.8.ssl_100.x64.deb
+
+# Check setup
+lsof -i | grep omi
+/opt/omi/bin/omicli id
+/opt/omi/bin/omicli ei root/omi OMI_Identify # Requires OMI + DSC
+
+## Install DSC for Linux
+dpkg -i "Linux Packages/dsc-1.0.0-320.ssl_100.x64.deb"
+
+#Check files
+ls /opt/microsoft/dsc/

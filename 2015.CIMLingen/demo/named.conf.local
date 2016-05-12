@@ -1,0 +1,8 @@
+zone "contoso.com" {
+  type master; 
+  file "/var/lib/bind/db.contoso.com"; 
+  allow-transfer { 192.168.0.0/24 ; };  
+  notify yes;
+  allow-update { 192.168.0.0/24 ; };
+  check-names ignore;  
+}; 
