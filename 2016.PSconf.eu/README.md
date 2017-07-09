@@ -1,5 +1,5 @@
 # psconf.eu.2016
-PowerShell Conference EU 2016 (Hannover, Germany 20.04.2016 - 22.04.2016)
+PowerShell Conference EU 2016 (Hannover, Germany, 20.-22.04.2016)
 
 ## My sessions
 - NANO Server Administration
