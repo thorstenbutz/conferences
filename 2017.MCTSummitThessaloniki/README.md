@@ -5,7 +5,6 @@ MCT Summit 2017 (Thessalonki, Greece, 08.-10.06.2017)
 - Everything you always wanted to know about file server. But where afraid to ask.
 
     (Room Maistros B; Thursday, June 8th, 2017: 14-15h)
-    [linkname]https://www.youtube.com/watch?v=KtnBKVfrE9w
 
 
 - Oh, I am alien. Avoiding the hidden traps of training delivery in foreign languages
