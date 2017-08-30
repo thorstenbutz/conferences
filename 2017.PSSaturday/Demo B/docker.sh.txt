@@ -1,0 +1,48 @@
+## Sample commands for docker.io in Ubuntu Linux (August 2017)
+
+# Installation
+apt-get install docker.io -y   
+ 
+# Check version, verify installation
+docker version  
+
+# Running containers
+docker ps 
+
+# all containers
+docker ps -a 
+  
+# List images
+docker images
+
+# Search the docker hub
+docker search hello-world
+docker run hello-world
+
+# Find and run linux distro
+docker search ubuntu
+docker pull ubuntu
+docker run -t -i --rm ubuntu bash
+
+# Inside container
+apt-get install net-tools
+
+# Install CentOS (on ubuntu) 
+docker run -t -i  centos bash
+
+# Get ifconfig 
+yum install net-tools -y
+ 
+# Run webserver
+docker run-p 7890:80 nginx
+
+# Start detached container (background)
+docker run --name myginx1 -d -p 7890:80 nginx
+docker run --name myginx1 -d -p 7890:80 nginx
+
+# Port Fwd: 7890 => 80
+nmap -p 7890 localhost
+curl localhost:7890
+
+# Remove all containers
+docker rm $(docker ps -a -q)
