@@ -1,0 +1,19 @@
+# Setup PoSh core 6.1 on a RasPi (Raspbian OS)
+
+# Install prerequisites
+sudo apt-get install libunwind8
+
+# Grab the latest tar.gz
+wget https://github.com/PowerShell/PowerShell/releases/download/v6.1.0/powershell-6.1.0-linux-arm32.tar.gz
+
+# Make folder to put powershell
+mkdir /opt/powershell
+
+# Unpack the tar.gz file
+tar -xvf ./powershell-6.1.0-linux-arm32.tar.gz -C /opt/powershell
+
+# Start PowerShell
+/opt/powershell/pwsh
+
+# Link pwsh
+ln -s /opt/powershell/pwsh /usr/bin/pwsh

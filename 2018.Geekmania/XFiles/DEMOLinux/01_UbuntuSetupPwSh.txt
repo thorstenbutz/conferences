@@ -1,0 +1,37 @@
+##############################
+## PowerShell on Ubuntu 18.04
+## via Packet Management
+##############################
+
+# Check current OS
+cat /etc/os-release 
+uname -a 
+
+# Download the Microsoft repository GPG keys
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+
+# Register the Microsoft repository GPG keys
+sudo dpkg -i packages-microsoft-prod.deb
+
+# Update the list of products
+sudo apt-get update
+
+# Install PowerShell
+sudo apt-get install -y powershell
+
+# Start PowerShell
+pwsh
+
+##############################
+## PowerShell on Ubuntu 18.04
+## via Snap
+##############################
+
+# Setup 
+snap install powershell --classic
+
+# Update
+snap refresh powershell 
+
+# Remove
+snap remove powershell 

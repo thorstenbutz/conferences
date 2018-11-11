@@ -1,0 +1,26 @@
+##########################
+## PowerShell on Debian 9
+## via Packet Management
+##########################
+
+# Check current OS
+cat /etc/os-release 
+uname -a 
+
+# Prerequisites
+apt-get install curl gnupg apt-transport-https
+
+# Import Microsoft's GPG keys
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+
+# Register the Microsoft Product feed
+sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/microsoft.list'
+
+# Update the list of products
+apt-get update
+
+# Install PowerShell
+apt-get install -y powershell
+
+# Start PowerShell
+pwsh
