@@ -1,0 +1,7 @@
+# Edit config file
+vi /etc/apt/ssh/sshd_config
+
+# Add subsystem
+Subsystem powershell /usr/bin/pwsh -sshs -NoLogo -NoProfile
+
+# Try PoSh ...
