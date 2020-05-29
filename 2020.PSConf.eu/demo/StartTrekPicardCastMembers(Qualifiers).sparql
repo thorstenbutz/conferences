@@ -1,0 +1,13 @@
+#################################################################################
+# Statements and qualifiers 
+# https://en.wikibooks.org/wiki/SPARQL/WIKIDATA_Qualifiers,_References_and_Ranks
+#################################################################################
+
+SELECT ?actor ?actorLabel ?roleLabel ?role ?statement
+WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  wd:Q62573305 p:P161  ?statement.   # Statement:  "Star Trek:Picard" has "cast member" 
+  ?statement   ps:P161 ?actor.       # Store the "cast member"s in variable   
+  ?statement   pq:P453 ?role.        # The actor has "character role" .. 
+}
+ 

@@ -1,0 +1,15 @@
+##################################################
+# Measure the distance (in km) between two cities
+# P625  => "coordinate location"
+# Q1715 => "Hannover"
+# Q2100 => "Duisburg"
+# BIND(geof:distance(?a,?b)) returns the distance
+##################################################
+SELECT ?Hannover ?Duisburg ?Distance  
+WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    wd:Q1715 wdt:P625 ?Hannover. 
+    wd:Q2100 wdt:P625 ?Duisburg.
+    BIND(geof:distance(?Hannover, ?Duisburg) as ?Distance)
+}
+ 

@@ -1,0 +1,8 @@
+# Microsoft employees
+SELECT ?item ?itemLabel ?GitHub_username ?notable_workLabel WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    ?item wdt:P108  wd:Q2283;            # ? has employer MSFT
+          wdt:P2037 ?GitHub_username;    # ? has a Github username
+          wdt:P800  ?notable_work.       # ? has a notable work
+  }
+  

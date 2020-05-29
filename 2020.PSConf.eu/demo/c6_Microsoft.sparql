@@ -1,0 +1,69 @@
+# Microsoft employees
+SELECT 
+    ?item 
+    ?itemLabel 
+    ?GitHub_username 
+    ?Twitter_username 
+    
+    ?date_of_birthLabel 
+    ?place_of_birthLabel 
+    (group_concat(distinct ?country_of_citizenshipLabel;separator=",") as ?arrCitizenship) 
+    
+    (group_concat(distinct ?notable_workLabel;separator=",") as ?arrNotableWork) 
+    (group_concat(distinct ?award_receivedLabel;separator=",") as ?arrAwardReceived) 
+          
+    ?official_website 
+    ?official_blog
+    
+    (group_concat(distinct ?given_nameLabel;separator=" ") as ?arrGivenName) # givenNames are separate values in the DB
+    ?family_nameLabel     
+
+WHERE {
+    SERVICE wikibase:label { 
+        bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". 
+        ?item rdfs:label ?itemLabel.    
+        ?notable_work rdfs:label ?notable_workLabel.       
+        ?given_name rdfs:label ?given_nameLabel.
+        ?family_name rdfs:label ?family_nameLabel.
+        ?date_of_birth rdfs:label ?date_of_birthLabel. 
+        ?place_of_birth rdfs:label ?place_of_birthLabel .
+        ?country_of_citizenship rdfs:label ?country_of_citizenshipLabel.
+        ?award_received rdfs:label ?award_receivedLabel.   
+    }
+  
+    ?item wdt:P108 wd:Q2283.            # ? has employer MSFT        
+    # ?item wdt:P800 ?notable_work.     # ? has a notable work
+  
+    #FILTER(BOUND(?notable_work))    
+    #FILTER("1969-01-01"^^xsd:dateTime <= ?date_of_birth  && ?date_of_birth  < "1969-12-31"^^xsd:dateTime).
+  
+    OPTIONAL { ?item wdt:P2002 ?Twitter_username. }
+    OPTIONAL { ?item wdt:P2037 ?GitHub_username. }
+    OPTIONAL { ?item wdt:P735 ?given_name. }
+    OPTIONAL { ?item wdt:P734 ?family_name. }
+    OPTIONAL { ?item wdt:P569 ?date_of_birth. }
+    OPTIONAL { ?item wdt:P19 ?place_of_birth. }
+    OPTIONAL { ?item wdt:P27 ?country_of_citizenship. }
+    OPTIONAL { ?item wdt:P800 ?notable_work. }  
+    OPTIONAL { ?item wdt:P166 ?award_received. }
+    OPTIONAL { ?item wdt:P856 ?official_website. }
+    OPTIONAL { ?item wdt:P1581 ?official_blog. }  
+}
+GROUP BY 
+    ?item 
+    ?itemLabel 
+    ?GitHub_username 
+    ?Twitter_username 
+    ?arrGivenname 
+    ?family_nameLabel 
+    ?date_of_birthLabel 
+    ?place_of_birthLabel 
+    ?arrAwardReceived 
+    ?arrNotableWork # OR: having(count(?notable_workLabel) >= 1)
+    ?arrCitizenship 
+    ?official_website 
+    ?official_blog           
+
+# HAVING(COUNT(?award_received) >= 1 && COUNT(?notable_work) >= 1)
+
+LIMIT 1000

@@ -1,0 +1,35 @@
+##################
+# (Real) Spacemen
+##################
+SELECT 
+  ?spacemen 
+  ?spacemenLabel  
+  ?date_of_birth  
+  ?sex_or_genderLabel
+  (group_concat(distinct ?missionLabel;separator=",") as ?arrMissions)
+  (group_concat(distinct ?country_of_citizenshipLabel;separator=",") as ?arrCitizenships)
+  (group_concat(distinct ?award_receivedLabel;separator=",") as ?arrAwardsReceived)
+WHERE {
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". 
+    ?spacemen rdfs:label ?spacemenLabel.
+    ?sex_or_gender rdfs:label ?sex_or_genderLabel.
+    ?mission rdfs:label ?missionLabel.
+    ?country_of_citizenship rdfs:label ?country_of_citizenshipLabel.
+    ?award_received rdfs:label ?award_receivedLabel.
+  }
+  ?spacemen wdt:P31 wd:Q5;           # "instance of" "human"
+            wdt:P106 wd:Q11631;      # "occupation" "astronaut"
+            wdt:P450 ?mission;       # "astronaut mission"
+            wdt:P569 ?date_of_birth. # "date of birth"
+  
+  OPTIONAL { ?spacemen wdt:P27 ?country_of_citizenship. }
+  OPTIONAL { ?spacemen wdt:P166 ?award_received. }
+  OPTIONAL { ?spacemen wdt:P21 ?sex_or_gender. }
+  
+  #FILTER("1901-01-01"^^xsd:dateTime <= ?date_of_birth && 
+  #        ?date_of_birth <= "1950-12-31"^^xsd:dateTime).
+}
+GROUP BY  ?spacemen ?spacemenLabel  ?date_of_birth  ?sex_or_genderLabel  
+ORDER BY (?date_of_birth)
+

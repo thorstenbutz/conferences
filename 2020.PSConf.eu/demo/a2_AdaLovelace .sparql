@@ -1,0 +1,17 @@
+# Searching for Ada ...
+SELECT ?programmer ?date_of_birth ?programmerLabel WHERE { 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+  # Who has   "occupation" "programmer"?
+  ?programmer wdt:P106 wd:Q5482740;              
+  #           "instance of" "human"
+              wdt:P31 wd:Q5;
+  #           "sex or gender" "female"    
+              wdt:P21 wd:Q6581072;
+  #           "date of birth"              
+              wdt:P569 ?date_of_birth. 
+  
+  # Show only programmers from the 19th century
+  FILTER("1801-01-01"^^xsd:dateTime <= ?date_of_birth && 
+         ?date_of_birth <= "1900-12-31"^^xsd:dateTime).
+}

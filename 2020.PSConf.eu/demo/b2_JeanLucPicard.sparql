@@ -1,0 +1,7 @@
+SELECT ?item ?itemLabel WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  # "Dixon Hill" has performer JLP. 
+  ?item wdt:P175 wd:Q16276.
+  # "Jean-Luc Picard" has performer Patrick Stewart.
+  wd:Q16276 wdt:P175 ?item .  
+}

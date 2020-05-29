@@ -1,0 +1,19 @@
+#####################
+# 12 Men on the moon
+#####################
+
+SELECT ?astronaut ?missionLabel  ?place_of_birthLabel ?date_of_birth  ?date_of_death WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+  
+  ?astronaut wdt:P31 wd:Q5;         # "instance of" "human"
+             wdt:P106 wd:Q11631;    # "occupation" "astronaut"
+             wdt:P450 ?mission;     # "astronaut mission"
+             wdt:P793 wd:Q42882411. # "significant event" "walk on the moon"
+  
+  ?mission wdt:P31 wd:Q495307.      # "instance of" "Moon landing"
+  
+  OPTIONAL { ?astronaut wdt:P569 ?date_of_birth. }
+  OPTIONAL { ?astronaut wdt:P19 ?place_of_birth. }
+  OPTIONAL { ?astronaut wdt:P570 ?date_of_death. }
+}
+ORDER BY (?missionLabel)

@@ -1,0 +1,5 @@
+SELECT ?companyLabel WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }    
+    ?company wdt:P112 wd:Q162005,
+                      wd:Q5284.
+}

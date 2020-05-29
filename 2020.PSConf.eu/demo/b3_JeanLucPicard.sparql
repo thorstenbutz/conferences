@@ -1,0 +1,9 @@
+SELECT ?item ?itemLabel ?languages_spoken__written_or_signed ?languages_spoken__written_or_signedLabel ?date_of_birth ?country_of_citizenship ?country_of_citizenshipLabel WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  
+    ?item wdt:P170 wd:Q191716.
+    ?item wdt:P569 ?date_of_birth. 
+    
+    OPTIONAL { ?item wdt:P1412 ?languages_spoken__written_or_signed. }   
+    OPTIONAL { ?item wdt:P27 ?country_of_citizenship. }
+  }

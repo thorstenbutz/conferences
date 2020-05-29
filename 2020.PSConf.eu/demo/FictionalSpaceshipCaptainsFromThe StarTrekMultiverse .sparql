@@ -1,0 +1,37 @@
+#################################################################
+# Fictional "spaceship captain"s from the "Star Trek multiverse" 
+# Short version: https://w.wiki/SAj
+#################################################################
+SELECT 
+  ?char 
+  ?charName  
+  (GROUP_CONCAT(DISTINCT ?occupationLabel; SEPARATOR = ",") AS ?arrOccupations) 
+  (GROUP_CONCAT(DISTINCT ?universeLabel; SEPARATOR = ",") AS ?arrUniverses) 
+  ?country_of_citizenshipLabel  
+  ?date_of_birth 
+  ?place_of_birthLabel
+
+WHERE {
+    ?char wdt:P1080 wd:Q18043309;  # "from narrative universe" "Start Trek multiverse"
+          wdt:P1080 ?universe;     
+          wdt:P31 wd:Q15632617;    # "instance of" "fictional human"
+          wdt:P31 ?type;           
+          wdt:P106 wd:Q87265645;   # "occupation" "spaceship captain"
+          wdt:P106 ?occupation.
+
+    OPTIONAL { ?char wdt:P569 ?date_of_birth. }
+    OPTIONAL { ?char wdt:P19 ?place_of_birth. }
+    OPTIONAL { ?char wdt:P27 ?country_of_citizenship. }    
+  
+    SERVICE wikibase:label {
+      bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+      ?char rdfs:label ?charName.
+      ?universe rdfs:label ?universeLabel.
+      ?type rdfs:label ?typeLabel.
+      ?country_of_citizenship  rdfs:label ?country_of_citizenshipLabel.      
+      ?place_of_birth rdfs:label ?place_of_birthLabel.
+      ?occupation rdfs:label ?occupationLabel.
+    }  
+  }
+  GROUP BY ?char ?charName ?date_of_birth ?place_of_birthLabel ?country_of_citizenshipLabel
+  ORDER BY ASC(?charName)

@@ -1,0 +1,45 @@
+##############################
+# FAMILY TREE John F. Kennedy
+# Comment / Uncomment to try
+##############################
+
+SELECT ?item ?itemLabel ?date_of_birth WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+    
+    # Parents of JFK
+    #?item wdt:P40  wd:Q9696.
+             
+    # Parents of JFK's Mother Rose
+    # ?item wdt:P40 wd:Q236540.
+    
+    # Grandparents of JFK
+    # ?parents wdt:P40  wd:Q9696.
+    # ?item wdt:P40 ?parents.
+                 
+    # Grandparents of JFK: abbreviated
+     ?item wdt:P40/wdt:P40 wd:Q9696.
+   
+    # Ancestors of JFK
+    # ?item wdt:P40*  wd:Q9696. # Includes JFK himself
+    # ?item wdt:P40+  wd:Q9696.
+    
+    ##############################
+    
+    # Children of JFK => "JFK has children"
+    # wd:Q9696 wdt:P40 ?item.
+    
+    # Grandchildren of JFK ("JFK has children")
+    # wd:Q9696 wdt:P40 ?children.
+    # $children wdt:P40 $item
+   
+    # Grandchildren of JFK: abbreviated
+    # wd:Q9696 wdt:P40/wdt:P40 $item   
+    # OR: wd:Q9696 wdt:P40 [wdt:P40 ?item]
+             
+    # (Grand) Children: infinite levels
+    # wd:Q9696 wdt:P40* $item . # Includes JFK himself
+    # wd:Q9696 wdt:P40+ $item .
+    
+    Optional { ?item wdt:P569 ?date_of_birth. }
+  }
+  ORDER BY ?date_of_birth

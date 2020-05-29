@@ -1,0 +1,12 @@
+# Searching for Ada ...
+SELECT ?programmer ?date_of_birth ?programmerLabel WHERE { 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+  ?programmer wdt:P106 wd:Q5482740;
+              wdt:P31 wd:Q5;
+              wdt:P21 wd:Q6581072;
+              wdt:P569 ?date_of_birth. 
+  
+  FILTER("1801-01-01"^^xsd:dateTime <= ?date_of_birth && 
+         ?date_of_birth <= "1900-12-31"^^xsd:dateTime).
+}
