@@ -9,13 +9,4 @@ This session provides an insight to wikidata/wikimedia queries by SPARQ
 query language from W3C. 
 
 After you watched this, you will be able to embed  SPARQL queries inside your PowerShell 
-code. 
-
-## Get in touch
-
-You fill find additional information on my homepage:
-
-- [thorsten-butz.de](https://thorsten-butz.de/psconfeu2020)
-
-Subscribe to my podcast:
-- [slidingwindows.de](https://slidingwindows.de)
+code.  
