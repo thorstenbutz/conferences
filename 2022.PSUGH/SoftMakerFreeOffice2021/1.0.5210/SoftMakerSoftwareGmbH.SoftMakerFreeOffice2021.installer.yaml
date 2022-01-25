@@ -1,0 +1,15 @@
+# Created using wingetcreate 0.4.4.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.0.0.schema.json
+
+PackageIdentifier: SoftMakerSoftwareGmbH.SoftMakerFreeOffice2021
+PackageVersion: 1.0.5210
+Installers:
+- InstallerLocale: en-US
+  Architecture: x86
+  InstallerType: msi
+  InstallerUrl: https://www.freeoffice.com/download.php?filename=https://www.softmaker.net/down/freeoffice2021.msi
+  InstallerSha256: AB128A576A4FD5AE51484178201B634AB306D2C17D341C30E59F8AEC59B69F76
+  ProductCode: '{2847114B-5210-4F32-8E22-44DCDFEA77EF}'
+ManifestType: installer
+ManifestVersion: 1.0.0
+
