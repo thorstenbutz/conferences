@@ -1,0 +1,13 @@
+# Created using wingetcreate 0.4.4.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.0.0.schema.json
+
+PackageIdentifier: SoftMakerSoftwareGmbH.SoftMakerFreeOffice2021
+PackageVersion: 1.0.5210
+PackageLocale: en-US
+Publisher: SoftMaker Software GmbH
+PackageName: SoftMaker FreeOffice 2021
+License: Copyright (c) Softmaker Software GmbH
+ShortDescription: Yet another office suite
+ManifestType: defaultLocale
+ManifestVersion: 1.0.0
+
