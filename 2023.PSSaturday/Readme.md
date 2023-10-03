@@ -4,7 +4,7 @@
 
 
 
-![delivery600x300](D:\git\conferences\2023.PSSaturday\delivery600x300.png)
+![delivery600x300](delivery600x300.png)
 
 **Aufzeichnung**
 
