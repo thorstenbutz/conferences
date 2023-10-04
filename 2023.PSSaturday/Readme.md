@@ -1,6 +1,6 @@
 # PowerShell Saturday PSUGH 2023
 
-## Andreas Nick, Thorsten Butz: Eine Paketverwaltung für Windows (Eine Geschichte voller Missverständnisse)
+**Andreas Nick, Thorsten Butz: Eine Paketverwaltung für Windows (Eine Geschichte voller Missverständnisse)**
 
 
 
@@ -10,5 +10,6 @@
 
 https://vimeo.com/thorstenbutz/pssat2023
 
+**Transcipt** (automatisch generiert)
 
-
+[pssat2023nickbutz_transcript.html]()
