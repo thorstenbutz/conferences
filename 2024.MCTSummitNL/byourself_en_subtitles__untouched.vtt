@@ -1,1706 +1,1781 @@
 WEBVTT
 
 00:00:03.117 --> 00:00:07.557
-Good morning, that is so nice to be here. 
+Good morning, that is so nice to be here.
 
 00:00:08.237 --> 00:00:13.337
-First of all, because before I forget it, thanks to the organizers, such an amazing event. 
+First of all, because before I forget it, thanks to the organizers, such an amazing event.
 
 00:00:14.397 --> 00:00:17.897
-I guess I'm allowed to say that since we're on the last day of the conference 
+I guess I'm allowed to say that since we're on the last day of the conference
 
 00:00:17.897 --> 00:00:21.397
-MCT Summit 2024: I love it. 
+MCT Summit 2024, I love it.
 
 00:00:22.877 --> 00:00:25.917
-I gotta confess that I do like the Netherlands. 
+I gotta confess that I do like the Netherlands
 
 00:00:25.917 --> 00:00:30.577
-Quite often here and somehow 
+quite often here and yeah somehow
 
 00:00:30.577 --> 00:00:35.617
-I really love 
+it I really love
 
 00:00:35.617 --> 00:00:38.617
-that conference and you will see on a personal note 
+that love that conference and you will see on a personal note
 
 00:00:38.617 --> 00:00:44.077
-why that has a special meaning to me personally. We will talk about 
+way that has a special meaning to me personally because we will talk about it
 
 00:00:44.077 --> 00:00:48.077
-some tools, we will also talk about hardware, we will talk about some - let 
+got some tools we would also talk about hardware we will talk about some let
 
 00:00:48.077 --> 00:00:53.557
-me say soft skills and I want to pack that all in half an hour, so let me let 
+me say soft skills and I want to pack that all in half an hour so let me let
 
 00:00:53.557 --> 00:00:56.017
-me find out - let us find out with it if it works. 
+me find out let us find out with it if it works.
 
 00:00:56.117 --> 00:00:59.897
-Before I forget that, there is a little poll out there. 
+Before I forget that, there is a little poll out there.
 
 00:01:00.017 --> 00:01:02.597
-I will publish the results later on. 
+I will publish the results later on.
 
 00:01:02.977 --> 00:01:06.537
-There are QR codes, you might have seen that, they're all around the places. 
+There are QR codes, you might have seen that, they're all around the places.
 
 00:01:06.837 --> 00:01:15.817
-I will leave it open just after the talk and then I will post it to our signal group and such things. 
+I will leave it open just after the talk and then I will post it with our signal group and such things.
 
 00:01:16.277 --> 00:01:18.417
-Most of you will already have seen that. 
+Most of you will already have seen that.
 
 00:01:19.877 --> 00:01:27.297
-Before we really start I need to tell you a little bit that's quite personal 
+Before we really start I need to tell you a little bit that's quite personal
 
 00:01:27.297 --> 00:01:33.617
-because actually it took almost five years to deliver this talk. 
+because actually it took almost five years to deliver this talk.
 
 00:01:34.397 --> 00:01:40.797
-The first idea to talk about something like that was in 2019 when I was thinking 
+The first idea to talk about something like that was in 2019 when I was thinking
 
 00:01:40.797 --> 00:01:44.757
-about what are the next challenges that we face, 
+about what are the next challenges that we face,
 
 00:01:44.877 --> 00:01:54.417
-the things that that you as an MCT will need to create your own version of the 2.0 version of an MCT. 
+the things that that you as an MCT will need to create your own version of the 2.0 version of an MCT.
 
 00:01:54.437 --> 00:01:59.957
-What does that mean in terms of YouTube, live streaming, talking on conferences, stuff like that? 
+What does that mean in terms of YouTube, live streaming, talking on conferences, stuff like that?
 
 00:02:01.281 --> 00:02:06.441
-And what we planned, Denise and I, because I had the pleasure to work on that 
+And what we planned, Denise and I, because I had the pleasure to work on that
 
 00:02:06.441 --> 00:02:11.401
-with Denise McLaughlin, formerly known as Denise Humphreys, his lovely wife. 
+with Denise McLaughlin, formerly known as Denise Humphreys, his lovely wife.
 
 00:02:13.681 --> 00:02:17.681
-It is not exactly the same because it would be ludicrous four and a half years 
+It is not exactly the same because it would be ludicrous four and a half years
 
 00:02:17.681 --> 00:02:20.701
-later to talk about exactly the same things. 
+later to talk about exactly the same things.
 
 00:02:21.061 --> 00:02:23.081
-But it's very much comparable. 
+But it's very much comparable.
 
 00:02:23.761 --> 00:02:29.721
-The sad story is that Denise couldn't make it here, but I got you covered. 
+The sad story is that Denise couldn't make it here, but I got you covered.
 
 00:02:30.801 --> 00:02:36.141
-Because what was so special? Why didn't we deliver that session in Vilnius? 
+Because what was so special? Why didn't we deliver that session in Vilnius?
 
 00:02:36.141 --> 00:02:38.001
-Because that was what it should be. 
+Because that was what it should be.
 
 00:02:38.841 --> 00:02:44.501
-The answer is pretty easy. Just a couple of days after the videos that you will see in a minute, 
+The answer is pretty easy. Just a couple of days after the videos that you will see in a minute,
 
 00:02:45.181 --> 00:02:51.061
-I was diagnosed with a life-threatening illness, and I had to go through some 
+I was diagnosed with a life-threatening illness, and I had to go through some
 
 00:02:51.061 --> 00:02:56.501
-very severe medical treatment that took a while. 
+very severe medical treatment that took a while.
 
 00:02:56.501 --> 00:03:01.761
-And that was the reason why I missed Vilnius and I also missed Switzerland so 
+And that was the reason why I missed Vilnius and I also missed Switzerland so
 
 00:03:01.761 --> 00:03:07.261
-that's the reason why four and a half years later I couldn't wait to deliver something like this. 
+that's the reason why four and a half years later I couldn't wait to deliver something like this.
 
 00:03:08.321 --> 00:03:11.581
-Back in those days and that's the reason why I want to show you because Denise 
+Back in those days and that's the reason why I want to show you because Denise
 
 00:03:11.581 --> 00:03:17.961
-is not here, we wanted to focus on a couple of microphones stuff like that, 
+is not here, we wanted to focus on a couple of microphones stuff like that,
 
 00:03:17.981 --> 00:03:22.001
-a little bit of hardware stuff and because Denise is such a funny person. 
+a little bit of hardware stuff and because Denise is such a funny person.
 
 00:03:22.641 --> 00:03:28.281
-I can't resist to simply show you as a prologue this few minute video. 
+I can't resist to simply show you as a prologue this few minute video.
 
 00:03:28.441 --> 00:03:31.861
-So enjoy, and then we will talk about the serious stuff. 
+So enjoy, and then we will talk about the serious stuff.
 
 00:03:33.361 --> 00:03:33.881
-Denise. 
+Denise.
 
 00:03:36.961 --> 00:03:42.081
-So here we are in Cologne. There are three important things to know about Cologne. 
+So here we are in Cologne. There are three important things to know about Cologne.
 
 00:03:42.081 --> 00:03:45.041
-One: the Dom and here 
+One the Dom and here
 
 00:03:45.041 --> 00:03:50.221
-we are at the back end fantastic we 
+we are at the back end fantastic we
 
 00:03:50.221 --> 00:03:55.241
-have got the Hauptbahnhof over here so I can catch a train quickly to go home and 
+have got the Hoppenhof over here so I can catch a train quickly to go home and
 
 00:03:55.241 --> 00:04:04.461
-to my right there is a band playing some Latin music and it's amazing. And this 
+to my right there is a band playing some Latin music and it's amazing and this
 
 00:04:04.461 --> 00:04:10.041
-is number two: Kölsch. I don't like it. Sion Kölsch is better. 
+is number two Kölsch I don't like it. See you on coach is better.
 
 00:04:15.581 --> 00:04:21.561
-Guess what? This is number three: the Rhine and we're on the Rhine Boulevard. 
+Guess what? This is number three the Rhine and we're on the Rhine Boulevard.
 
 00:04:23.521 --> 00:04:24.781
-Fantastic view behind. 
+Fantastic view behind.
 
 00:04:29.197 --> 00:04:34.077
-So the reason back then was that we wanted to show a couple of different types 
+So the reason back then was that we wanted to show a couple of different types
 
 00:04:34.077 --> 00:04:37.557
-of microphones and how we can enhance audio and stuff like that. 
+of microphones and how we can enhance audio and stuff like that.
 
 00:04:37.597 --> 00:04:40.817
-I will talk about that a little bit later, but that is the reason why we created 
+I will talk about that a little bit later, but that is the reason why we created
 
 00:04:40.817 --> 00:04:43.737
-that demo videos. Back in those days, you both lived in Cologne. 
+that demo videos. Back in those days, you both lived in Cologne.
 
 00:04:44.057 --> 00:04:47.077
-You moved. You are real Europeans. 
+You moved. We are real Europeans.
 
 00:04:47.497 --> 00:04:52.277
-So I'm glad that Rolf made it here in the audience. Especially you. Thank you. 
+So I'm glad that Rolf made it here in the audience. Especially you. Thank you.
 
 00:04:54.457 --> 00:04:58.737
-And I'm pretty sure we will plan something for the upcoming. 
+And I'm pretty sure we will plan something for the upcoming.
 
 00:04:59.917 --> 00:05:02.337
-MCT summit somewhere. So but now let's get serious. 
+MCT summit somewhere. So but now let's get serious.
 
 00:05:03.957 --> 00:05:07.337
-Thanks for all the sponsors. Some of them are here in the room. 
+Thanks for all the sponsors. Some of them are here in the room.
 
 00:05:07.517 --> 00:05:09.217
-Thank you for making it possible. 
+Thank you for making it possible.
 
 00:05:09.457 --> 00:05:13.197
-But again, thanks to the organizers and thank you to all the MCTs that paid for that, right? 
+But again, thanks to the organizers and thank you to all the MCTs that paid for that, right?
 
 00:05:13.337 --> 00:05:18.457
-So this is not a free event. So we're all somehow sponsors. That is important to say. 
+So this is not a free event. So we're all somehow sponsors. That is important to say.
 
 00:05:21.297 --> 00:05:27.537
-My name is Thorsten Butz. And as I told you, I got some serious medical treatment. 
+My name is Thorsten Butz. And as I told you, I got some serious medical treatment.
 
 00:05:27.537 --> 00:05:31.057
-And as I already told you, I'm a big fan of the Netherlands. 
+And as I already told you, I'm a big fan of the Netherlands.
 
 00:05:31.677 --> 00:05:36.557
-And I thought, I've got to combine that thing. If you want to get back to life, 
+And I thought, I've got to combine that thing. If you want to get back to life,
 
 00:05:36.697 --> 00:05:37.437
-you've got to do something. 
+you've got to do something.
 
 00:05:37.717 --> 00:05:42.157
-So I decided to bike a little bit more than what I did before. 
+So I decided to bike a little bit more than what I did before.
 
 00:05:42.637 --> 00:05:46.397
-And this is, some of the Dutch people might recognize this, this is a very famous 
+And this is some of the Dutch people might recognize this. This is a very famous
 
 00:05:46.397 --> 00:05:48.697
-tour here in the Netherlands, the Elfstedentocht. 
+tour here in the Netherlands, the Elfstedentocht.
 
 00:05:49.037 --> 00:05:56.337
-And usually you do that skating, but some of you do that by bike. and this is me last year,
+And usually you do that skating, but some of you do that by bike. and this is me last year.
 
 00:05:56.417 --> 00:06:02.497
-I did that a couple of times now, after 240 kilometers in a single day by the way. 
+I did that a couple of times now after 240 kilometers in a single day by the way.
 
 00:06:02.957 --> 00:06:10.297
-So this is to (thank you) but this is nothing nothing better than show yourself 
+So this is to thank you but this is nothing nothing better than show yourself
 
 00:06:10.297 --> 00:06:13.097
-that you're still alive, right? So that's the best way to do that. 
+that you're still alive, right? So that's the best way to do that.
 
 00:06:13.237 --> 00:06:15.937
-But let's talk about what you came for. 
+But let's talk about what you came for.
 
 00:06:17.417 --> 00:06:20.757
-When do we talk about that. It's pretty simple because of that. 
+When do we talk about that. It's pretty simple because of that.
 
 00:06:22.057 --> 00:06:27.737
-There's a great German word for that "Bandsalat". Everything that fails, 
+There's a great German word for that banzalat. Everything that fails,
 
 00:06:27.737 --> 00:06:31.137
-that can fail, will fail. That is my experience. 
+that can fail, will fail. That is my experience.
 
 00:06:32.197 --> 00:06:39.697
-I'm an MCT for almost 25 years now. I started speaking in public more than a decade ago, 15 years. 
+I'm an MCT for almost 25 years now. I started speaking in public decades ago, 15 years.
 
 00:06:39.957 --> 00:06:46.757
-I decided to do that a little bit more. Because if you talk, if we talk .. 
+I decided to do that a little bit more because if you talk, if we talk to each other.
 
 00:06:46.837 --> 00:06:51.057
-For example, a while ago, Sami (Laiho) delivered a great talk about that. 
+For example, a while ago, Sammy delivered a great talk about that.
 
 00:06:51.557 --> 00:06:58.617
-And Sami, I remember well, said it is not about quantity, it is about quality. 
+And Sammy, I remember well, said it is not about quantity, it is about quality.
 
 00:06:58.937 --> 00:07:02.917
-So it really doesn't matter if you speak in front of 1,000 people, 
+So it really doesn't matter if you speak in front of 1,000 people,
 
 00:07:03.177 --> 00:07:05.537
-they will not show up as customers. 
+they will not show up as customers.
 
 00:07:05.957 --> 00:07:11.317
-But it might be on a special event that you simply have 20 or 30 people in the 
+But it might be on a special event that you simply have 20 or 30 people in the
 
 00:07:11.317 --> 00:07:14.817
-audience, but they will return to you as customers. 
+audience, but they will return to you as customers.
 
 00:07:15.117 --> 00:07:19.957
-So that is what I think about speaking in public. Doesn't mean that you have 
+So that is what I think about speaking in public doesn't mean that you have
 
 00:07:19.957 --> 00:07:25.337
-one thousand people in the audience it can be a tiny group but that can be very important for, 
+one thousand people in the audience it can be a tiny group but that can be very important for,
 
 00:07:26.326 --> 00:07:30.526
-And you can also be the famous YouTuber that maybe Andy is becoming. 
+And you can also be the famous YouTuber that maybe Andy is becoming.
 
 00:07:30.926 --> 00:07:33.726
-And that is your way you can do it. 
+And that is your way you can do it.
 
 00:07:33.766 --> 00:07:39.566
-The problem is when you speak on big conferences, you might know that I'm now 
+The problem is when you speak on big conferences, you might know that I'm now
 
 00:07:39.566 --> 00:07:41.786
-for quite a couple of years, I'm 
+for quite a couple of years, I'm
 
 00:07:41.786 --> 00:07:45.526
-responsible for audio and video at the PowerShell conference in Europe. 
+responsible for audio and video at the PowerShell conference in Europe.
 
 00:07:46.906 --> 00:07:51.066
-I became in charge by accident. That is not what I was looking for. 
+I became in charge by accident. That is not what I was looking for.
 
 00:07:51.266 --> 00:07:54.186
-The reason was: I was from day one, I was a speaker. 
+The reason was I was from day one, I was a speaker.
 
 00:07:54.406 --> 00:08:00.426
-This was one of my favorite events. And what I found out is that you never get 
+This was one of my favorite events. And what I found out is that you never get
 
 00:08:00.426 --> 00:08:04.646
-100%. You can do whatever you want. Someone will screw it up. 
+100%. You can do whatever you want. Someone will screw it up.
 
 00:08:05.046 --> 00:08:11.246
-Maybe the audio is missing. Maybe the screen recording is missing. Something will fail. 
+Maybe the audio is missing. Maybe the screen recording is missing. Something will fail.
 
 00:08:11.686 --> 00:08:16.046
-And I thought, I have a right for my 15 minutes of fame. 
+And I thought, I have a right for my 15 minutes of fame.
 
 00:08:16.186 --> 00:08:21.866
-So I want to take care, and I would encourage all of you to do exactly the same. 
+So I want to take care, and I would encourage all of you to do exactly the same.
 
 00:08:22.206 --> 00:08:25.026
-Record yourself and treat this as a backup. 
+Record yourself and treat this as a backup. up.
 
 00:08:25.626 --> 00:08:29.026
-Don't mind if everything works great, but if you have a backup, 
+Don't mind if everything works great, but if you have a backup,
 
 00:08:29.306 --> 00:08:31.806
-you do not rely on the AV team. 
+you do not rely on the AV team.
 
 00:08:32.006 --> 00:08:34.866
-And the good thing is the AV team will love you. 
+And the good thing is the AV team will love you.
 
 00:08:35.046 --> 00:08:40.366
-For example, some of you, I met a couple of you that will speak in the next 
+For example, some of you, I met a couple of you that will speak in the next
 
 00:08:40.366 --> 00:08:42.666
-upcoming PowerShell conference in Antwerp. 
+upcoming Pauschal Conference in Antwerp.
 
 00:08:43.086 --> 00:08:47.246
-If you do a backup and we miss something, maybe the audio is broken, 
+If you do a backup and we miss something, maybe the audio is broken,
 
 00:08:47.466 --> 00:08:51.926
-and you come to me and tell me, hey, I got my own personal recording, I will love you. 
+and you come to me and tell me, hey, I got my own personal recording, I will yell to you.
 
 00:08:52.286 --> 00:08:58.566
-So that is my primary purpose why I started to create backups while I'm talking. 
+So that is my primary purpose why I started to create backups while I'm talking.
 
 00:08:58.806 --> 00:09:02.386
-And you will see, I did it with Ralph, you will see how that works. 
+And you will see, I did it with Ralph, you will see how that works.
 
 00:09:03.346 --> 00:09:08.826
-Because everything, everyone I said, has his right for, his or her right for 
+Because everything, everyone I said, has his right for, his or her right for
 
 00:09:08.826 --> 00:09:12.006
-his 15 minutes of fame, as Andy Warhol said it. 
+his 15 minutes of fame, as Andy Warhol said it.
 
 00:09:12.086 --> 00:09:15.966
-And for those who are not familiar with PowerShell, This is Jeffrey Snover, 
+And for those who are not familiar with PowerShell, This is Jeffrey Snover,
 
 00:09:16.006 --> 00:09:17.146
-the inventor of PowerShell. 
+the inventor of PowerShell.
 
 00:09:17.206 --> 00:09:23.986
-I had the joy that he came to a couple of my talks, but this was the first one. 
+I had the joy that he came to a couple of my talks, but this was the first one.
 
 00:09:24.106 --> 00:09:26.526
-And the topic was, yeah, you read it, right? 
+And the topic was, yeah, you read it, right?
 
 00:09:26.826 --> 00:09:31.766
-So this, I think this is my 15 minutes of fame. So I wanted to have it, 
+So this, I think this is my 15 minutes of fame. So I wanted to have it,
 
 00:09:31.806 --> 00:09:33.446
-it's on YouTube. It's not the best quality. 
+it's on YouTube. It's not the best quality.
 
 00:09:35.306 --> 00:09:38.106
-I could do that better today, but it worked. 
+I could do that better today, but it worked.
 
 00:09:40.415 --> 00:09:43.695
-Let's start with some general advice very quickly. 
+Let's start with some general advice very quickly.
 
 00:09:44.995 --> 00:09:48.495
-This is from a colleague of ours. He's running a MacBook. 
+This is from a colleague of ours. He's running a MacBook.
 
 00:09:49.255 --> 00:09:56.715
-And what you see up there is that he got a splitter because MacBooks are very 
+And what you see up there is that he got a splitter because MacBooks are very
 
 00:09:56.715 --> 00:09:59.315
-famous, and the same is true for Surface notebooks. 
+famous, and the same is true for Surface notebooks.
 
 00:09:59.975 --> 00:10:03.375
-They are very, very famous that they screw up recording. 
+They are very, very famous that they screw up recording.
 
 00:10:03.775 --> 00:10:09.035
-This is because of, read the Wikipedia article, this is because of HDCP. 
+This is because of, read the Wikipedia article, this is because of HTCP.
 
 00:10:09.035 --> 00:10:20.095
-It is meant to take care that you're not able to record yourself in terms of 
+It is meant to take care that you're not able to record yourself in terms of
 
 00:10:20.095 --> 00:10:22.475
-audio and video duplication. 
+audio and video duplication.
 
 00:10:22.515 --> 00:10:30.155
-They don't want that the latest Hollywood blockbuster shows up on YouTube one 
+They don't want that the latest Hollywood blockbuster shows up on YouTube one
 
 00:10:30.155 --> 00:10:32.775
-day before it's broadcasted generally. 
+day before it's broadcasted in January.
 
 00:10:34.535 --> 00:10:37.955
-The cheaper the device the better. 
+The cheaper the device the better.
 
 00:10:39.495 --> 00:10:46.835
-If you buy that from that China Express store, you name it, for just two euros it will work because. 
+If you buy that from that China Express store, you name it, for just two euros it will work because.
 
 00:10:48.715 --> 00:10:54.115
-HDCP as far as I know requires some license 
+HDCP as far as I know requires some license
 
 00:10:54.115 --> 00:10:56.875
-fee and they have to take care 
+fee and they have to take care
 
 00:10:56.875 --> 00:11:01.795
-about a couple of things and some of the cheap manufacturers they don't care 
+about a couple of things and some of the cheap manufacturers they don't care
 
 00:11:01.795 --> 00:11:08.195
-about and that means that they simply tell the notebook we got you covered, everything 
+about and that means that they simply tell the notebook we got you covered everything
 
 00:11:08.195 --> 00:11:12.515
-is fine everything is licensed give me the content so that will work and this 
+is fine everything is licensed give me the content so that will work and this
 
 00:11:12.515 --> 00:11:15.175
-colleague that I also recorded you will see him in a minute, 
+colleague that I also recorded you will see him in a minute,
 
 00:11:16.435 --> 00:11:21.695
-he had it with him and I would encourage you to try that on your own if you 
+he had it with him and I would encourage you to try that on your own if you
 
 00:11:21.695 --> 00:11:25.715
-have a MacBook if you have a Surface Book try recording yourself and if it works 
+have a MacBook if you have a Surface Book try recording yourself and if it works
 
 00:11:25.715 --> 00:11:29.075
-great but buy this kind of device. 
+great but buy this kind of device.
 
 00:11:29.335 --> 00:11:32.395
-It's just a few euros.  
+It's just a few euros. How do you go about it?
 
 00:11:33.195 --> 00:11:40.855
-Yeah, you name it. So generally, read about HDCP. So why do I tell? Because... 
+Yeah, you name it. So generally, read about HDCP. So why do I tell? Because...
 
 00:11:42.233 --> 00:11:47.693
-It's more or less, it's a returning joke. Every year that we're recording something, 
+It's more or less, it's a returning joke. Every year that we're recording something,
 
 00:11:48.293 --> 00:11:52.053
-a couple of more people have macOS, a couple of more people have a new notebook, 
+a couple of more people have macOS, a couple of more people have a new notebook,
 
 00:11:52.233 --> 00:11:54.133
-and then all of a sudden we can't record that. 
+and then all of a sudden we can't record that.
 
 00:11:54.693 --> 00:12:00.853
-So in many cases, the audio-video team got you covered, but it's always a good 
+So in many cases, the audio-video team got you covered, but it's always a good
 
 00:12:00.853 --> 00:12:04.153
-idea to have one with you. That's the first point. 
+idea to have one with you. That's the first point.
 
 00:12:04.353 --> 00:12:08.153
-Second thing, always use FullHD. 
+Second thing, always use full HD.
 
 00:12:08.333 --> 00:12:14.733
-That's another thing that I see so often. People buy notebooks with such ridiculous 
+That's another thing that I see so often. People buy notebooks with such ridiculous
 
 00:12:14.733 --> 00:12:17.453
-screen resolution, which is nice when you work on it. 
+screen resolution, which is nice when you work on it.
 
 00:12:18.353 --> 00:12:21.633
-But this is not what you want to deliver to YouTube. 
+But this is not what you want to deliver to YouTube.
 
 00:12:21.993 --> 00:12:28.053
-Forget about 4K these days. You can start with that maybe in a couple of years, 
+Forget about 4K these days. You can start with that maybe in a couple of years,
 
 00:12:28.173 --> 00:12:32.613
-but today you will see FullHD is simply the sweet spot. 
+but today you will see full HD is simply the sweet spot.
 
 00:12:32.793 --> 00:12:37.173
-It's the gold standard. It will work everywhere. and I would encourage anyone 
+It's the gold standard. It will work everywhere. and I would encourage anyone
 
 00:12:37.173 --> 00:12:44.693
-to lower the resolution, try that, mirror the screen and deliver your content as FullHD. 
+to lower the resolution, try that, mirror the screen and deliver your content as full HD.
 
 00:12:44.853 --> 00:12:46.833
-And this is what the AV team expects. 
+And this is what the AV team expects.
 
 00:12:47.253 --> 00:12:53.753
-So if you're doing home production then you might focus on higher resolutions. 
+So if you're doing home production then you might focus on higher resolutions.
 
 00:12:53.993 --> 00:12:57.413
-But that is not what I'm talking about. I'm talking about life situation. 
+But that is not what I'm talking about. I'm talking about life situation.
 
 00:12:57.713 --> 00:12:59.513
-I'm delivering FullHD here. 
+I'm delivering full HD here.
 
 00:13:01.233 --> 00:13:09.193
-There are some more tips and tricks that are so - I think everybody should already know that - 
+There are some more tips and tricks that are so So I think everybody should already know that.
 
 00:13:09.393 --> 00:13:13.293
-but what I found out is people forget about that. 
+But what I found out is people forget about that.
 
 00:13:13.473 --> 00:13:20.633
-So, for example, put your phone in do not disturb mode and do not use the presenter 
+So, for example, put your phone in do not disturb mode and do not use the presenter
 
 00:13:20.633 --> 00:13:24.633
-mode because that always leads into trouble when mirroring screens. 
+mode because that always leads into trouble when mirroring screens.
 
 00:13:24.793 --> 00:13:27.293
-If you know what you're doing, you can do any of that. 
+If you know what you're doing, you can do any of that.
 
 00:13:29.073 --> 00:13:33.433
-And a private tip from me, you might find out that it's a bit strange: w
+And a private tip from me, you might find out that it's a bit strange,
 
 00:13:33.433 --> 00:13:35.853
-hy should we hide the clock? 
+Why should we hide the clock?
 
 00:13:37.877 --> 00:13:42.417
-Sometimes you screw it up, sometimes it fails and you need to cut it later on 
+Sometimes you screw it up, sometimes it fails and you need to cut it later on
 
 00:13:42.417 --> 00:13:49.697
-because nobody wants to see how you repair the cable or do something. 
+because nobody wants to see how you repair the cable or do something.
 
 00:13:50.137 --> 00:13:56.637
-And then it's a bit annoying if the clock is moving from 1 o'clock to 3 o'clock or something like that. 
+And then it's a bit annoying if the clock is moving from 1 o'clock to 3 o'clock or something like that.
 
 00:13:56.717 --> 00:14:02.177
-So it's way easier to cut your video if you simply disable the clock in the tray bar. 
+So it's way easier to cut your video if you simply disable the clock in the tray bar.
 
 00:14:02.257 --> 00:14:06.737
-That's a tiny trick, but it makes a big difference, I can tell you. 
+That's a tiny trick, but it makes a big difference, I can tell you.
 
 00:14:06.737 --> 00:14:13.797
-So probably turn off messenger and those type of things exactly if you enable 
+So probably turn off messenger and those type of things exactly if you enable
 
 00:14:13.797 --> 00:14:17.897
-the presentation setting in Windows, then it should be covered, but anyhow. 
+the presentation Setting in Windows, then it should be covered, but anyhow.
 
 00:14:31.717 --> 00:14:35.157
-Exactly. Sometimes it doesn't matter if you will have a look at that video if 
+Exactly sometimes it doesn't matter if you will have a look at that video if
 
 00:14:35.157 --> 00:14:40.957
-if the recording will show up. So it's very likely that in two years' 
+if the recording will show up So it's very likely that in two years'
 
 00:14:41.097 --> 00:14:44.317
-time it is still the same that I would tell you because it doesn't change that 
+time it is still the same that I would tell you because it doesn't change that
 
 00:14:44.317 --> 00:14:48.957
-often in terms of microphone technology or audio interfaces or stuff like that. 
+often in terms of microphone technology or audio interfaces or stuff like that.
 
 00:14:49.117 --> 00:14:54.097
-Anyhow, the final thing that I don't see very often, I do it all the time, 
+Anyhow, the final thing that I don't see very often, I do it all the time,
 
 00:14:54.097 --> 00:15:00.937
-maybe you saw it before we started, start with a jingle or start with a countdown. 
+maybe you saw it before we started, start with a jingle or start with a countdown.
 
 00:15:00.937 --> 00:15:06.857
-But believe it or not, I very often have to cut sessions from speakers. 
+But believe it or not, I very often have to cut sessions from speakers.
 
 00:15:07.117 --> 00:15:10.457
-I don't name people here. Very, very prominent celebrities. 
+I don't name people here. Very, very prominent celebrities.
 
 00:15:11.197 --> 00:15:15.437
-Very, very prominent. And you don't get the point in time where they start talking. 
+Very, very prominent. And you don't get the point in time why they start talking.
 
 00:15:15.637 --> 00:15:18.497
-Because they're constantly chatting with someone. 
+Because they're constantly chatting with someone.
 
 00:15:18.757 --> 00:15:22.077
-And all of a sudden you think: Okay, this is already the talk. 
+And all of a sudden you think, okay, this is already the talk.
 
 00:15:23.077 --> 00:15:26.457
-Don't do that. In the beginning, shut up and do this. 
+Don't do that. In the beginning, shut up and do this.
 
 00:15:33.277 --> 00:15:37.717
-And now you start. And now that is the distinct point where you say, 
+And now you start. And now that is the distinct point where you say,
 
 00:15:37.797 --> 00:15:40.157
-okay, that is the beginning of my presentation. 
+okay, that is the beginning of my presentation.
 
 00:15:40.417 --> 00:15:43.197
-Chicken, chicken, chicken, chicken. That's it. Very easy. 
+Chicken, chicken, chicken, chicken. That's it. Very easy.
 
 00:15:45.385 --> 00:15:50.625
-If you want to record yourself, it's obvious that it's easy somehow, 
+If you want to record yourself, it's obvious that it's easy somehow,
 
 00:15:50.825 --> 00:15:53.025
-and it's very hard in some other aspects. 
+and it's very hard in some other aspects.
 
 00:15:53.385 --> 00:15:57.045
-What I want to show you is that you only need to cover two things. 
+What I want to show you is that you only need to cover two things.
 
 00:15:57.585 --> 00:16:02.665
-And if you're looking for a little bit more, then you have to cover three things. 
+And if you're looking for a little bit more, then you have to cover three things.
 
 00:16:02.765 --> 00:16:04.045
-Let's find out what that is. 
+Let's find out what that is.
 
 00:16:05.385 --> 00:16:09.805
-What you really need is screen recording. And it really doesn't hurt anyone 
+What you really need is screen recording. And it really doesn't hurt anyone
 
 00:16:09.805 --> 00:16:12.845
-if you do a screen recording as a backup.  
+if you do a screen recording as a backup. up.
 
 00:16:12.965 --> 00:16:19.605
-As I mentioned before, if the audio video team on a conference has got some 
+As I mentioned before, if the audio video team on a conference has got some
 
 00:16:19.605 --> 00:16:24.525
-trouble with the connection, stuff like that, it's just so easy to record your screen. 
+trouble with the connection, stuff like that, it's just so easy to record your screen.
 
 00:16:25.745 --> 00:16:30.565
-What you already should take care of is audio. 
+What you already should take care of is audio.
 
 00:16:30.825 --> 00:16:35.605
-This is the reason why you see that I wear a microphone, because that is very important. 
+This is the reason why you see that I wear a microphone, because that is very important.
 
 00:16:36.305 --> 00:16:43.025
-The one thing that I think is not so really important important is the thumbnail 
+The one thing that I think is not so really important important is the thumbnail
 
 00:16:43.025 --> 00:16:45.825
-size of your head, that headshot. 
+size of your head, that headshot.
 
 00:16:46.965 --> 00:16:51.265
-Because if you think about, if you have a look at the PowerShell training or 
+Because if you think about, if you have a look at the PowerShell training or
 
 00:16:51.265 --> 00:16:55.845
-something like that on a conference, just that I mentioned. How important is 
+something like that on a conference just that I mentioned, how important is
 
 00:16:55.845 --> 00:16:56.965
-that you see the speaker? 
+that you see the speaker?
 
 00:16:57.725 --> 00:17:02.825
-It's nice to have because it gives you some of the atmosphere at the conference. 
+It's nice to have because it gives you some of the atmosphere at the conference.
 
 00:17:03.265 --> 00:17:07.065
-It's very nice to have, but actually you don't need it. 
+It's very nice to have, but actually you don't need it.
 
 00:17:08.245 --> 00:17:13.305
-Sometimes I think it's a little bit disgusting if I see a huge amount of code 
+Sometimes I think it's a little bit disgusting if I see a huge amount of code
 
 00:17:13.305 --> 00:17:18.085
-and some of it overlaps with a picture of the speaker. 
+and some of it overlaps with a picture of the speaker.
 
 00:17:18.305 --> 00:17:23.145
-So if I cut it on my own then I always remove the camera. 
+So if I cut it on my own then I always remove the camera.
 
 00:17:23.645 --> 00:17:29.085
-So I want you, if you start recording with it, don't think too much about video. 
+So I want you, if you start recording with it, don't think too much about video.
 
 00:17:29.185 --> 00:17:33.865
-Simply think about screen recording plus audio and that is already a great backup 
+Simply think about screen recording plus audio and that is already a great backup
 
 00:17:33.865 --> 00:17:35.405
-for anything that you do. 
+for anything that you do.
 
 00:17:37.364 --> 00:17:40.344
-Screen recording is not a big thing. 
+Screen recording is not a big thing.
 
 00:17:41.164 --> 00:17:45.884
-And I have to say, first of all, that I'm not sponsored by any of the companies 
+And I have to say, first of all, that I'm not sponsored by any of the companies
 
 00:17:45.884 --> 00:17:49.824
-that I will name now, and I will name a lot, and I will give recommendation. 
+that I will name now, and I will name a lot, and I will give recommendation.
 
 00:17:50.344 --> 00:17:54.384
-I'm open to sponsoring, if you listen. 
+I'm open to sponsoring, if you listen.
 
 00:17:55.944 --> 00:18:01.944
-Camtasia, RØDE, and stuff like that. But this is just my personal experience. 
+Camtasia, Rody, and stuff like that. But this is just my personal experience.
 
 00:18:02.184 --> 00:18:06.904
-So Camtasia, to me, is number one, simply because we're at the MCT Summit. 
+So Camtasia, to me, is number one, simply because we're at the MCT Summit.
 
 00:18:07.364 --> 00:18:10.764
-And I know that almost any one of you already have a Camtasia license. 
+And I know that almost any one of you already has a Camtasia license.
 
 00:18:11.084 --> 00:18:15.224
-So if you have one: start it, it's fine. It's great. And you can also cut it. 
+So if you have one started, it's fine. It's great. And you can also cut it.
 
 00:18:16.184 --> 00:18:19.904
-It's available for macOS. It's available for Windows. Great tool. 
+It's available for macOS. It's available for Windows. Great tool.
 
 00:18:20.264 --> 00:18:25.584
-The easiest thing, maybe you have not yet seen it, is: ZoomIt
+The easiest thing, maybe you have not yet seen it, is Zoomit.
 
 00:18:26.124 --> 00:18:31.844
-In the latest versions, it was, I think, Mark Russinovich published it last year. 
+In the latest versions, it was, I think, Makrosinovich published it last year.
 
 00:18:32.224 --> 00:18:37.984
-It can also do screen recording. and I definitely I'm sure any one of you have 
+It can also do screen recording. and I definitely I'm sure any one of you have
 
 00:18:37.984 --> 00:18:39.824
-these Sysinternals tools on your notebook. 
+these sysinternals tools on your notebook.
 
 00:18:40.084 --> 00:18:43.644
-It is CTRL+F5 - that's it, let it run, it's fine. 
+It is control F5 that's it let it run it's fine.
 
 00:18:44.524 --> 00:18:52.504
-And if you really want to go serious then it must be OBS because OBS is the prime tool. 
+And if you really want to go serious then it must be OBS because OBS is the prime tool.
 
 00:18:53.124 --> 00:18:58.924
-It is not very hard to understand but it needs some time to try out. 
+It is not very hard to understand but it needs some time to try out.
 
 00:18:59.084 --> 00:19:02.864
-So the nice thing thing about OBS is, I use it here,
+So the nice thing thing about OBS is I use it here.
 
 00:19:03.144 --> 00:19:08.184
-the nice thing about OBS is that it is available for any platform that we use. 
+The nice thing about OBS is that it is available for any platform that we use.
 
 00:19:08.284 --> 00:19:11.404
-It's available for Linux, for Windows, and for macOS, so it's always the same. 
+It's available for Linux, for Windows, and for macOS, so it's always the same.
 
 00:19:11.764 --> 00:19:16.304
-And if you want to go into live streaming, that's where it comes from, 
+And if you want to go into live streaming, that's where it comes from,
 
 00:19:16.344 --> 00:19:17.224
-but it can do everything. 
+but it can do everything.
 
 00:19:17.424 --> 00:19:22.524
-I use it in any Teams recording because it's got virtual cameras and so many 
+I use it in any Teams recording because it's got virtual cameras and so many
 
 00:19:22.524 --> 00:19:26.164
-useful things. Do it, try it, that is the easiest part. 
+useful things. Do it, try it, that is the easiest part.
 
 00:19:28.924 --> 00:19:33.184
-The one thing that you're usually missing, why we wanted to talk about that 
+The one thing that you're usually missing, why we wanted to talk about that
 
 00:19:33.184 --> 00:19:38.284
-topic is, the one thing that people do not know is that they need an audio interface. 
+topic is, the one thing that people do not know is that they need an audio interface.
 
 00:19:39.324 --> 00:19:44.484
-Some of you might think, I got that little jack here, I can plug it in in my 
+Some of you might think, I got that little jack here, I can plug it in in my
 
 00:19:44.484 --> 00:19:46.604
-notebook and that's it. That will not work. 
+notebook and that's it. That will not work.
 
 00:19:47.464 --> 00:19:55.444
-Because computers are not very good in processing audio signals because they 
+Because computers are not very good in processing audio signals because they
 
 00:19:55.444 --> 00:19:57.284
-expect you to have such a device. 
+expect you to have such a device.
 
 00:19:57.644 --> 00:20:01.064
-And if you look closely, you will see there are three audio interfaces. 
+And if you look closely, you will see there are three audio interfaces.
 
 00:20:02.426 --> 00:20:06.926
-I have not took a picture of my biggest audio interface that is of this size, 
+I have not took a picture of my biggest audio interface that is of this size,
 
 00:20:07.126 --> 00:20:08.966
-if you do music and stuff like that. 
+if you do music and stuff like that.
 
 00:20:09.666 --> 00:20:15.846
-But the biggest one is a general general purpose audio device, a good one. 
+But the biggest one is a general general purpose audio device, a good one.
 
 00:20:17.226 --> 00:20:22.066
-The smallest one, the white one, you already know because that is nothing else 
+The smallest one, the white one, you already know because that is nothing else
 
 00:20:22.066 --> 00:20:25.866
-than the Apple adapter, that some of you might know. 
+than the Apple adapter, that some of you might know.
 
 00:20:26.326 --> 00:20:31.106
-And the one in the middle, that is the most interesting one on the right hand 
+And the one in the middle, that is the most interesting one on the right hand
 
 00:20:31.106 --> 00:20:32.686
-side, that is the RØDE micro AI. 
+side, that is the Rode micro AI.
 
 00:20:32.946 --> 00:20:35.306
-This is what I will recommend later on. 
+This is what I will recommend later on.
 
 00:20:35.986 --> 00:20:42.686
-The interesting thing about that Apple adapter is that some of you might think 
+The interesting thing about that Apple adapter is that some of you might think
 
 00:20:42.686 --> 00:20:47.766
-that this is simply a passive thing, just a cable. It is not. 
+that this is simply a passive thing, just a cable. It is not.
 
 00:20:48.146 --> 00:20:51.846
-It got tons of electronic circuit in it. It's a miracle. 
+It got tons of electronic circuit in it. It's a miracle.
 
 00:20:52.226 --> 00:20:59.166
-And the fun thing is that this might be the cheapest, in terms of value, 
+And the fun thing is that this might be the cheapest, in terms of value,
 
 00:20:59.526 --> 00:21:04.126
-the cheapest thing that Apple ever created, because it only cost 10 euros. 
+the cheapest thing that Apple ever created, because it only cost 10 euros.
 
 00:21:04.626 --> 00:21:07.626
-And if you think about it, if you read about it, what's all in it
+And if you think about it, if you read about it, what's all in it.
 
 00:21:10.346 --> 00:21:15.446
-hen compared to some cables that they sell for 30 euros: This must be way more 
+Then compared to some cables that they sell for 30 euros, this must be way more
 
 00:21:15.446 --> 00:21:16.886
-expensive, but we don't tell them. 
+expensive, I said, but we don't tell them.
 
 00:21:17.126 --> 00:21:24.926
-So one day they started to, when they moved to Lightning and to Lightning only, 
+So one day they started to, when they moved to Lightning and to Lightning only,
 
 00:21:25.086 --> 00:21:30.626
-so when they removed the jack, they started to offer that in a cheap way, 
+so when they removed the jack, they started to offer that in a cheap way,
 
 00:21:30.666 --> 00:21:36.066
-and they still offer it for 10 euros, and you get it on the used market for even less. 
+and they still offer it for 10 euros, and you get it on the used market for even less.
 
 00:21:37.106 --> 00:21:40.946
-And this will also work with most Android phones. 
+And this will also work with most Android phones.
 
 00:21:41.606 --> 00:21:45.586
-And I got a lot of things with me. If you have an Android phone, 
+And I got a lot of things with me. If you have an Android phone,
 
 00:21:45.746 --> 00:21:49.146
-I would really love to talk to you and give a couple of things so that you can 
+I would really love to talk to you and give a couple of things so that you can
 
 00:21:49.146 --> 00:21:52.866
-tell me this works with my device, this works with that device. 
+tell me this works with my device, this works with that device.
 
 00:21:53.146 --> 00:21:57.506
-I tested it with a Galaxy, for example. Many will have that. 
+I tested it with a Galaxy, for example. Many will have that.
 
 00:21:57.766 --> 00:22:02.986
-That works fine. And that is the cheapest one. You can buy much more expensive 
+That works fine. And that is the cheapest one. You can buy much more expensive
 
 00:22:02.986 --> 00:22:06.346
-stuff than this that will not work that well. 
+stuff than this that will not work that well.
 
 00:22:08.377 --> 00:22:13.317
-I will come to that later. The fun thing is that Andy, for example, 
+I will come to that later. The fun thing is that Andy, for example,
 
 00:22:13.377 --> 00:22:14.857
-asked me exactly about that. 
+asked me exactly about that.
 
 00:22:15.477 --> 00:22:21.677
-What you really need to know in terms of technical is that the jack / 
+What you really need to know in terms of technical is that the jack might,
 
 00:22:21.957 --> 00:22:27.737
-the pin might always look the same. We're talking about 3.5 millimeter jacks. 
+the pin might always look the same. We're talking about 3.5 millimeter jacks.
 
 00:22:28.157 --> 00:22:31.897
-But it is not the same. It's a large number of standards. 
+But it is not the same. It's a large number of standards.
 
 00:22:32.737 --> 00:22:36.117
-And I don't go into much detail here. We will not have the time. 
+And I don't go into much detail here. We will not have the time.
 
 00:22:36.117 --> 00:22:42.917
-But what you really should be aware of, count the rings and you will see these 
+But what you really should be aware of, count the rings and you will see these
 
 00:22:42.917 --> 00:22:44.157
-both pins are different. 
+both pins are different.
 
 00:22:44.857 --> 00:22:52.957
-The upper one is a so-called TRS jack, a TRS pin and the lower one is a TRRS. 
+The upper one is a so-called TRS jack, a TRS pin and the lower one is a TRRS.
 
 00:22:53.377 --> 00:22:54.677
-Why is that different? 
+Why is that different?
 
 00:22:55.577 --> 00:23:01.697
-The management summary is the lower one supports microphone plus headphones. 
+The management summary is the lower one supports microphone plus headphones.
 
 00:23:02.557 --> 00:23:11.217
-That's the reason why most most smartphones will expect you to have something with TRRS. 
+That's the reason why most Most smartphones will expect you to have something with TRRS.
 
 00:23:11.577 --> 00:23:13.477
-So that leads to the situation, 
+So that leads to the situation.
 
 00:23:14.277 --> 00:23:18.097
-if you buy a very expensive lapel mic, I'll come to that later, 
+If you buy a very expensive label mic, I'll come to that later,
 
 00:23:18.837 --> 00:23:22.657
-and you put it in here and attach it to your smartphone, it will not work. 
+and you put it in here and attach it to your smartphone, it will not work.
 
 00:23:22.977 --> 00:23:28.177
-Because the expensive ones, they are not meant to be directly used with headphones. 
+Because the expensive ones, they are not meant to be directly used with headphones.
 
 00:23:28.957 --> 00:23:33.497
-They think that you have some proper musician gear or some broadcasting gear. 
+They think that you have some proper musician gear or some broadcasting gear.
 
 00:23:33.497 --> 00:23:38.657
-So very often the expensive one use the TRS standard, the upper one, 
+So very often the expensive one use the TRRS standard, the upper one,
 
 00:23:38.817 --> 00:23:43.677
-and the cheaper one, those that I gave to you, they use TRRS. 
+and the cheaper one, those that I gave to you, they use TRRS.
 
 00:23:45.431 --> 00:23:49.951
-You can move from one to the other, but then you're in the dongle hell. 
+You can move from one to the other, but then you're in the dunghill hell.
 
 00:23:50.251 --> 00:23:53.291
-And you will see that very often when you find me on conferences. 
+And you will see that very often when you find me on conference.
 
 00:23:53.431 --> 00:23:59.231
-I always run with a bunch of these cables here because this is TRS to TRRS and vice versa. 
+I always run with a bunch of these cables here because this is TRS to TRRS and vice versa.
 
 00:23:59.491 --> 00:24:02.471
-And you need them. So I have a couple of them with me. 
+And you need them. So I have a couple of them with me.
 
 00:24:02.911 --> 00:24:07.711
-And you will later find - I will put everything with affiliate links - 
+And you will later find I will put everything with affiliate links,
 
 00:24:07.811 --> 00:24:12.031
-with links to the standards and stuff in the slide deck. 
+with links to the standards and stuff in the slide deck.
 
 00:24:12.111 --> 00:24:16.551
-And I will publish it. So you might take pictures, but there is no necessity. 
+And I will publish it. So you might take pictures, but there is no necessity.
 
 00:24:16.811 --> 00:24:23.111
-I will give you the links and some tips and tricks. Take your time. It doesn't matter. 
+I will give you the links and some tips and tricks Yeah, but I take your time. It doesn't matter.
 
 00:24:23.311 --> 00:24:26.271
-That is the one thing that you have to be aware and, a
+That is the one thing that you have to be aware and,
 
 00:24:28.431 --> 00:24:33.251
-s most of you already know, I donated this. This is for free. 
+As most of you already know I Donated this is this is for free.
 
 00:24:33.311 --> 00:24:39.071
-You can keep it. I gave it to some of you if you don't have one take one use it. 
+You can keep it I gave it to some of you if you don't have one take one use it.
 
 00:24:39.191 --> 00:24:44.151
-This one has TRRS. So this is what is expected here on a smartphone. 
+This one has TRRS So this is what is expected here on a smartphone.
 
 00:24:44.351 --> 00:24:49.131
-This is a very cheap lapel mic and we will see what comes out in a couple of minutes. 
+This is a very cheap label mic and we will see what comes out in a couple of minutes.
 
 00:24:51.991 --> 00:24:57.631
-This is what it looks like. You have a smartphone and since I'm an Apple user, 
+This is what it looks like. You have a smartphone and since I'm an Apple user,
 
 00:24:57.791 --> 00:25:01.931
-Apple makes it easy for me because it's always the same. 
+Apple makes it easy for me because it's always the same.
 
 00:25:02.731 --> 00:25:06.831
-I don't mind that you use Android but there might be a difference if you use 
+I don't mind that you use Android but there might be a difference if you use
 
 00:25:06.831 --> 00:25:13.691
-a Galaxy phone from Samsung or you use a Huawei or Xiaomi or whatsoever. So try that out. 
+a Galaxy phone from Samsung or you use a Huawei or Xiaomi or whatsoever. So try that out.
 
 00:25:17.871 --> 00:25:23.051
-The question is, if you got everything wired, how do you record yourself? 
+The question is, if you got everything wired, how do you record yourself?
 
 00:25:23.731 --> 00:25:32.171
-If I go back one more time, on the left hand side you see there is a recording application. 
+If I go back one more time, on the left hand side you see there is a recording application.
 
 00:25:33.051 --> 00:25:38.251
-You can use anything. You can use a voice recorder, you can use anything that you 
+You can use anything. You can use a voice recorder you can anything that you
 
 00:25:38.251 --> 00:25:41.511
-find but i highly recommend for apple users, 
+find but i highly recommend for apple users,
 
 00:25:43.331 --> 00:25:46.171
-sadly that is not on the Google store it is 
+sadly that is not on the google store it is
 
 00:25:46.171 --> 00:25:49.591
-on the store yes but it's only for outdated android 
+on the store yes but it's only for outdated android
 
 00:25:49.591 --> 00:25:54.431
-versions so for the latest and greatest you will not find it. But for ios users 
+versions so for the latest and greatest you will not find it but for ios users
 
 00:25:54.431 --> 00:25:59.491
-i highly recommend this app you see here it's aphonic we will talk about that 
+i highly recommend this app you see here it's aphonic we will talk about that
 
 00:25:59.491 --> 00:26:05.831
-and you can simply use it to record And the main reason why I recommend it is 
+and you can simply use it to record And the main reason why I recommend it is
 
 00:26:05.831 --> 00:26:08.131
-you can choose the microphone. 
+you can choose the microphone.
 
 00:26:08.791 --> 00:26:15.751
-Because in my current setup, I have four microphones, if I got it right, 
+Because in my current setup, I have four microphones, if I got it right,
 
 00:26:16.031 --> 00:26:18.751
-that are connected to my smartphone. 
+that are connected to my smartphone.
 
 00:26:19.191 --> 00:26:23.311
-Because I have a couple of them built in, and I attach another one, 
+Because I have a couple of them built in, and I attach another one,
 
 00:26:23.391 --> 00:26:25.791
-so I can choose from three or four or whatsoever. 
+so I can choose from three or four or whatsoever.
 
 00:26:26.331 --> 00:26:31.371
-And this doesn't work properly automatically. You should really check that. 
+And this doesn't work properly automatically. You should really check that.
 
 00:26:31.371 --> 00:26:34.091
-And Auphonic allows you to check that. 
+And Auphonic allows you to check that.
 
 00:26:34.731 --> 00:26:39.851
-That is also true for some other tools, but this is the one that I use. 
+That is also true for some other tools, but this is the one that I use.
 
 00:26:42.775 --> 00:26:46.555
-What is Auphonic? Auphonic is a dream come true. 
+What is Auphonic? Auphonic is a dream come true.
 
 00:26:46.615 --> 00:26:50.975
-You will see that in the little demo that I prepared. 
+You will see that in the little demo that I prepared.
 
 00:26:51.875 --> 00:26:57.535
-Auphonic is, and now comes the best, it's a free service from our friends in Austria. 
+Auphonic is, and now comes the best, it's a free service from our friends in Austria.
 
 00:26:57.755 --> 00:27:00.675
-It is somehow related to a university over there. 
+It is somehow related to a university over there.
 
 00:27:01.175 --> 00:27:10.635
-They're doing research on audio signals and they are, These guys are world-class 
+They're doing research on audio signals and they are, These guys are world-class
 
 00:27:10.635 --> 00:27:14.635
-experts on audio processing. It is the highest level. 
+experts on audio processing. It is the highest level.
 
 00:27:15.275 --> 00:27:19.575
-And they do offer a broadcasting service, let me say it like that, 
+And they do offer a broadcasting service, let me say it like that,
 
 00:27:20.415 --> 00:27:24.115
-where you can put in your totally rubbish audio signal. 
+where you can put in your totally rubbish audio signal.
 
 00:27:24.155 --> 00:27:27.075
-You can also put in videos. You will see in a couple of minutes. 
+You can also put in videos. You will see in a couple of minutes.
 
 00:27:28.275 --> 00:27:32.195
-And then they try to improve it. they also 
+And then they try to improve it. they also
 
 00:27:32.195 --> 00:27:35.915
-these days they create a transcript and 
+these days they create a transcript and
 
 00:27:35.915 --> 00:27:39.595
-if you want to you get automated subtitles it 
+if you want to you get automated subtitles it
 
 00:27:39.595 --> 00:27:42.875
-is great you will see that I always 
+is great you will see that I always
 
 00:27:42.875 --> 00:27:47.975
-use that because it makes it so easy to publish something for example to YouTube 
+use that because it makes it so easy to publish something for example to YouTube
 
 00:27:47.975 --> 00:27:55.815
-on conferences I very often tell that we have one more time I take this as an 
+on conferences I very often tell that we have one more time I take this as an
 
 00:27:55.815 --> 00:27:59.635
-example because I I know a lot about it. I take the PowerShell conference. 
+example because I I know a lot about it. I take the partial conference.
 
 00:27:59.835 --> 00:28:03.955
-We have almost 100 sessions, 80-something. 
+We have almost 100 sessions, 80-something.
 
 00:28:04.895 --> 00:28:12.635
-And if everything works great, I can publish all of them in three days. And how can that be? 
+And if everything works great, I can publish all of them in three days. And how can that be?
 
 00:28:13.655 --> 00:28:16.575
-I delivered a couple of talks. You will find them on YouTube. 
+I delivered a couple of talks. You will find them on YouTube.
 
 00:28:16.915 --> 00:28:20.175
-But the management summary is: I couldn't do without Auphonic. 
+But the management summary is I couldn't do without Auphonic.
 
 00:28:20.575 --> 00:28:22.855
-Because I put everything in a cloud storage. 
+Because I put everything in a cloud storage.
 
 00:28:23.475 --> 00:28:30.055
-I automatically let improve it here. and they will publish it on behalf of me to YouTube. 
+I automatically let improve it here. and they will publish it on behalf of me to YouTube.
 
 00:28:30.555 --> 00:28:35.395
-So that's it. And then you can say that it's automatically visible or not. 
+So that's it. And then you can say that it's automatically visible or not.
 
 00:28:35.555 --> 00:28:39.735
-I always say upload it, but don't make it visible, and then I check it again, 
+I always say upload it, but don't make it visible, and then I check it again,
 
 00:28:39.815 --> 00:28:42.735
-and then I put it to public. 
+and then I put it to public.
 
 00:28:43.175 --> 00:28:46.415
-I show you a demo in a few seconds. 
+I show you a demo in a few seconds.
 
 00:28:48.375 --> 00:28:53.275
-What should you buy if you're interested? In that, what I will demo with the 
+What should you buy if you're interested? In that, what I will demo with the
 
 00:28:53.275 --> 00:28:55.015
-help of Ralph in a couple of seconds. 
+help of Ralph in a couple of seconds.
 
 00:28:57.375 --> 00:29:01.175
-And what you should not buy. And again, I'm not paid for that. 
+And what you should not buy. And again, I'm not paid for that.
 
 00:29:01.895 --> 00:29:03.755
-So that is really my experience. 
+So that is really my experience.
 
 00:29:05.605 --> 00:29:09.185
-Do not buy any of the cheap or not so cheap adapters. 
+Do not buy any of the cheap or not so cheap adapters.
 
 00:29:09.465 --> 00:29:19.005
-I bought them to try them out, but usually they are made for supporting headphones and only headphones. 
+I bought them to try them out, but usually they are made for supporting headphones and only headphones.
 
 00:29:19.285 --> 00:29:22.545
-Most of them do not support microphones. 
+Most of them do not support microphones.
 
 00:29:22.985 --> 00:29:24.145
-They are not meant for that. 
+They are not meant for that.
 
 00:29:24.805 --> 00:29:31.025
-So if you buy anything, simply try if it works or not, I would recommend that 
+So if you buy anything, simply try if it works or not, I would recommend that
 
 00:29:31.025 --> 00:29:32.165
-you buy something different. 
+you buy something different.
 
 00:29:32.905 --> 00:29:36.045
-If you only want to spend 10 euros then take 
+If you only want to spend 10 euros then take
 
 00:29:36.045 --> 00:29:38.865
-the microphone that I gave to you which is 
+the microphone that I gave to you which is
 
 00:29:38.865 --> 00:29:42.485
-by the way less than less than 
+by the way less than less than
 
 00:29:42.485 --> 00:29:45.165
-two euros. This microphone costs on the 
+two euros this microphone costs on the
 
 00:29:45.165 --> 00:29:48.025
-China market just one euro something and then 
+China market just one euro something and then
 
 00:29:48.025 --> 00:29:51.185
-the rest is parcel service and how 
+the rest is partial service and how
 
 00:29:51.185 --> 00:29:54.245
-good it is you will hear that. Buy this 
+good it is you will hear that by this
 
 00:29:54.245 --> 00:29:57.665
-one. And Apple is rich enough it's not 
+one and Apple is rich enough it's not
 
 00:29:57.665 --> 00:30:00.705
-that I want them to be even richer it is just because I made 
+that I want them to be even richer it is just because I made
 
 00:30:00.705 --> 00:30:06.385
-the best experience with that. That is why I recommend that but since you are 
+the best experience with that that is why I recommend that but since you are
 
 00:30:06.385 --> 00:30:12.345
-all rich I want you to think about and this is exactly what you asked me, Andy. A
+all rich I want you to think about and this is exactly what you asked me Andy
 
 00:30:12.345 --> 00:30:17.825
-nd I want you to think about trying the, 
+and I want you to think about trying the,
 
 00:30:18.445 --> 00:30:21.165
-I put the notes and they I put the 
+I put the notes and they I put the
 
 00:30:21.165 --> 00:30:26.125
-link in the notes try the RØDE AI micro. You see it on the left hand 
+link in the notes try the road road AI make through you see it on the left hand
 
 00:30:26.125 --> 00:30:34.165
-side this is this one over there it is as big as a stamp and it's a miracle 
+side this is this one over there it is as big as a stamp and it's a miracle
 
 00:30:34.165 --> 00:30:38.725
-because there are a couple of things that are really great in it. 
+because there are a couple of things that are really great in it.
 
 00:30:39.525 --> 00:30:44.105
-First of all it supports two microphones and it handles as different channels 
+First of all it supports two microphones and it handles as different channels
 
 00:30:44.105 --> 00:30:52.025
-so I can for my podcast for example I can create a two-person interview and 
+so I can for my podcast for example I can create a two-person interview and
 
 00:30:52.025 --> 00:30:53.205
-I have separated channels. 
+I have separated channels.
 
 00:30:53.505 --> 00:30:58.945
-That is first of all super great. The next thing is you have headphones support 
+That is first of all super great. The next thing is you have headphones support
 
 00:30:58.945 --> 00:31:04.805
-on top and the the very, very best thing is, do you see the microphone? 
+on top and the the very, very best thing is, do you see the microphone?
 
 00:31:05.025 --> 00:31:09.365
-Some, one of it, the red one is TRRS and the other one is TRS. 
+Some, one of it, the red one is TRRS and the other one is TRS.
 
 00:31:10.998 --> 00:31:15.458
-You can put both of it into, it will recognize automatically. That is pure magic. 
+You can put both of it into, it will recognize automatically. That is pure magic.
 
 00:31:15.878 --> 00:31:20.038
-You know, I always say content first, recording second!
+You know, I always say content first, recording second.
 
 00:31:20.518 --> 00:31:23.498
-If you're on a big stage, don't screw it up because of the recording. 
+If you're on a big stage, don't screw it up because of the recording.
 
 00:31:24.438 --> 00:31:28.758
-Deliver your session. It is better that you deliver a good session than you 
+Deliver your session. It is better that you deliver a good session than you
 
 00:31:28.758 --> 00:31:30.298
-have a good recording of a bad session. 
+have a good recording of a bad session.
 
 00:31:31.018 --> 00:31:34.238
-So you don't want to fiddle around. 
+So you don't want to fiddle around.
 
 00:31:35.118 --> 00:31:39.598
-So take the simplest way that can be. And if you buy this one, 
+So take the simplest way that can be. And if you buy this one,
 
 00:31:39.758 --> 00:31:46.238
-again, not an advertisement, but I got very, very good experience with that. 
+again, not an advertisement, but I got very, very good experience with that.
 
 00:31:47.198 --> 00:31:48.178
-That's my recommendation. 
+That's my recommendation.
 
 00:31:50.298 --> 00:31:59.178
-If you want to buy another lapel mic, you can spend money on it, infinite money on it. 
+If you want to buy another label mic, you can spend money on it, infinite money on it.
 
 00:31:59.538 --> 00:32:02.338
-But the one thing that I started with is this one. 
+But the one thing that I started with is this one.
 
 00:32:02.378 --> 00:32:06.038
-This is, again, a RØDE product. I got to confess that I'm a bit addicted to 
+This is, again, a road product. I got to confess that I'm a bit addicted to
 
 00:32:06.038 --> 00:32:08.318
-that company because they're in that sweet spot. 
+that company because they're in that sweet spot.
 
 00:32:08.598 --> 00:32:16.378
-They're not too expensive. Because real pro gear can be super expensive if you 
+They're not too expensive Because real pro gear can be super expensive if you
 
 00:32:16.378 --> 00:32:21.918
-think about the news on television It's disgusting what they pay for microphones. 
+think about the news on television It's disgusting what they pay for microphones.
 
 00:32:22.278 --> 00:32:29.378
-We don't want to go into that area. It can be a couple of thousand euros for a microphone. 
+We don't want to go into that area and It can be a couple of thousand euros for a microphone.
 
 00:32:29.598 --> 00:32:35.278
-That's not a problem at all so this one is only 60 euros this is the RØDE smart
+That's not a problem at all so this one is only 60 euros this is the erode smart
 
 00:32:35.278 --> 00:32:39.138
-lav+ and this also has TRRS you see. 
+love and this also has trrs you see.
 
 00:32:40.338 --> 00:32:43.338
-hat means it is meant to be connected 
+That is that means it is meant to be connected
 
 00:32:43.338 --> 00:32:46.478
-to a smartphone but even better 
+to a smartphone but even better
 
 00:32:46.478 --> 00:32:50.918
-if you say that doesn't convince me because what do 
+if you say that doesn't convince me because what do
 
 00:32:50.918 --> 00:32:53.698
-i do with my smartphone while it's 
+i do with my smartphone while it's
 
 00:32:53.698 --> 00:32:57.458
-connected  i want to move around right and 
+connected i i want to move around right and
 
 00:32:57.458 --> 00:33:02.578
-if I have it here on the desk I can't do it. This is the reason why I also gave 
+if I have it here on the desk I can't do it this is the reason why I also gave
 
 00:33:02.578 --> 00:33:06.218
-you that little stand because that might be okay if you don't want to go around 
+you that little stand because that might be okay if you don't want to go around
 
 00:33:06.218 --> 00:33:12.498
-but if you want to move around then you need something like that. Fhat is where 
+but if you want to move around then you need something like that that is where
 
 00:33:12.498 --> 00:33:17.238
-Ralph comes into this session and you might see here, 
+Ralph comes into this session and you might see here,
 
 00:33:18.378 --> 00:33:24.118
-there is a there is a wireless transmitter and this is the one that I used. 
+there is a there is a wireless transmitter and this is the one that I used.
 
 00:33:24.178 --> 00:33:28.858
-The audience in the room will see what I point 
+You see all you hear in the room the audience in the room will see what I point
 
 00:33:28.858 --> 00:33:30.258
-to you don't see it on the recording. 
+to you don't see it on the recording.
 
 00:33:32.038 --> 00:33:37.978
-This is a wireless transmitter and this is what I use and this is what we did 
+This is a wireless transmitter and this is what I use and this is what we did
 
 00:33:37.978 --> 00:33:42.538
-while I recorded the session that you will see in a minute and I also recorded 
+while I recorded the session that you will see in a minute and I also recorded
 
 00:33:42.538 --> 00:33:46.258
-the session a couple of other colleagues for example Andy's. 
+the session a couple of other colleagues for example Andi's.
 
 00:33:46.858 --> 00:33:52.858
-I will show you two colleagues that texted me me first. 
+I will show you two colleagues that texted me me first.
 
 00:33:53.138 --> 00:33:56.118
-The first one was Ralph and the second one you will also see. 
+The first one was Ralph and the second one you will also see.
 
 00:33:56.198 --> 00:34:00.538
-So I take them as a demo to show you what we've done here. 
+So I take them as a demo to show you what we've done here.
 
 00:34:01.098 --> 00:34:05.698
-So before I go back to the wireless transmitter, let's have a, 
+So before I go back to the wireless transmitter, let's have a,
 
 00:34:08.144 --> 00:34:15.264
-Let's see what we've done there. I show you one thing first. I got a one minute clip. 
+Let's see what we've done there. I show you one thing first. I got a one minute clip.
 
 00:34:16.064 --> 00:34:20.344
-Hope time is enough. Yeah, we're fine in time. And the first thing that you 
+Hope time is enough. Yeah, we're fine in time. And the first thing that you
 
 00:34:20.344 --> 00:34:29.824
-will see is that I recorded Ralph with a high value, very pricey lapel mic. 
+will see is that I recorded Ralph with a high value, very pricey label make.
 
 00:34:29.924 --> 00:34:32.744
-Also from RØDE , the Lavalier II. This is the best 
+Also from Rode, the Lavalier True. this is the best
 
 00:34:32.744 --> 00:34:39.284
-that I have and this is what came out when I don't touch it when I do not improve 
+that I have and this is what came out when I don't touch it when I do not improve
 
 00:34:39.284 --> 00:34:45.124
-it this is just the untouched audio recording so wait.  
+it this is just the untouched audio recording so wait with that media bypass
+
+00:34:45.124 --> 00:34:51.464
+you can route your audio directly through the session border controller what does that mean.
+
+00:34:53.964 --> 00:35:01.944
+Let's say we have a big office for all the MCT's giving training either online or physical.
+
+00:35:02.864 --> 00:35:07.604
+This small little Wacom tablet, I believe it costs around 30 euros.
+
+00:35:08.844 --> 00:35:10.444
+It's perfect for stuff like this.
+
+00:35:11.964 --> 00:35:16.644
+Big whiteboard and the ability to draw anything you like. First one.
 
 00:35:17.184 --> 00:35:24.204
-First one. You see it's quite noisy and you have to keep something in mind. 
+You see it's quite noisy and you have to keep something in mind.
 
 00:35:24.904 --> 00:35:29.424
-The main stage below is a little bit awkward in terms of recording because you 
+The main stage below is a little bit awkward in terms of recording because you
 
 00:35:29.424 --> 00:35:31.304
-have that feedback loop from the PA. 
+have that feedback loop from the PA.
 
 00:35:31.884 --> 00:35:37.064
-The whole room is completely noisy, so that's not a lot of fun in terms of recording. 
+The whole room is completely noisy, so that's not a lot of fun in terms of recording.
 
 00:35:37.564 --> 00:35:41.944
-I will show you another example from this room where we are now. 
+I will show you another example from this room where we are now.
 
 00:35:42.084 --> 00:35:44.724
-It's way easier to record. But let me show you, 
+It's way easier to record. But let me show you,
 
 00:35:46.647 --> 00:35:52.507
-This is the microphone which only costs less than 2 euros and mind the difference. 
+This is the microphone which only costs less than 2 euros and mind the difference.
+
+00:35:53.207 --> 00:35:58.407
+With that MAPIA bypass you can route your audio directly through the session
+
+00:35:58.407 --> 00:36:01.047
+border controller. What does that mean?
+
+00:36:03.407 --> 00:36:11.527
+Let's say we have a big office for all the MCTs giving training either online or physical.
 
 00:36:12.187 --> 00:36:20.367
-Not that big of a difference, right? It's not 100 times better or less good. But I got one more thing. 
+Not that big of a difference, right? It's not 100 times better or less good. But I got one more thing.
 
 00:36:21.207 --> 00:36:27.627
-I always recommend that you also record the microphone of your notebook. 
+I always recommend that you also record the microphone of your notebook.
 
 00:36:27.907 --> 00:36:29.387
-Most of you will have one. 
+Most of you will have one.
 
 00:36:30.527 --> 00:36:35.487
-And the quality will be very bad. But later on, when you cut the video, 
+And the quality will be very bad. But later on, when you cut the video,
 
 00:36:35.747 --> 00:36:41.587
-you will have to find out you got an external source, an audio file and you 
+you will have to find out you got an external source, an audio file and you
 
 00:36:41.587 --> 00:36:48.507
-have to combine it eventually with a screen recording. 
+have to combine it eventually with a screen recording.
 
 00:36:49.027 --> 00:36:53.827
-And how do you find out what is the proper position to align these both? 
+And how do you find out what is the proper position to align these both?
 
 00:36:54.027 --> 00:37:00.687
-So I always recommend that you also include the notebook microphone so that 
+So I always recommend that you also include the notebook microphone so that
 
 00:37:00.687 --> 00:37:04.967
-it's easier to cut it and when you align it then you silence the notebook. 
+it's easier to cut it and when you align it then you silence the notebook.
 
 00:37:04.967 --> 00:37:11.067
-And just for comparison, and keep your ears shut, what does that sound like? 
+And just for comparison, and keep your ears shut, what does that sound like?
+
+00:37:11.287 --> 00:37:16.127
+With that media bypass, you can route your audio directly through the session
+
+00:37:16.127 --> 00:37:18.747
+border control. What does that mean?
+
+00:37:21.247 --> 00:37:27.687
+Let's say we have a big office for all the MCTs giving training,
+
+00:37:27.847 --> 00:37:29.267
+either online or physical.
 
 00:37:29.927 --> 00:37:32.347
-What you hear is the PA. 
+What you hear is the PA.
 
 00:37:33.987 --> 00:37:37.727
-Because without the PA you wouldn't hear him not 
+Because without the PA you wouldn't hear him not
 
 00:37:37.727 --> 00:37:40.647
-like that because he moved away from from the notebook 
+like that because he moved away from from the notebook
 
 00:37:40.647 --> 00:37:46.207
-and it would be even worse so and now we show you something you put that file 
+and it would be even worse so and now we show you something you put that file
 
 00:37:46.207 --> 00:37:56.027
-into Auphonic and I have it here let's see this you go to productions I already 
+into Auphonic and I have it here let's see this you go to productions I already
 
 00:37:56.027 --> 00:38:00.487
-uploaded it I want to just want to show you one little thing. I hope it works here. 
+uploaded it I want to just want to show you one little thing. I hope it works here.
 
 00:38:02.627 --> 00:38:04.947
-Ah, maybe I'm not super online. 
+Ah, maybe I'm not super online.
 
 00:38:07.247 --> 00:38:07.867
-What's up? 
+What's up?
 
 00:38:10.810 --> 00:38:11.650
-roductions. 
+Now productions.
 
 00:38:14.470 --> 00:38:20.510
-This is a live situation, right? I should have taken a screenshot but anyhow it doesn't matter. 
+This is a live situation, right? I should have taken a screenshot but anyhow it doesn't matter.
 
 00:38:21.930 --> 00:38:24.990
-Okay, I can tell you what you would see here. 
+Okay, I can tell you what you would see here.
 
 00:38:25.450 --> 00:38:29.230
-You simply push it up. Now it's here. 
+You simply push it up. Now it's here.
 
 00:38:29.610 --> 00:38:33.250
-You simply push it up to a 
+You simply push it up to a
 
 00:38:33.250 --> 00:38:36.170
-cloud storage or you can also directly upload it 
+cloud storage or you can also directly upload it
 
 00:38:36.170 --> 00:38:40.150
-and then you can do 
+and then you can do
 
 00:38:40.150 --> 00:38:42.950
-a lot of things and you see you 
+a lot of things and you see you
 
 00:38:42.950 --> 00:38:46.450
-can put the title of the track into it so that it automatically gets 
+can put the title of the track into it so that it automatically gets
 
 00:38:46.450 --> 00:38:49.850
-the right YouTube title stuff like that but the real magic is 
+the right YouTube title stuff like that but the real magic is
 
 00:38:49.850 --> 00:38:55.970
-this here underneath and this 
+this here underneath and this
 
 00:38:55.970 --> 00:38:58.890
-is these audio algorithms that you see here below there 
+is these audio algorithms that you see here below there
 
 00:38:58.890 --> 00:39:01.870
-are pure magic and within the last year 
+are pure magic and within the last year
 
 00:39:01.870 --> 00:39:04.990
-they added augmented they added 
+they added augmented they added
 
 00:39:04.990 --> 00:39:07.770
-artificial intelligence to it and if 
+artificial intelligence to it and if
 
 00:39:07.770 --> 00:39:10.490
-you think about the documentary that you might have seen about the 
+you think about the documentary that you might have seen about the
 
 00:39:10.490 --> 00:39:13.370
-Beatles the reason why we see that 
+Beatles the reason why we see that
 
 00:39:13.370 --> 00:39:20.510
-is just audio processing next level that is because artificial intelligence 
+is just audio processing next level that is because artificial intelligence
 
 00:39:20.510 --> 00:39:32.310
-was used to to to recognize the noise and remove it without lowering the frequencies of the voice. 
+was used to to to recognize the noise and remove it without lowering the frequencies of the voice.
 
 00:39:32.970 --> 00:39:39.470
-And it's just amazing. If you think about it, the Beatles, that was 69, 70. It's amazing. 
+And it's just amazing. If you think about it, the Beatles, that was 69, 70. It's amazing.
 
 00:39:39.730 --> 00:39:41.090
-And you can use that here. 
+And you can use that here.
 
 00:39:41.910 --> 00:39:48.570
-And what you can also use is what I automatically added, and you will see the result here. 
+And what you can also use is what I automatically added, and you will see the result here.
 
 00:39:51.250 --> 00:40:01.170
-Auphonic integrates the Whisper system. Whisper is something that you might have heard of. 
+Auphonic integrates the Whisper system. Whisper is something that you might have heard of.
 
 00:40:01.270 --> 00:40:07.470
-It is from OpenAI, the ChatGPT guys, and it delivers automatic subtitles. 
+It is from OpenAI, the ChatGPT guys, and it delivers automatic subtitles.
 
 00:40:07.910 --> 00:40:11.650
-It can do a bunch of things. If you look at my YouTube videos you will find 
+It can do a bunch of things. If you look at my YouTube videos you will find
 
 00:40:11.650 --> 00:40:12.570
-out there are summaries. 
+out there are summaries.
 
 00:40:12.610 --> 00:40:18.930
-They are created by the Whisper because think about it, three days for almost 
+They are created by the Whisper because think about it, three days for almost
 
 00:40:18.930 --> 00:40:23.350
-100 talks, each of them an hour, how can that be? 
+100 talks, each of them an hour, how can that be?
 
 00:40:23.570 --> 00:40:27.710
-I would need an army of people to process that video. 
+I would need an army of people to process that video.
 
 00:40:27.930 --> 00:40:31.850
-That is done by Whisper. And now I show you what's coming up here. 
+That is done by Whisper. And now I show you what's coming up here.
 
 00:40:33.770 --> 00:40:35.230
-And take your seat. 
+And take your seat.
 
 00:40:37.376 --> 00:40:40.956
-This is the the resulting file i have not yet uploaded it because it's ralph's content, 
+This is the the resulting file i have not yet uploaded it because it's ralph's content,
 
 00:40:42.076 --> 00:40:48.196
-but take care. 
+but take care with that media bypass you can route your audio directly through
+
+00:40:48.196 --> 00:40:55.576
+the session border controller um what does that mean um let's say we have a big office hack,
+
+00:40:57.296 --> 00:41:03.816
+um for all the mcts giving training either online or physical um this small
+
+00:41:03.816 --> 00:41:07.396
+little Wacom tablet, I believe it costs around 30 euros.
+
+00:41:08.656 --> 00:41:10.216
+It's perfect for stuff like this.
+
+00:41:11.716 --> 00:41:15.056
+Big whiteboards and the ability to draw anything you like.
 
 00:41:17.076 --> 00:41:23.836
-Unbelievable, isn't it? There's no noise in it and that was the expensive microphone. 
+Unbelievable, isn't it? There's no noise in it and that was the expensive microphone.
 
 00:41:25.076 --> 00:41:31.936
-The real magic, now we listen to the one euro something microphone.  
+The real magic, now we listen to the one euro something microphone. of a phone.
 
-00:42:00.596 --> 00:42:02.396
-Unbelievable, right? Have you heard any? 
+00:41:32.376 --> 00:41:37.456
+With that media bypass, you can route your audio directly through the session
+
+00:41:37.456 --> 00:41:40.076
+border controller. What does that mean?
+
+00:41:42.636 --> 00:41:44.056
+Let's say we have a big office.
+
+00:41:46.356 --> 00:41:50.536
+For all the MCTs giving training, either online or physical,
+
+00:41:51.636 --> 00:41:56.236
+this small little Wacom tablet, I believe it costs around 30 euros.
+
+00:41:57.596 --> 00:42:02.396
+It's perfect for stuff like this. Unbelievable, right? Have you heard any?
 
 00:42:02.736 --> 00:42:08.436
-I checked it, I guess, I checked it four times because I thought I had confused 
+I checked it, I guess, I checked it four times because I thought I had confused
 
 00:42:08.436 --> 00:42:11.016
-the files. I have not. Exported it multiple times. 
+the files. I have not. Exported it multiple times.
 
 00:42:11.396 --> 00:42:15.916
-It's unbelievable, right? So what you find out is that I very often see that 
+It's unbelievable, right? So what you find out is that I very often see that
 
 00:42:15.916 --> 00:42:18.596
-people invest in very, very expensive microphones. 
+people invest in very, very expensive microphones.
 
 00:42:19.376 --> 00:42:25.156
-But what you see here is the audio interface is the first thing that you should buy. 
+But what you see here is the audio interface is the first thing that you should buy.
 
 00:42:25.296 --> 00:42:28.436
-That is my personal recommendation. I got one more thing. 
+That is my personal recommendation. I got one more thing.
 
 00:42:29.376 --> 00:42:31.376
-Do you remember the notebook sound? 
+Do you remember the notebook sound?
 
 00:42:33.696 --> 00:42:40.076
-It is not as good. That's for granted. But if you don't have anything else, 
+It is not as good. That's for granted. But if you don't have anything else,
 
 00:42:40.236 --> 00:42:42.536
-and that was your 15 minutes of fame. 
+and that was your 15 minutes of fame.
+
+00:42:43.556 --> 00:42:48.616
+With that media bypass, you can route your audio directly through the session
+
+00:42:48.616 --> 00:42:51.256
+border control. What does that mean?
+
+00:42:53.856 --> 00:42:55.216
+Let's say we have a big office.
 
 00:42:57.325 --> 00:43:01.845
-I stop it here. It's amazing. That is Auphonic. So I give a big hand to Auphonic. 
+I stop it here. It's amazing. That is Auphonic. So I give a big hand to Auphonic.
 
 00:43:01.925 --> 00:43:03.625
-It's great. And it's for free. 
+It's great. And it's for free.
 
 00:43:04.805 --> 00:43:10.765
-It is for free. Thank you, Austria. You can use it two hours a month for free. 
+It is for free. Thank you, Austria. You can use it two hours a month for free.
 
 00:43:11.385 --> 00:43:14.945
-So if you're someone like, let's say, Tiago, our friend MCT, 
+So if you're someone like, let's say, Tiago, our friend MCT,
 
 00:43:14.965 --> 00:43:20.485
-Tiago Costa, and some of you constantly talk on, that might not be enough, 
+Tiago Costa, and some of you constantly talk on, that might not be enough,
 
 00:43:20.605 --> 00:43:22.865
-but for me it's almost enough. 
+but for me it's almost enough.
 
 00:43:23.005 --> 00:43:25.965
-You can pay a little bit. It's just a few euros. Thank you. 
+You can pay a little bit. It's just a few euros. Thank you.
 
 00:43:28.545 --> 00:43:33.345
-But it is free. And the whisper system, for example, is also free. 
+But it is free. And the whisper system, for example, is also free.
 
 00:43:33.845 --> 00:43:36.105
-Completely free. I want to show you one last thing. 
+Completely free. I want to show you one last thing.
 
 00:43:39.125 --> 00:43:43.865
-This is what Camtasia looks like. And if Ralph and the colleagues allow, 
+This is what Camtasia looks like. And if Ralph and the colleagues allow,
 
 00:43:44.125 --> 00:43:49.525
-I put the demo files, unprocessed everything, I put it into a cloud storage 
+I put the demo files, unprocessed everything, I put it into a cloud storage
 
 00:43:49.525 --> 00:43:52.245
-and I will link it so you can try that on your own. 
+and I will link it so you can try that on your own.
 
 00:43:52.965 --> 00:43:58.385
-And I will also take a note which microphone did I use which audio interface 
+And I will also take a note which microphone did I use which audio interface
 
 00:43:58.385 --> 00:44:03.805
-because I changed it multiple times to make a good demo this is, 
+because I changed it multiple times to make a good demo this is,
 
 00:44:04.405 --> 00:44:11.485
-unprocessed audio from this room no auphonic and listen to it ".. has so many settings 
+unprocessed audio from this room no aphonic and listen to it has so many settings
 
 00:44:11.485 --> 00:44:16.045
-it's not possible at all to configure a control a setting through you write 
+it's not possible at all to configure a control a setting through you write
 
 00:44:16.045 --> 00:44:19.065
-a script you will sit down in the night and write scripts and then test and deploy. 
+a script you will sit down in the night and write scripts and then test and deploy.
 
 00:44:19.565 --> 00:44:26.005
-So thankfully, Apple has a project which is called Mac OS Security Compliance Project. 
+So thankfully, Apple has a project which is called Mac OS Security Compliance Project.
 
 00:44:26.325 --> 00:44:31.945
-It is a project which is available on GitHub. It's an open source project. 
+It is a project which is available on GitHub. It's an open source project.
 
 00:44:32.365 --> 00:44:39.345
-And it has been developed by Apple itself, along with many high security agencies 
+And it has been developed by Apple itself, along with many high security agencies
 
 00:44:39.345 --> 00:44:43.405
-like NASA, CIA, and the US Defense Organization. 
+like NASA, CIA, and the US Defense Organization.
 
 00:44:43.745 --> 00:44:45.445
-They have... " So much, thank you. 
+They have... So much, thank you.
 
 00:44:45.945 --> 00:44:49.445
-You see he got two microphones wired so that 
+You see he got two microphones wired so that
 
 00:44:49.445 --> 00:44:52.645
-is just the one I tested to that 
+is just the one I tested to that
 
 00:44:52.645 --> 00:44:59.245
-is again the cheap one so I really like it and that was also one of the reason 
+is again the cheap one so I really like it and that was also one of the reason
 
 00:44:59.245 --> 00:45:03.445
-so that I wanted you to test it and I still want you to test it because we got 
+so that I wanted you to test it and I still want you to test it because we got
 
 00:45:03.445 --> 00:45:08.365
-one more almost a complete day if you want to try it today and do yourself a 
+one more almost a complete day if you want to try it today and do yourself a
 
 00:45:08.365 --> 00:45:11.065
-favor thank you and simply try it so. 
+favor thank you and simply try it so.
 
 00:45:12.404 --> 00:45:19.324
-If you're rich, if you're a security expert and you do not know what to spend 
+If you're rich, if you're a security expert and you do not know what to spend
 
 00:45:19.324 --> 00:45:25.044
-with your money, I would highly recommend that you use a wireless transmitter and a little tripod. 
+with your money, I would highly recommend that you use a wireless transmitter and a little tripod.
 
 00:45:25.504 --> 00:45:30.204
-And what you saw from the picture when we were down in the hall. 
+And what you saw from the picture when we were down in the hall.
 
 00:45:31.004 --> 00:45:37.204
-You can't always use a tripod just like this because there were plenty of people walking around. 
+You can't always use a tripod just like this because there were plenty of people walking around.
 
 00:45:37.204 --> 00:45:43.864
-You might have seen on the picture, I go back so that you remember. Do you see this? 
+You might have seen on the picture, I go back so that you remember. Do you see this?
 
 00:45:44.344 --> 00:45:46.924
-I bought this to be totally independent. 
+I bought this to be totally independent.
 
 00:45:47.644 --> 00:45:51.864
-So I just simply put it on the desk if I can. 
+So I just simply put it on the desk if I can.
 
 00:45:52.324 --> 00:45:56.424
-And it's just about the audio recording. I don't care too much about the video. 
+And it's just about the audio recording. I don't care too much about the video.
 
 00:45:56.484 --> 00:46:00.604
-I'm not that nice guy so that everybody needs to see me. 
+I'm not that nice guy so that everybody needs to see me.
 
 00:46:00.644 --> 00:46:06.284
-But I hope I got some content and this should be heard and my screen recording should be seen. 
+But I hope I got some content and this should be heard and my screen recording should be seen.
 
 00:46:06.284 --> 00:46:09.784
-So you can get that on the 
+So you can get that on the
 
 00:46:09.784 --> 00:46:16.044
-used market and I think they will not produce this anymore there will be new 
+used market and I think they will not produce this anymore there will be new
 
 00:46:16.044 --> 00:46:22.544
-versions you can buy other stuff but do yourself a favor and stay away from 
+versions you can buy other stuff but do yourself a favor and stay away from
 
 00:46:22.544 --> 00:46:27.304
-Bluetooth. If you want to know more about Bluetooth and why you should not use 
+Bluetooth if you want to know more about Bluetooth and why you should not use
 
 00:46:27.304 --> 00:46:29.444
-it, talk to me after the session. 
+it talk to me after the session,
 
 00:46:30.124 --> 00:46:31.844
-Bluetooth is not meant to be for 
+Bluetooth is not meant to be for
 
 00:46:31.844 --> 00:46:37.004
-that purpose so the Bluetooth stuff is almost rubbish. It is not meant for that. 
+that purpose so the Bluetooth stuff is almost It is not meant for that.
 
 00:46:37.084 --> 00:46:41.084
-You can have a telephone call, but don't use a wireless transmitter just like this. 
+You can have a telephone call, but don't use a wireless transmitter just like this.
 
 00:46:41.184 --> 00:46:44.384
-There are competing products that is not an issue. 
+There are competing products that is not an issue.
 
 00:46:44.884 --> 00:46:52.264
-So I paid 300 euros or something like that, but you can easily get it on the 
+So I paid 300 euros or something like that, but you can easily get it on the
 
 00:46:52.264 --> 00:46:57.004
-used market because due to corona, many, many people bought it, 
+used market because due to corona, many, many people bought it,
 
 00:46:57.744 --> 00:46:58.344
-but they're not satisfied. 
+but they're not satisfied.
 
 00:46:59.603 --> 00:47:02.523
-Because they have not yet bought an audio interface. You know what I mean? 
+Because they have not yet bought an audio interface. You know what I mean?
 
 00:47:02.563 --> 00:47:06.523
-The quality is poor if you attach it directly to the notebook. 
+The quality is poor if you attach it directly to the notebook.
 
 00:47:06.963 --> 00:47:11.523
-And so you will find, I recently found a pair for 50 euros in Germany. 
+And so you will find, I recently found a pair for 50 euros in Germany.
 
 00:47:11.983 --> 00:47:16.743
-So you will, without any problems, you will find one for 100 euros. I highly recommend. 
+So you will, without any problems, you will find one for 100 euros. I highly recommend.
 
 00:47:16.903 --> 00:47:22.843
-And you can borrow one from me if you deliver a session later today. I gladly record you. 
+And you can borrow one from me if you deliver a session later today. I gladly record you.
 
 00:47:24.283 --> 00:47:28.623
-So that is what I wanted to show you. and I'm really really looking forward 
+So that is what I wanted to show you. and I'm really really looking forward
 
 00:47:28.623 --> 00:47:34.583
-to talk to you and yeah discuss your your experience. Any questions? 
+to talk to you and yeah discuss your your experience. Any questions?
 
 00:47:35.943 --> 00:47:40.183
-"The most problem I have is that my storage is full on my phone or on my iPad."
+The most problem I have is that my storage is full on my phone or on my iPad.
 
 00:47:41.023 --> 00:47:47.563
-Storage is full. Yes. Buy a bigger phone. Buy a bigger one. But what I use is 
+Storage is full. Yes. Buy a bigger phone. Buy a bigger one. But what I use is
 
 00:47:47.563 --> 00:47:48.623
-your portable hand recorder. 
+your portable hand recorder.
 
 00:47:49.563 --> 00:47:53.803
-The Zoom Z1. What's your opinion about that? You can use that. 
+The Zoom Z1. What's your opinion about that? You can use that.
 
 00:47:53.803 --> 00:47:59.743
-The reason why I use a smartphone is pretty easy to explain. 
+The reason why I use a smartphone is pretty easy to explain.
 
 00:47:59.743 --> 00:48:03.023
-Because and you might 
+Because and you might
 
 00:48:03.023 --> 00:48:06.943
-think that a proper camera for 2,000 
+think that a proper camera for 2,000
 
 00:48:06.943 --> 00:48:12.863
-euros is better no it is not because the problem with cameras is they are not 
+euros is better no it is not because the problem with cameras is they are not
 
 00:48:12.863 --> 00:48:19.783
-meant for recording video so they will overheat and that will not work for an 
+meant for recording video so they will overheat and that will not work for an
 
 00:48:19.783 --> 00:48:26.903
-hour-long session so that is the reason why I why I use my smartphone because it is not a problem. 
+hour-long session so that is the reason why I why I use my smartphone because it is not a problem.
 
 00:48:27.523 --> 00:48:32.483
-It will not overheat. And my main problem is not storage, it's battery life. 
+It will not overheat. And my main problem is not storage, it's battery life.
 
 00:48:32.703 --> 00:48:38.723
-So you really need to take care that you have a full loaded phone. 
+So you really need to take care that you have a full loaded phone.
 
 00:48:39.403 --> 00:48:46.503
-And you can, of course, also use an audio recorder, but then you don't have the picture. 
+And you can, of course, also use an audio recorder, but then you don't have the picture.
 
 00:48:46.643 --> 00:48:51.183
-That is the reason why I use the smartphone. It's easier. 
+That is the reason why I use the smartphone. It's easier.
 
 00:48:51.403 --> 00:48:54.903
-And you have it with you already. 
+And you have it with you already.
 
 00:48:55.163 --> 00:49:00.803
-But of course, you can You can also use this. There are also tiny audio recorders 
+But of course, you can You can also use this. There are also tiny audio recorders
 
 00:49:00.803 --> 00:49:04.883
-that you can also use to be independent. Maybe you need your phone during the call. 
+that you can also use to be independent. Maybe you need your phone during the call.
 
 00:49:05.763 --> 00:49:08.243
-Okay, any more questions? 
+Okay, any more questions?
 
 00:49:11.603 --> 00:49:14.243
-So thank you, thanks a lot!
+So thank you, thanks a lot, and I will close.
 
 00:49:19.483 --> 00:49:23.943
-And grab one if you don't have one. Thanks to the sponsors. 
+And grab one if you don't have one. Thanks to the sponsors.
 
