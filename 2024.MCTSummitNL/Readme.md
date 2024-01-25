@@ -52,6 +52,7 @@ https://thorsten-butz.de/public/byourself/
 
 - Aliexpress Mini Lavalier Microphone Metal (my gift to the summit delegates) <br>
   https://www.aliexpress.com/item/1005003676763510.html
+    
 - Another AliExpress inexpensive lapel mic  <br>
   I do like this lapel mic from AliExpress, since it comes in a useful plastic box and is at least as good as the the microphone a).  <br>
   https://www.aliexpress.com/item/1005004774726550.html
