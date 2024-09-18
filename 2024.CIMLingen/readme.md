@@ -7,11 +7,17 @@ IT Zentrum Lingen, 19.09.2024
 - PowerShell (folder): sample scripts 
 
 - Demo recording: Windows Server Container – Thorsten Butz – CIM Lingen 2017
+
   Original version 2017: 
+  
   https://youtu.be/bFpzrlqhrHg
+  
   Remastered version 2024: 
+
   https://youtu.be/egtrQg5tuF0
+
   https://vimeo.com/thorstenbutz/cimlingen2017
+
   
 - Session recording: (soon)
 
