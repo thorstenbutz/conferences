@@ -1,0 +1,628 @@
+{
+    "uuid": "GkUbJC44B5S2PspZt9WQ5m",
+    "status": 3,
+    "error_status": null,
+    "error_message": "",
+    "warning_status": null,
+    "warning_message": "",
+    "status_string": "Done",
+    "image": null,
+    "thumbnail": null,
+    "creation_time": "2024-09-17T07:01:38.713Z",
+    "change_time": "2024-09-17T08:36:52.578Z",
+    "output_files": [
+        {
+            "format": "video",
+            "bitrate": 96,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": "",
+            "ending": "mkv",
+            "filename": "cimlingen-2.mkv",
+            "size": 86256945,
+            "checksum": "d03ebcd8d4390d600a63a5318f080d2e",
+            "size_string": "82.3 MB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.mkv",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "subtitle",
+            "bitrate": 0,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": ".de",
+            "ending": "vtt",
+            "filename": "cimlingen-2.de.vtt",
+            "size": 69348,
+            "checksum": "65a9b10b372369bf7f63f66b6ea9445c",
+            "size_string": "67.7 KB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.de.vtt",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "transcript",
+            "bitrate": 0,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": ".de",
+            "ending": "html",
+            "filename": "cimlingen-2.de.html",
+            "size": 1116625,
+            "checksum": "df303f9ac7bea876661ac17b2d580f87",
+            "size_string": "1.1 MB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.de.html",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "speech",
+            "bitrate": 0,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": ".de",
+            "ending": "json",
+            "filename": "cimlingen-2.de.json",
+            "size": 342708,
+            "checksum": "3f59dd36cf403fba39e64fe3c614da15",
+            "size_string": "334.7 KB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.de.json",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "chaps",
+            "bitrate": 0,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": "",
+            "ending": "chapters.txt",
+            "filename": "cimlingen-2.chapters.txt",
+            "size": 681,
+            "checksum": "8e591ebe75545873da1d524244eb98d8",
+            "size_string": "681.0 bytes",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.chapters.txt",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "descr",
+            "bitrate": 0,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": ".description",
+            "ending": "json",
+            "filename": "cimlingen-2.description.json",
+            "size": 0,
+            "checksum": "",
+            "size_string": "",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.description.json",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "subtitle",
+            "bitrate": 0,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": ".de",
+            "ending": "srt",
+            "filename": "cimlingen-2.de.srt",
+            "size": 72068,
+            "checksum": "850f73dd97e4eadf06695c4bfeb7d573",
+            "size_string": "70.4 KB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.de.srt",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "mp3",
+            "bitrate": 112,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": "",
+            "ending": "mp3",
+            "filename": "cimlingen-2.mp3",
+            "size": 38765168,
+            "checksum": "659fda00c805d69e0502624dc20928b3",
+            "size_string": "37.0 MB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2.mp3",
+            "outgoing_services": [
+                "nhkZwYtq2DoKrS2pRHxXUf"
+            ]
+        },
+        {
+            "format": "video",
+            "bitrate": 96,
+            "mono_mixdown": false,
+            "split_on_chapters": false,
+            "suffix": "_youtube",
+            "ending": "mkv",
+            "filename": "cimlingen-2_youtube.mkv",
+            "size": 86256945,
+            "checksum": "f9f07db8f455a352904ecabafaf0d7df",
+            "size_string": "82.3 MB",
+            "download_url": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/cimlingen-2_youtube.mkv",
+            "outgoing_services": []
+        }
+    ],
+    "outgoing_services": [
+        {
+            "uuid": "UM2urtBCqT2FNS3JFUk8XA",
+            "display_name": "Thorsten Butz",
+            "type": "youtube",
+            "category": "Tech",
+            "privacy": "unlisted",
+            "transfer_success": true,
+            "error_message": "",
+            "result_page": "https://www.youtube.com/watch?v=egtrQg5tuF0",
+            "result_urls": [],
+            "incoming": false,
+            "outgoing": true
+        },
+        {
+            "uuid": "nhkZwYtq2DoKrS2pRHxXUf",
+            "display_name": "Thorsten Butz",
+            "email": "thorsten@butz.io",
+            "type": "onedrive",
+            "transfer_success": true,
+            "error_message": "",
+            "result_page": "https://onedrive.live.com/?id=01A7HTVUQZQBPWDQPREZGKMNA42V34RH4B",
+            "result_urls": [],
+            "incoming": true,
+            "outgoing": true
+        }
+    ],
+    "review_before_publishing": false,
+    "in_review": false,
+    "metadata": {
+        "album": "CIM Lingen",
+        "subtitle": "Thorsten Butz erklärt die Verbindung zwischen klassischer IT und Container-Management, insbesondere Windows Server Container und Docker. Er behandelt Docker-Funktionen, Sicherheitsaspekte und zeigt praktische Demonstrationen.",
+        "license": "",
+        "summary": "In dieser Vorlesung spricht Thorsten Butz über die Schnittstelle zwischen klassischer IT und modernem Container-Management, insbesondere in Bezug auf Windows Server Container und Docker. Er erläutert, wie in seiner Jugend die IT-Welt durch unterschiedliche Systeme wie Linux und Windows getrennt war, und wie Container-Technologien diese Grenzen aufbrechen. Der Vortrag beginnt mit einer Erklärung, dass es nicht nur um Windows Server Container geht, sondern auch um Docker und die zugrunde liegenden Technologien.\r\n\r\nButz gibt einen Überblick über die Rolle von Docker in der Container-Technologie und erklärt die zugrunde liegenden Konzepte wie Namespaces und das Overlay File System. Er zieht Parallelen zwischen Containern in der Schifffahrt und der IT-Welt und betont, dass Container eine Revolution in der Art und Weise darstellen, wie Software bereitgestellt wird. Die Fähigkeit, mit minimalem Aufwand komplexe Anwendungen zu betreiben und massenhafte Deployments durchzuführen, wird hervorgehoben. Außerdem wird der Unterschied zwischen Containern und virtuellen Maschinen (VMs) diskutiert, wobei die Kosten- und Ressourcenvorteile der Container-Technologie unterstrichen werden.\r\n\r\nIm weiteren Verlauf des Vortrags zeigt Thorsten Butz, wie Docker installiert wird und demonstriert die grundlegenden Befehle und Funktionen in Docker, einschließlich Docker PS und Docker Run. Der Fokus liegt darauf, dass Docker eine benutzerfreundliche Oberfläche bietet, die es IT-Administratoren ermöglicht, Container effizient zu verwalten. Butz erklärt, dass Docker-Images leicht heruntergeladen und verwaltet werden können und er geht auch auf die Bedeutung des Docker Hubs ein, der als Repository für vorgefertigte Container-Images dient. \r\n\r\nDarüber hinaus beleuchtet er die Sicherheitsaspekte von Containern und wie Microsoft versucht, diese durch Hyper-V-Container zu verbessern, welche eine zusätzliche Sicherheitsstufe bieten, indem sie eine separate Isolation für Container gewährleisten. Dies wird in Zusammenhang mit der Kritik an der klassischen Docker-Architektur gesetzt, die einige Sicherheitsbedenken aufwirft. \r\n\r\nEine essentielle Diskussion findet darüber statt, dass Microsoft mit Docker zusammenarbeitet, um deren Technologien und Clients zu integrieren, was die Interoperabilität zwischen Windows und Linux-Containern ermöglicht. Die Vorlesung umfasst auch einige praktische Demonstrationen, in denen Butz verschiedene Container wie Ubuntu, Nginx und PowerShell startet und diskutiert, wie sie in realen Szenarien verwendet werden können.\r\n\r\nAbschließend behandelt der Vortrag die zukünftige Richtung von Windows Server Containers und die Möglichkeiten, die die enge Integration von Windows und Linux bieten könnte. Die Zuhörer werden ermutigt, die Container-Technologie auszuprobieren und erste Erfahrungen mit Docker zu sammeln, bevor sie sich komplexeren Windows Server Container-Anwendungen zuwenden. Der Vortrag schließt mit einem Ausblick auf die Zukunft der Container-Technologien und den Innovationspotenzial, das noch zu erwarten ist.",
+        "artist": "Thorsten Butz",
+        "track": "",
+        "title": "Windows Server Container -  Thorsten Butz - cim lingen 2017 (remastered)",
+        "publisher": "Thorsten Butz",
+        "url": "https://thorsten-butz.de",
+        "license_url": "",
+        "year": "",
+        "genre": "",
+        "append_chapters": true,
+        "tags": [
+            "Thorsten Butz",
+            "Schnittstelle",
+            "klassische IT",
+            "Container-Management",
+            "Windows Server Container",
+            "Docker",
+            "Funktionen",
+            "Namespaces",
+            "Overlay File System",
+            "Sicherheitsaspekte",
+            "Hyper-V-Controller",
+            "Docker-Images",
+            "Zukunft",
+            "Container-Technologien",
+            "Innovationspotenzial"
+        ],
+        "location": {
+            "longitude": null,
+            "latitude": null
+        }
+    },
+    "chapters": [
+        {
+            "start": "00:00:06.309",
+            "start_sec": 6.309,
+            "start_output": "00:00:06.309",
+            "start_output_sec": 6.309,
+            "title": "Willkommen auf der True Metal Stage",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:06:48.912",
+            "start_sec": 408.912,
+            "start_output": "00:06:48.912",
+            "start_output_sec": 408.912,
+            "title": "Grundprinzip von Containern",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:09:06.292",
+            "start_sec": 546.292,
+            "start_output": "00:09:06.292",
+            "start_output_sec": 546.292,
+            "title": "Virtualisierung und deren Entwicklung",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:11:58.094",
+            "start_sec": 718.094,
+            "start_output": "00:11:58.094",
+            "start_output_sec": 718.094,
+            "title": "Anwendungsfälle für Container",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:13:32.909",
+            "start_sec": 812.909,
+            "start_output": "00:13:32.909",
+            "start_output_sec": 812.909,
+            "title": "Docker und seine Funktionsweise",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:15:29.835",
+            "start_sec": 929.835,
+            "start_output": "00:15:29.835",
+            "start_output_sec": 929.835,
+            "title": "Docker als Einstiegspunkt",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:20:07.310",
+            "start_sec": 1207.31,
+            "start_output": "00:20:07.310",
+            "start_output_sec": 1207.31,
+            "title": "Docker-Befehle und Nutzung",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:24:45.443",
+            "start_sec": 1485.443,
+            "start_output": "00:24:45.443",
+            "start_output_sec": 1485.443,
+            "title": "Container-Images suchen und verwenden",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:26:27.933",
+            "start_sec": 1587.933,
+            "start_output": "00:26:27.933",
+            "start_output_sec": 1587.933,
+            "title": "PowerShell im Containerumfeld",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:31:03.109",
+            "start_sec": 1863.109,
+            "start_output": "00:31:03.109",
+            "start_output_sec": 1863.109,
+            "title": "Arbeiten im Container",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:33:02.562",
+            "start_sec": 1982.562,
+            "start_output": "00:33:02.562",
+            "start_output_sec": 1982.562,
+            "title": "Der Sinn von Dockerfiles",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:34:20.182",
+            "start_sec": 2060.182,
+            "start_output": "00:34:20.182",
+            "start_output_sec": 2060.182,
+            "title": "Windows Server Container und deren Zukunft",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:37:10.681",
+            "start_sec": 2230.681,
+            "start_output": "00:37:10.681",
+            "start_output_sec": 2230.681,
+            "title": "Der Nano-Server und seine Rolle",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:44:29.465",
+            "start_sec": 2669.465,
+            "start_output": "00:44:29.465",
+            "start_output_sec": 2669.465,
+            "title": "Tipps für den Einstieg in Container",
+            "url": "",
+            "image": null
+        },
+        {
+            "start": "00:45:38.745",
+            "start_sec": 2738.745,
+            "start_output": "00:45:38.745",
+            "start_output_sec": 2738.745,
+            "title": "Ausblick auf die Zukunft von Containern",
+            "url": "",
+            "image": null
+        }
+    ],
+    "input_file": "Windows Server Container - Thorsten Butz - cim lingen 2017.mkv",
+    "algorithms": {
+        "filtering": true,
+        "filtermethod": "autoeq",
+        "leveler": true,
+        "levelermode": "default",
+        "compressor_speech": "auto",
+        "compressor_music": "same",
+        "levelerstrength_speech": 100,
+        "levelerstrength_music": -1,
+        "maxlra": 0,
+        "maxs": 0,
+        "maxm": 0,
+        "musicgain": 0,
+        "msclassifier": "on",
+        "normloudness": true,
+        "loudnesstarget": -16,
+        "maxpeak": 99.0,
+        "dualmono": false,
+        "loudnessmethod": "program",
+        "denoise": true,
+        "denoisemethod": "dynamic",
+        "denoiseamount": 12,
+        "deverbamount": 12,
+        "dehum": 0,
+        "dehumamount": 0,
+        "debreathamount": 12,
+        "cutter": false,
+        "cut_mode": "apply_cuts",
+        "silence_cutter": false,
+        "filler_cutter": false
+    },
+    "length": 2767.5167573696144,
+    "length_timestring": "00:46:07.516",
+    "channels": 2,
+    "samplerate": 48000,
+    "bitrate": 0.0,
+    "webhook": null,
+    "format": "opus",
+    "has_video": true,
+    "cut_start": 0.0,
+    "cut_end": 0.0,
+    "waveform_image": "https://auphonic.com/api/download/audio-result/GkUbJC44B5S2PspZt9WQ5m/waveform.png",
+    "output_basename": "cimlingen-2",
+    "start_allowed": false,
+    "change_allowed": true,
+    "service": "nhkZwYtq2DoKrS2pRHxXUf",
+    "status_page": "https://auphonic.com/engine/status/GkUbJC44B5S2PspZt9WQ5m",
+    "edit_page": "https://auphonic.com/engine/upload/edit/GkUbJC44B5S2PspZt9WQ5m",
+    "multi_input_files": [],
+    "statistics": {
+        "levels": {
+            "input": {
+                "signal_level": [
+                    -28.37,
+                    "dB"
+                ],
+                "noise_level": [
+                    -60.21,
+                    "dB"
+                ],
+                "snr": [
+                    31.84,
+                    "dB"
+                ],
+                "loudness": [
+                    -29.22,
+                    "LUFS"
+                ],
+                "max_momentary": [
+                    -16.39,
+                    "LUFS"
+                ],
+                "max_shortterm": [
+                    -17.65,
+                    "LUFS"
+                ],
+                "lra": [
+                    6.9,
+                    "LU"
+                ],
+                "music_loudness": [
+                    -32.65,
+                    "LUFS"
+                ],
+                "music_lra": [
+                    4.41,
+                    "LU"
+                ],
+                "music_percentage": [
+                    0,
+                    "%"
+                ],
+                "speech_loudness": [
+                    -29.21,
+                    "LUFS"
+                ],
+                "speech_lra": [
+                    6.92,
+                    "LU"
+                ],
+                "speech_percentage": [
+                    100,
+                    "%"
+                ],
+                "lsr": [
+                    -0.01,
+                    "LU"
+                ]
+            },
+            "output": {
+                "loudness": [
+                    -16.0,
+                    "LUFS"
+                ],
+                "lra": [
+                    4.32,
+                    "LU"
+                ],
+                "max_momentary": [
+                    -9.87,
+                    "LUFS"
+                ],
+                "max_shortterm": [
+                    -12.8,
+                    "LUFS"
+                ],
+                "music_loudness": [
+                    -15.83,
+                    "LUFS"
+                ],
+                "music_lra": [
+                    4.2,
+                    "LU"
+                ],
+                "music_percentage": [
+                    0,
+                    "%"
+                ],
+                "speech_loudness": [
+                    -16.0,
+                    "LUFS"
+                ],
+                "speech_lra": [
+                    4.32,
+                    "LU"
+                ],
+                "speech_percentage": [
+                    100,
+                    "%"
+                ],
+                "lsr": [
+                    0.0,
+                    "LU"
+                ],
+                "gain_mean": [
+                    13.57,
+                    "dB"
+                ],
+                "gain_min": [
+                    5.57,
+                    "dB"
+                ],
+                "gain_max": [
+                    22.62,
+                    "dB"
+                ],
+                "peak": [
+                    -1,
+                    "dBTP"
+                ],
+                "plr": [
+                    15.0,
+                    "LU"
+                ]
+            }
+        },
+        "music_speech": [
+            {
+                "start_sec": 0.0,
+                "start": "00:00:00.000",
+                "stop_sec": 2767.517,
+                "stop": "00:46:07.516",
+                "label": "speech"
+            }
+        ],
+        "noise_hum_reduction": [
+            {
+                "start_sec": 0.0,
+                "start": "00:00:00.000",
+                "stop_sec": 9.845,
+                "stop": "00:00:09.845",
+                "denoise": "Music Model",
+                "dehum": false
+            },
+            {
+                "start_sec": 9.845,
+                "start": "00:00:09.845",
+                "stop_sec": 2753.374,
+                "stop": "00:45:53.374",
+                "denoise": "Speech Model",
+                "dehum": false
+            },
+            {
+                "start_sec": 2753.374,
+                "start": "00:45:53.374",
+                "stop_sec": 2767.517,
+                "stop": "00:46:07.516",
+                "denoise": "Music Model",
+                "dehum": false
+            }
+        ],
+        "format": {
+            "length_sec": 2767.5167573696144,
+            "channels": 2,
+            "samplerate": 48000,
+            "bitrate": 0,
+            "format": "opus"
+        }
+    },
+    "used_credits": {
+        "recurring": 0.0,
+        "onetime": 0.7687546548248929,
+        "combined": 0.7687546548248929
+    },
+    "is_multitrack": false,
+    "speech_recognition": {
+        "uuid": "e2qoQdYxgbAQT3Wi6aicWn",
+        "keywords": [
+            ""
+        ],
+        "type": "whisper",
+        "language": "de",
+        "shownotes": true,
+        "speaker_diarization_num_speakers": -1,
+        "speaker_diarization_names": [
+            ""
+        ]
+    },
+    "shownotes": {
+        "summaries": {
+            "long": [
+                "In dieser Vorlesung spricht Thorsten Butz über die Schnittstelle zwischen klassischer IT und modernem Container-Management, insbesondere in Bezug auf Windows Server Container und Docker. Er erläutert, wie in seiner Jugend die IT-Welt durch unterschiedliche Systeme wie Linux und Windows getrennt war, und wie Container-Technologien diese Grenzen aufbrechen. Der Vortrag beginnt mit einer Erklärung, dass es nicht nur um Windows Server Container geht, sondern auch um Docker und die zugrunde liegenden Technologien.\n\nButz gibt einen Überblick über die Rolle von Docker in der Container-Technologie und erklärt die zugrunde liegenden Konzepte wie Namespaces und das Overlay File System. Er zieht Parallelen zwischen Containern in der Schifffahrt und der IT-Welt und betont, dass Container eine Revolution in der Art und Weise darstellen, wie Software bereitgestellt wird. Die Fähigkeit, mit minimalem Aufwand komplexe Anwendungen zu betreiben und massenhafte Deployments durchzuführen, wird hervorgehoben. Außerdem wird der Unterschied zwischen Containern und virtuellen Maschinen (VMs) diskutiert, wobei die Kosten- und Ressourcenvorteile der Container-Technologie unterstrichen werden.\n\nIm weiteren Verlauf des Vortrags zeigt Thorsten Butz, wie Docker installiert wird und demonstriert die grundlegenden Befehle und Funktionen in Docker, einschließlich Docker PS und Docker Run. Der Fokus liegt darauf, dass Docker eine benutzerfreundliche Oberfläche bietet, die es IT-Administratoren ermöglicht, Container effizient zu verwalten. Butz erklärt, dass Docker-Images leicht heruntergeladen und verwaltet werden können und er geht auch auf die Bedeutung des Docker Hubs ein, der als Repository für vorgefertigte Container-Images dient. \n\nDarüber hinaus beleuchtet er die Sicherheitsaspekte von Containern und wie Microsoft versucht, diese durch Hyper-V-Container zu verbessern, welche eine zusätzliche Sicherheitsstufe bieten, indem sie eine separate Isolation für Container gewährleisten. Dies wird in Zusammenhang mit der Kritik an der klassischen Docker-Architektur gesetzt, die einige Sicherheitsbedenken aufwirft. \n\nEine essentielle Diskussion findet darüber statt, dass Microsoft mit Docker zusammenarbeitet, um deren Technologien und Clients zu integrieren, was die Interoperabilität zwischen Windows und Linux-Containern ermöglicht. Die Vorlesung umfasst auch einige praktische Demonstrationen, in denen Butz verschiedene Container wie Ubuntu, Nginx und PowerShell startet und diskutiert, wie sie in realen Szenarien verwendet werden können.\n\nAbschließend behandelt der Vortrag die zukünftige Richtung von Windows Server Containers und die Möglichkeiten, die die enge Integration von Windows und Linux bieten könnte. Die Zuhörer werden ermutigt, die Container-Technologie auszuprobieren und erste Erfahrungen mit Docker zu sammeln, bevor sie sich komplexeren Windows Server Container-Anwendungen zuwenden. Der Vortrag schließt mit einem Ausblick auf die Zukunft der Container-Technologien und den Innovationspotenzial, das noch zu erwarten ist."
+            ],
+            "brief": [
+                "In dieser Vorlesung erklärt Thorsten Butz die Schnittstelle zwischen klassischer IT und modernem Container-Management, mit einem speziellen Fokus auf Windows Server Container und Docker. Er bietet einen Überblick über Docker, dessen Funktionen und die zugrunde liegenden Konzepte wie Namespaces und das Overlay File System. Butz diskutiert die Vorteile von Containern im Vergleich zu virtuellen Maschinen und stellt die Effizienz von Docker bei der Verwaltung und dem Deployment komplexer Anwendungen heraus. Sicherheitsaspekte, insbesondere die Rolle von Hyper-V-Controllern, werden ebenfalls behandelt. Praktische Demonstrationen verdeutlichen die Nutzung von Docker-Images, während die Vorlesung mit einem Ausblick auf die Zukunft der Container-Technologien und deren Innovationspotenzial endet."
+            ],
+            "subtitle": [
+                "Thorsten Butz erklärt die Verbindung zwischen klassischer IT und Container-Management, insbesondere Windows Server Container und Docker. Er behandelt Docker-Funktionen, Sicherheitsaspekte und zeigt praktische Demonstrationen."
+            ]
+        },
+        "tags": [
+            "Thorsten Butz",
+            "Schnittstelle",
+            "klassische IT",
+            "Container-Management",
+            "Windows Server Container",
+            "Docker",
+            "Funktionen",
+            "Namespaces",
+            "Overlay File System",
+            "Sicherheitsaspekte",
+            "Hyper-V-Controller",
+            "Docker-Images",
+            "Zukunft",
+            "Container-Technologien",
+            "Innovationspotenzial"
+        ]
+    }
+}

@@ -1,0 +1,2130 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.960
+Music.
+
+00:00:06.810 --> 00:00:12.590
+Thorsten, welcome to the True Metal Stage,
+
+00:00:12.770 --> 00:00:13.690
+I think that means, doesn't it?
+
+00:00:13.750 --> 00:00:17.670
+Or in the language of CIM Lingen, the tech track.
+
+00:00:19.370 --> 00:00:25.750
+My name is Thorsten Butz. I am talking about what is certainly a very special topic.
+
+00:00:25.750 --> 00:00:31.490
+Well, we all do, but we are connecting two worlds in this session,
+
+00:00:31.490 --> 00:00:36.950
+which were always very separate in my adolescence as an IT person.
+
+00:00:37.030 --> 00:00:40.330
+So different religions, Linux, Windows and now Container is
+
+00:00:40.330 --> 00:00:45.530
+one of many, many technologies where these worlds suddenly merge.
+
+00:00:45.570 --> 00:00:47.130
+I want to talk about that in a moment.
+
+00:00:49.030 --> 00:00:52.290
+I have to say two things up front.
+
+00:00:52.510 --> 00:00:56.570
+The one thing is, it's actually a bit of a sham.
+
+00:00:56.570 --> 00:01:00.550
+I'm not just talking about Windows Server Containers, there's a bit more to it.
+
+00:01:00.990 --> 00:01:04.270
+Many people know that in the context of Windows Server Containers there are always
+
+00:01:04.270 --> 00:01:07.390
+Docker is mentioned and you have to clarify what that actually is. Finally.
+
+00:01:08.430 --> 00:01:11.670
+And now that I've said that, I have to apologize for the second one.
+
+00:01:11.690 --> 00:01:19.150
+Unfortunately I'm totally underdressed, because today I found André, who is sitting here in the front.
+
+00:01:19.890 --> 00:01:23.209
+And I have to say, this is what you have to look like when you talk about Windows Server Container
+
+00:01:23.209 --> 00:01:25.709
+is talking, right? So let's hear it for André. Nice to have you here.
+
+00:01:27.130 --> 00:01:28.349
+And thanks for the photo.
+
+00:01:30.010 --> 00:01:32.670
+Yes, I was just about to say, we've already talked about it,
+
+00:01:32.870 --> 00:01:36.650
+So that's not how it works. So after the session we'll have to have another quick chat.
+
+00:01:38.610 --> 00:01:42.090
+Many thanks to the sponsors who make it possible for us to be here.
+
+00:01:42.530 --> 00:01:47.670
+And yes, let's get on with the actual session. I have a whole one,
+
+00:01:47.790 --> 00:01:49.130
+very small advertisement up front. gone.
+
+00:01:51.350 --> 00:01:53.990
+Community is a good keyword. We all have our hobbies,
+
+00:01:54.050 --> 00:01:59.810
+which we are quite happy to do, without the need for significant capitalist
+
+00:01:59.810 --> 00:02:00.750
+Have intentions behind it.
+
+00:02:00.870 --> 00:02:02.910
+And one of my hobbies, besides
+
+00:02:02.910 --> 00:02:06.330
+the CIM Lingen, is that I'm trying to keep a podcast alive.
+
+00:02:06.610 --> 00:02:11.850
+I affectionately call it Slowcast because episodes appear relatively infrequently.
+
+00:02:11.949 --> 00:02:14.270
+I admire the colleagues who do this every week.
+
+00:02:14.550 --> 00:02:17.610
+And I get a new episode twice a year, three times a year.
+
+00:02:17.870 --> 00:02:22.850
+But it's all the better for it. And not because of me, but because of the guests.
+
+00:02:23.110 --> 00:02:28.370
+And I've picked one out of the long series of my podcasts,
+
+00:02:28.370 --> 00:02:29.850
+because it's also here.
+
+00:02:29.970 --> 00:02:32.610
+And a good friend of CIM Lingen, Benni Tritsch.
+
+00:02:33.130 --> 00:02:39.110
+I have a high affinity for asking people about things that used to be quite
+
+00:02:39.110 --> 00:02:43.330
+were hotly traded. I like to invite guests and try to keep the
+
+00:02:43.330 --> 00:02:45.050
+Tracing the history of origins.
+
+00:02:45.410 --> 00:02:48.010
+And if you always wanted to know a bit about remote desktops,
+
+00:02:48.090 --> 00:02:51.850
+so from the real beginnings, this is really a tip. Not because of me,
+
+00:02:51.949 --> 00:02:53.070
+but because of Benni Tritsch.
+
+00:02:53.470 --> 00:02:55.389
+Here he always tells the current status.
+
+00:02:59.330 --> 00:03:02.610
+This is the obligatory picture. I did it myself because of copyright.
+
+00:03:02.889 --> 00:03:07.310
+You can't get around it. Windows containers, you always see these strange Euro containers.
+
+00:03:07.949 --> 00:03:13.810
+And if you really want to draw such a connection between the containers
+
+00:03:13.810 --> 00:03:18.590
+in shipping and containers in IT, if you are very enthusiastic now
+
+00:03:18.590 --> 00:03:22.570
+it can be said that these containers have revolutionized the global economy.
+
+00:03:23.470 --> 00:03:26.890
+How much we are not even aware of. What we call globalization,
+
+00:03:26.930 --> 00:03:30.850
+would not be possible at all without these extremely cheap imports.
+
+00:03:30.990 --> 00:03:32.010
+I say that in a completely unbiased way.
+
+00:03:33.970 --> 00:03:37.070
+And if you are now enthusiastic about IT containers,
+
+00:03:37.070 --> 00:03:40.610
+you could say that containers will revolutionize our lives,
+
+00:03:40.650 --> 00:03:41.890
+because it is a completely new species,
+
+00:03:42.110 --> 00:03:48.370
+providing software, providing solutions in this very agile world
+
+00:03:48.370 --> 00:03:50.450
+and doing things with minimal effort,
+
+00:03:51.050 --> 00:03:54.470
+which are otherwise very, very complex. Containers are all about simplicity.
+
+00:03:55.030 --> 00:03:59.370
+And just like containers in shipping, it's about cost savings. It's about density.
+
+00:03:59.790 --> 00:04:03.990
+If you think about how many billions of parts are transported and
+
+00:04:03.990 --> 00:04:09.350
+If you then look at the unit costs, you have a direct analogy to IT.
+
+00:04:10.510 --> 00:04:15.010
+Every admin immediately thinks, yes, but what about here? We have VMs.
+
+00:04:16.550 --> 00:04:21.450
+VMs are wonderful. Perhaps with a lot of imagination you can also create such a competitive situation.
+
+00:04:21.450 --> 00:04:23.730
+or see a similarity, I'll talk about that in a minute.
+
+00:04:24.850 --> 00:04:29.690
+But none of that matters. VMs are expensive. We could also, of course
+
+00:04:29.690 --> 00:04:32.430
+without these Euro containers.
+
+00:04:32.570 --> 00:04:35.450
+At the end of the day, it's all a question of volume.
+
+00:04:36.570 --> 00:04:41.130
+And when we talk about containers, we always talk about mass deployment.
+
+00:04:41.170 --> 00:04:42.910
+We are talking about simplification.
+
+00:04:43.110 --> 00:04:45.790
+We don't always and only talk about security.
+
+00:04:46.510 --> 00:04:49.149
+Although this is also a big issue with Windows containers.
+
+00:04:50.149 --> 00:04:54.310
+Whenever people talk about containers
+
+00:04:54.310 --> 00:04:55.610
+the word Docker appears immediately.
+
+00:04:55.830 --> 00:04:58.589
+And this play on words is of course not at all coincidental.
+
+00:04:59.230 --> 00:05:02.110
+Docker is a Linux company. Period.
+
+00:05:03.089 --> 00:05:08.570
+But this company has obviously done a very good job and has a
+
+00:05:08.570 --> 00:05:10.450
+made a certain container solution very popular.
+
+00:05:11.350 --> 00:05:16.210
+And Microsoft was apparently also very enthusiastic about the
+
+00:05:16.210 --> 00:05:17.230
+Work that is being done.
+
+00:05:17.290 --> 00:05:19.950
+They once knocked on Docker's door and said, let's think about it,
+
+00:05:19.990 --> 00:05:21.250
+if we could do something together.
+
+00:05:21.730 --> 00:05:25.010
+This resulted in a collaboration, which then led to this today,
+
+00:05:25.130 --> 00:05:30.110
+that when we talk about Windows Server Containers, we always immediately talk about Docker and Linux.
+
+00:05:30.350 --> 00:05:33.890
+And why this is so and what can be so confusing about it, that's what I want to explain now.
+
+00:05:33.890 --> 00:05:34.730
+show technical right away.
+
+00:05:36.029 --> 00:05:40.210
+There is, if you look at container technology now in the focus of Microsoft,
+
+00:05:40.630 --> 00:05:43.170
+then there are three solutions that need to be seen.
+
+00:05:43.450 --> 00:05:48.670
+The one gave my presentation the title, the Windows Server Container.
+
+00:05:50.450 --> 00:05:54.810
+Now my title of this talk suggests that this is a generic term.
+
+00:05:55.130 --> 00:05:58.190
+But that's not the case. And that makes it a bit difficult now,
+
+00:05:58.310 --> 00:05:59.830
+to find a title for such a lecture.
+
+00:06:00.350 --> 00:06:04.290
+Because Windows Server Containers are only one of several types.
+
+00:06:04.330 --> 00:06:06.649
+The second type is Hyper-V containers.
+
+00:06:07.230 --> 00:06:09.610
+But I would now call my presentation Hyper-V Container,
+
+00:06:09.670 --> 00:06:12.010
+then everyone would immediately think of classic virtualization.
+
+00:06:12.230 --> 00:06:15.029
+And that's why it's always a bit difficult to find the right name.
+
+00:06:15.029 --> 00:06:19.010
+for such a presentation. So it's actually about containers in general.
+
+00:06:19.510 --> 00:06:20.990
+And you can see the game types here.
+
+00:06:21.790 --> 00:06:24.450
+And in fact, we're going to talk about Docker right now.
+
+00:06:24.590 --> 00:06:25.470
+So really about Linux.
+
+00:06:26.790 --> 00:06:30.070
+I hope I'm not hurting anyone with this. It's always a total party for me,
+
+00:06:30.190 --> 00:06:34.430
+if the very first thing I show at a Microsoft-affine event is Linux.
+
+00:06:34.730 --> 00:06:37.490
+But I have been told by trusted sources in Redmond,
+
+00:06:37.570 --> 00:06:38.470
+that this is how it is done today.
+
+00:06:38.610 --> 00:06:44.250
+Holger knows that too, so if you don't run three times a minuteSSH,
+
+00:06:44.310 --> 00:06:47.310
+Visual Studio Code and any Unix-related tools,
+
+00:06:47.310 --> 00:06:48.810
+then you are no longer really state of the art.
+
+00:06:49.410 --> 00:06:52.350
+If you haven't made friends with it yet, you'll see what I mean in a moment.
+
+00:06:57.670 --> 00:06:58.990
+What is the basic principle?
+
+00:07:01.520 --> 00:07:04.960
+I say to many customers who always have a hard time with such innovations,
+
+00:07:05.640 --> 00:07:08.240
+yeah, yeah, sure, I know what it was like back then, 90s.
+
+00:07:08.460 --> 00:07:12.680
+So, we went to the computer room, data center today.
+
+00:07:13.300 --> 00:07:18.440
+We still knew every computer by hand. We jumpered network cards.
+
+00:07:19.120 --> 00:07:23.140
+A great time. We also had no internet. Patching was obsolete.
+
+00:07:23.140 --> 00:07:26.220
+The famous NetWare server that was walled up and never used again.
+
+00:07:26.600 --> 00:07:28.540
+Let me put it this way, it was a different time.
+
+00:07:29.940 --> 00:07:34.600
+When then virtualization came in the sense of VMware and took place in the masses,
+
+00:07:34.700 --> 00:07:38.460
+I am quite sure that many of us have discussed this,
+
+00:07:38.480 --> 00:07:42.880
+it can't be safe if someone hacks our VMware host.
+
+00:07:43.020 --> 00:07:45.420
+All 50 VMs are dead.
+
+00:07:46.720 --> 00:07:49.900
+I'm sure we've had exactly the same discussions,
+
+00:07:49.920 --> 00:07:52.940
+which we will, are or will be conducting today via containers.
+
+00:07:54.160 --> 00:07:58.520
+The point is, VMware, Hyper-V, Xen servers, the whole virtualization thing,
+
+00:07:58.540 --> 00:08:03.220
+that we have today, KVM, they have simply won because the compromise is right.
+
+00:08:03.580 --> 00:08:07.380
+The costs are unbelievably much lower than if we were now really constantly
+
+00:08:07.380 --> 00:08:08.180
+Screw hardware.
+
+00:08:09.160 --> 00:08:10.660
+And the security is good enough.
+
+00:08:12.240 --> 00:08:15.460
+Sure, I can also break out of a virtual machine onto a host.
+
+00:08:15.620 --> 00:08:18.360
+I just have to wait long enough for a bug to be found in the software.
+
+00:08:18.800 --> 00:08:22.320
+But the probability in relation to the benefit that this will happen is quite low.
+
+00:08:22.820 --> 00:08:25.700
+So you always have to consider what payload you have? What is my concern?
+
+00:08:26.020 --> 00:08:27.660
+How sensitive is my data?
+
+00:08:28.100 --> 00:08:30.780
+That's basically, I don't want to start this discussion right now,
+
+00:08:30.800 --> 00:08:33.420
+I just want to mention them briefly, it's basically the same thing,
+
+00:08:33.420 --> 00:08:37.679
+what we always have with these cloud issues, so if we're in an internet
+
+00:08:37.679 --> 00:08:40.179
+Publish data.
+
+00:08:40.179 --> 00:08:44.480
+In my eyes they are safer than at home, because there I really have to
+
+00:08:44.480 --> 00:08:50.240
+do everything to give access only to authorized persons, whereas I might
+
+00:08:50.240 --> 00:08:53.900
+in my own data center that there is a door,
+
+00:08:53.920 --> 00:08:54.660
+which I can close.
+
+00:08:54.740 --> 00:08:57.240
+But if we are honest, even in our data centers I have a
+
+00:08:57.240 --> 00:09:00.220
+physical access control, but of course...
+
+00:09:01.730 --> 00:09:06.230
+That's not the point. Nobody who wants something from us physically comes by and breaks in.
+
+00:09:06.790 --> 00:09:10.030
+You have to keep that in mind. That is, with this scale,
+
+00:09:10.049 --> 00:09:11.890
+that accompanies us throughout our professional lives,
+
+00:09:12.210 --> 00:09:16.549
+I started in the 90s with something like virtual hosting,
+
+00:09:16.610 --> 00:09:18.770
+because everything else was for my
+
+00:09:18.770 --> 00:09:21.850
+Allotment garden website and not financially viable for my soccer club.
+
+00:09:22.010 --> 00:09:25.090
+I would also have preferred a root server. It was far too expensive.
+
+00:09:26.809 --> 00:09:29.790
+Yes, you probably know the chroot environment from Linux,
+
+00:09:30.170 --> 00:09:32.309
+to make it a little safer.
+
+00:09:33.510 --> 00:09:38.150
+In BSD there are the jails, which are already very similar to the
+
+00:09:38.150 --> 00:09:42.030
+have with container technology and containers under Windows, under Linux,
+
+00:09:42.170 --> 00:09:43.730
+Sorry, the way Docker does it,
+
+00:09:43.890 --> 00:09:48.270
+are just a compromise and the person who invented Docker,
+
+00:09:48.410 --> 00:09:49.970
+didn't actually do anything else,
+
+00:09:50.170 --> 00:09:54.370
+without belittling that now, as existing concepts of the Linux kernel and the Linux
+
+00:09:55.090 --> 00:10:01.790
+environment by using techniques such as namespaces and simply
+
+00:10:01.790 --> 00:10:04.950
+if I cleverly combine everything and make it user-friendly,
+
+00:10:05.190 --> 00:10:09.850
+then I have a high degree of security with maximum density.
+
+00:10:10.470 --> 00:10:14.690
+That's what it's all about. And when Microsoft worked with Docker
+
+00:10:14.690 --> 00:10:17.950
+they then very quickly discovered that Microsoft specifically in its
+
+00:10:17.950 --> 00:10:21.950
+customer environment may have one or two who say,
+
+00:10:22.030 --> 00:10:24.570
+this isolation that Docker offers is not enough for me,
+
+00:10:24.710 --> 00:10:27.510
+because there is a possible problem with Docker,
+
+00:10:27.710 --> 00:10:30.870
+you have to trust the Linux kernel with Docker.
+
+00:10:30.870 --> 00:10:36.850
+Because the same kernel can be seen on the container host,
+
+00:10:36.870 --> 00:10:39.570
+who works there, who also does the work in the container.
+
+00:10:39.890 --> 00:10:43.429
+That is, theoretically speaking, if someone found a vulnerability in the Linux kernel
+
+00:10:43.429 --> 00:10:48.130
+it can of course break out of the container onto the host system.
+
+00:10:48.590 --> 00:10:53.630
+And that was one of the basic ideas at Microsoft, we can do Microsoft better.
+
+00:10:53.990 --> 00:10:56.090
+We can add an additional hardening
+
+00:10:56.090 --> 00:10:59.530
+by inventing Hyper-V containers. That's a mixture.
+
+00:11:00.809 --> 00:11:04.770
+From Hyper-V and Windows containers, which is basically based on it,
+
+00:11:04.870 --> 00:11:09.250
+that I do not pass the Windows kernel into the container,
+
+00:11:09.350 --> 00:11:10.670
+but duplicate it, so to speak.
+
+00:11:11.450 --> 00:11:15.410
+So the container gets its own kernel. It is like this under Windows,
+
+00:11:15.530 --> 00:11:18.590
+that we don't have a monolithic kernel where we can somehow create a file
+
+00:11:18.590 --> 00:11:20.750
+in RAM, one process and that's it.
+
+00:11:21.309 --> 00:11:24.330
+But the Windows kernel is very modular.
+
+00:11:25.250 --> 00:11:29.910
+And that means a lot of processes have to be mirrored in the containers.
+
+00:11:29.910 --> 00:11:31.809
+And that creates overhead.
+
+00:11:32.270 --> 00:11:36.750
+What you will notice immediately when you work with it is that Hyper-V containers
+
+00:11:36.750 --> 00:11:42.010
+are already subjectively much more computationally intensive than Windows server containers.
+
+00:11:42.049 --> 00:11:44.490
+But you have to think, when does that make sense?
+
+00:11:45.429 --> 00:11:49.230
+To anticipate the most important question of all,
+
+00:11:49.390 --> 00:11:52.070
+is this now replacing virtualization as we know it?
+
+00:11:52.290 --> 00:11:55.270
+No, probably not for the time being, and certainly not in the next few years,
+
+00:11:55.370 --> 00:11:58.130
+because the typical use case is completely different.
+
+00:11:58.590 --> 00:12:02.549
+The typical use case for Windows Server Container or Docker Container
+
+00:12:02.549 --> 00:12:03.610
+is something like WordPress today.
+
+00:12:04.570 --> 00:12:07.450
+Stuff you provide quickly, because now a new season of House
+
+00:12:07.450 --> 00:12:10.870
+of Cards is running and you need 10,000 web servers.
+
+00:12:11.429 --> 00:12:14.250
+Domain controllers are not suitable for this. Not at the moment.
+
+00:12:14.790 --> 00:12:18.070
+Of course you can think about it, there is always a future, let's see,
+
+00:12:18.090 --> 00:12:20.429
+how this develops, perhaps these techniques will merge.
+
+00:12:23.690 --> 00:12:26.290
+If you look at Docker, how that works, I just said,
+
+00:12:26.490 --> 00:12:28.010
+these are techniques that are all already there.
+
+00:12:28.049 --> 00:12:31.770
+Google has contributed a great deal to the existence of this technology.
+
+00:12:31.809 --> 00:12:36.470
+Many others as well, but I think Google is one of the most intense players in this space.
+
+00:12:37.410 --> 00:12:40.750
+And what has happened now, quite simply in 2013,
+
+00:12:40.809 --> 00:12:45.770
+that someone has netted this, has developed a kind of store,
+
+00:12:45.830 --> 00:12:47.350
+the Docker Hub, we'll see that in a moment.
+
+00:12:48.010 --> 00:12:51.990
+And in this store you can basically download hard disk images.
+
+00:12:51.990 --> 00:12:57.970
+In other words, if you imagine that you would simply be in the Microsoft
+
+00:12:57.970 --> 00:13:02.790
+Gallery or download ready-to-run VHDX files from the Microsoft Store
+
+00:13:02.790 --> 00:13:05.710
+then this has a certain similarity to Images. is.
+
+00:13:06.550 --> 00:13:10.950
+It's just that you always have such a design goal with containers.
+
+00:13:11.010 --> 00:13:14.610
+They always say like this, one thing in a container. So we don't mix bicycles
+
+00:13:14.610 --> 00:13:17.650
+and mopeds in such a container, but only bicycles go in such a container.
+
+00:13:18.350 --> 00:13:22.410
+This leads to the fact that with a typical solution like WordPress
+
+00:13:22.410 --> 00:13:27.250
+does not download an image, but you have something like Linux as a basis.
+
+00:13:27.870 --> 00:13:32.390
+Above that you have a "Müskel", a MySQL, say many.
+
+00:13:33.410 --> 00:13:38.390
+Or a MariaDB or something else. You have PHP and then on top of that an Nginx or
+
+00:13:38.390 --> 00:13:41.690
+one Apache and you stack them all on top of each other like this.
+
+00:13:41.750 --> 00:13:45.590
+From this point of view, this solution might also have been problematic in terms of copyright
+
+00:13:45.590 --> 00:13:48.370
+Lego, because that's exactly what it's all about.
+
+00:13:49.490 --> 00:13:51.930
+And if you now look at what that actually is technically,
+
+00:13:51.990 --> 00:13:54.850
+these images are basically nothing more than an idea of so
+
+00:13:54.850 --> 00:13:58.230
+Differencing Disks, Overlay File System,
+
+00:13:58.430 --> 00:14:01.650
+who knows this, I say so keyword Knoppix, the way it works,
+
+00:14:01.790 --> 00:14:06.090
+you start a DVD and so that you can make changes during operation,
+
+00:14:06.310 --> 00:14:08.650
+which you can't really do with Knoppix,
+
+00:14:08.950 --> 00:14:12.630
+Klaus Knopper creates such an overlay FS and you can write in there
+
+00:14:12.630 --> 00:14:14.230
+and then when you turn off the machine, it's gone.
+
+00:14:15.270 --> 00:14:18.170
+I think you can see that similarity there.
+
+00:14:20.950 --> 00:14:24.230
+The really nice thing, and I ask for your understanding,
+
+00:14:24.290 --> 00:14:26.890
+that I am doing this for strategic reasons alone.
+
+00:14:27.730 --> 00:14:32.590
+The beauty of Docker and a demo of Docker in general is,
+
+00:14:32.590 --> 00:14:37.050
+Knock on wood, it's very slim, it's very mature,
+
+00:14:37.110 --> 00:14:38.170
+that is very reliable.
+
+00:14:38.210 --> 00:14:42.730
+That's the beauty of a Windows Server Container lecture,
+
+00:14:42.730 --> 00:14:44.910
+that you would actually like to show Docker first.
+
+00:14:45.450 --> 00:14:48.350
+But there is another, very important reason for this.
+
+00:14:48.570 --> 00:14:52.090
+I think a lot of us who are in this room have tried it before,
+
+00:14:52.170 --> 00:14:54.870
+have tried to approach this topic, but have failed a little,
+
+00:14:55.010 --> 00:14:56.430
+because you don't know where to start.
+
+00:14:56.650 --> 00:15:02.550
+If you start googling, binging, you find pages and pages of texts and you know
+
+00:15:02.550 --> 00:15:03.950
+not at all, where do I start now?
+
+00:15:04.050 --> 00:15:06.270
+Then you realize that one thing is already obsolete again.
+
+00:15:06.490 --> 00:15:09.450
+It is very, very difficult to understand Windows Server Container,
+
+00:15:09.510 --> 00:15:11.530
+as we will see in the second demo.
+
+00:15:12.770 --> 00:15:13.950
+Because I say cautiously.
+
+00:15:16.150 --> 00:15:19.590
+But mature is different, I would say.
+
+00:15:19.750 --> 00:15:24.390
+And mature in the sense that when I buy a car,
+
+00:15:24.470 --> 00:15:25.730
+then I don't just want one engine.
+
+00:15:26.150 --> 00:15:29.090
+There are people who tinker with their boxes all day long.
+
+00:15:30.330 --> 00:15:33.650
+I drive a car like this, which is totally unexciting, because I just want it to run.
+
+00:15:34.750 --> 00:15:39.490
+And if you want that is transferred to IT, is Windows Server Container,
+
+00:15:39.510 --> 00:15:43.230
+is not your topic, because it's all command line, it's all web.
+
+00:15:43.930 --> 00:15:46.770
+And it's not even PowerShell. Now most people think so,
+
+00:15:46.790 --> 00:15:50.690
+Yes of course, PowerShell as always. No, we're beyond PowerShell again, I'll get to that in a moment.
+
+00:15:51.350 --> 00:15:53.830
+That's why Docker is much easier to understand. Because everything,
+
+00:15:53.870 --> 00:15:57.690
+what you have to do, you install a VM somewhere, I already did it, Ubuntudu in front of me.
+
+00:15:58.230 --> 00:16:00.410
+And then you do Upget, Install, Docker I.O., done.
+
+00:16:01.510 --> 00:16:03.890
+This is not how the nerds do it. I'll show you in a minute,
+
+00:16:04.010 --> 00:16:05.330
+how to make it a little better.
+
+00:16:05.930 --> 00:16:09.610
+But that's enough to try it out. And then you realize, you can see that here
+
+00:16:09.610 --> 00:16:14.110
+also on the list, no matter what you call, you call as soon as you have Docker,
+
+00:16:14.190 --> 00:16:15.430
+only ever calls the Docker command.
+
+00:16:17.210 --> 00:16:18.930
+Now, of course, someone could come up with the idea of saying,
+
+00:16:19.030 --> 00:16:21.490
+okay, watch out, I'm going to get some coffee. When Windows comes, I'll be back.
+
+00:16:21.590 --> 00:16:25.970
+Nah, stay here, because I can change the headline,
+
+00:16:26.690 --> 00:16:30.350
+The Windows commands are completely identical. Let me anticipate that.
+
+00:16:30.450 --> 00:16:32.410
+Therefore, if you want to memorize this, please memorize everything,
+
+00:16:32.530 --> 00:16:37.030
+what I am showing now, because it is done one-to-one in the same way under Windows.
+
+00:16:37.730 --> 00:16:41.350
+And now let's take a look at what that looks like.
+
+00:16:41.870 --> 00:16:43.170
+I have prepared something.
+
+00:16:45.350 --> 00:16:49.770
+I hope everyone can read this reasonably well now. I'm on one here,
+
+00:16:49.790 --> 00:16:54.510
+here below in the red area, I have shown it a bit above with markup,
+
+00:16:54.510 --> 00:16:57.110
+as a reminder for me, but also so that you can see it better,
+
+00:16:57.230 --> 00:16:58.290
+A few basic commands.
+
+00:16:59.730 --> 00:17:03.550
+I'm down here on a Linux machine. This is...
+
+00:17:07.170 --> 00:17:09.790
+Now they're already getting the first one to have a crisis because they say,
+
+00:17:09.890 --> 00:17:11.810
+now I'm learning PowerShell all the time, now I have to learn this
+
+00:17:11.810 --> 00:17:12.990
+Get Linux commands on it.
+
+00:17:13.150 --> 00:17:16.070
+I'm afraid that's the sad truth. We all can't avoid it now
+
+00:17:16.070 --> 00:17:18.230
+around, because it all keeps growing together.
+
+00:17:18.810 --> 00:17:24.630
+This is an Ubuntu and what I've done here is, I've already...
+
+00:17:27.320 --> 00:17:33.540
+The Docker package repository is stored in the sources list.
+
+00:17:35.020 --> 00:17:38.060
+Under Debian-based systems it is thankfully so,
+
+00:17:38.160 --> 00:17:41.000
+for the Windows people something similar to PowerShell-Gallery,
+
+00:17:41.180 --> 00:17:44.160
+but really complete.
+
+00:17:45.300 --> 00:17:50.000
+You can specify package repositories via which you install software,
+
+00:17:50.060 --> 00:17:51.520
+apt-get install, many will know this.
+
+00:17:52.500 --> 00:17:55.820
+And you can of course enter your own private repository there.
+
+00:17:55.820 --> 00:17:59.740
+And you can use that now to say, I'm connecting directly to Docker.
+
+00:17:59.980 --> 00:18:02.540
+Then you save yourself the detour via the distribution.
+
+00:18:03.119 --> 00:18:07.700
+And that simply has something to do with up-to-dateness. With Ubuntu we currently have
+
+00:18:07.700 --> 00:18:12.920
+Docker, I don't know, like 1.12 or something and we have 1.17 or something.
+
+00:18:13.000 --> 00:18:16.820
+So a lot more current than if you go through the distro. We'll see that in a moment.
+
+00:18:17.580 --> 00:18:21.640
+That is, you can see down here with what I'm highlighting here,
+
+00:18:22.160 --> 00:18:26.280
+you can see, I have simply entered that my package management directly
+
+00:18:26.280 --> 00:18:28.520
+Docker asks and I get the latest version.
+
+00:18:28.920 --> 00:18:33.560
+Do you have to do that? No. For a start, the distribution route is certainly sufficient.
+
+00:18:34.740 --> 00:18:38.599
+But it's all documented. You can get all the scripts and so on
+
+00:18:38.599 --> 00:18:41.500
+of course through the slides for download. I make a ZIP package like this.
+
+00:18:43.220 --> 00:18:47.320
+I think that can help a lot. Just click through it
+
+00:18:47.320 --> 00:18:49.700
+and to get an idea of how the whole thing works.
+
+00:18:50.820 --> 00:18:53.900
+Maybe a little anecdote about why it's called Docker.io.
+
+00:18:54.320 --> 00:18:57.700
+There was already a software called Docker. That is a relatively
+
+00:18:57.700 --> 00:19:01.900
+insignificant trace software today, but it was already called Docker.
+
+00:19:02.380 --> 00:19:07.859
+And that's why you had to improvise a bit. If you use the Docker repository
+
+00:19:07.859 --> 00:19:12.580
+then it is now called Docker-CE or Docker.ce,
+
+00:19:12.580 --> 00:19:17.119
+depending on what you use. CE stands for Community Edition.
+
+00:19:17.540 --> 00:19:21.260
+And you can already hear that Docker is now looking for ways to make money.
+
+00:19:21.340 --> 00:19:24.560
+This means that there will now be an Enterprise Edition, which of course makes the whole thing
+
+00:19:24.560 --> 00:19:26.220
+doesn't exactly make things any clearer.
+
+00:19:27.570 --> 00:19:32.010
+You can see above in the markup how to set all this up exactly.
+
+00:19:32.010 --> 00:19:35.849
+You still need the PGP key for the repository so that it can be checked.
+
+00:19:35.849 --> 00:19:40.650
+whether the checksums of the packages are correct. I have already done all that.
+
+00:19:41.930 --> 00:19:45.330
+So, and then we go down here like this and then you see this first part here.
+
+00:19:45.830 --> 00:19:50.070
+This is where it gets serious. So if I already have Docker, then this is always
+
+00:19:50.070 --> 00:19:52.390
+the first step is to see which version you have.
+
+00:19:52.869 --> 00:19:57.970
+Docker version. And I'll say it again, it's exactly the same,
+
+00:19:57.970 --> 00:20:00.730
+which you also do under Windows, as you will see in a moment.
+
+00:20:00.730 --> 00:20:01.890
+There is no difference at all.
+
+00:20:02.030 --> 00:20:04.630
+It will say something else. You may have a different version.
+
+00:20:05.050 --> 00:20:07.470
+Or the platform, the API says something else.
+
+00:20:07.810 --> 00:20:10.869
+It doesn't say Linux. So, that's actually all.
+
+00:20:13.010 --> 00:20:16.270
+docker -version, docker -info is when I call this now,
+
+00:20:16.290 --> 00:20:18.770
+very complex. You get a lot, a lot of information.
+
+00:20:19.550 --> 00:20:23.730
+In Windows, it is important that the isolation mode is also displayed there at some point later.
+
+00:20:23.830 --> 00:20:27.369
+So if you want to know if you have Hyper-V containers as default,
+
+00:20:27.530 --> 00:20:29.050
+then you can watch it afterwards, for example.
+
+00:20:29.690 --> 00:20:32.390
+You can see that very nicely here. That's a lot of information.
+
+00:20:33.250 --> 00:20:35.330
+And then you can see everything that's going on.
+
+00:20:37.030 --> 00:20:40.230
+That's the whole trick. Like this.
+
+00:20:41.030 --> 00:20:43.530
+That means we basically know now that it's on.
+
+00:20:43.730 --> 00:20:47.450
+What always helps is to start the Docker service again.
+
+00:20:48.490 --> 00:20:52.710
+You could do that with Systems Control. And then, of course, the first
+
+00:20:52.710 --> 00:20:55.450
+Step, if you now go to a machine where you have never been before, Docker PS.
+
+00:20:55.830 --> 00:20:58.170
+And now comes the interesting stuff for Windows admins.
+
+00:20:59.109 --> 00:21:02.750
+Now if you've been living under a rock for the last 20 years and have
+
+00:21:02.750 --> 00:21:05.050
+never seen Unix, then PS doesn't mean anything to you.
+
+00:21:06.450 --> 00:21:08.810
+But if you have at least done a little PowerShell,
+
+00:21:08.869 --> 00:21:13.690
+then you know that there is an alias for Get-Process called PS.
+
+00:21:13.970 --> 00:21:18.030
+And why does it exist? Because PS under Linux, under Unix the command
+
+00:21:18.030 --> 00:21:19.730
+with which you look at processes.
+
+00:21:20.970 --> 00:21:24.790
+And the Docker guys thought, let's just use it so that everyone knows it.
+
+00:21:25.010 --> 00:21:28.210
+We are not displaying processes now, but we are displaying our containers.
+
+00:21:28.290 --> 00:21:30.030
+This is relatively easy to remember.
+
+00:21:30.390 --> 00:21:34.230
+And under Windows, this will cause you to view the running containers with
+
+00:21:34.230 --> 00:21:36.010
+Docker PS as well.
+
+00:21:36.050 --> 00:21:38.050
+The only problem is that this doesn't tell you anything under Windows,
+
+00:21:38.230 --> 00:21:40.750
+because you may not have known PS before.
+
+00:21:42.030 --> 00:21:46.990
+Then you see, I don't have any, I'm also new, but that's not
+
+00:21:46.990 --> 00:21:50.770
+quite reliable, because Docker PS only shows the running processes,
+
+00:21:50.830 --> 00:21:51.790
+the running containers.
+
+00:21:52.150 --> 00:21:57.310
+PS -a like all also shows you the ones I may have initiated and stopped.
+
+00:21:58.030 --> 00:22:01.130
+And there you see, oh yo, I actually have a few running already
+
+00:22:01.130 --> 00:22:06.070
+because they are obviously all stopped, otherwise I wouldn't be seeing them now.
+
+00:22:07.960 --> 00:22:11.800
+Yes, you always ask yourself, should you do something as trivial as docker run hello-world
+
+00:22:11.800 --> 00:22:14.619
+show at all? Yes, of course, because it's just part of it.
+
+00:22:15.560 --> 00:22:18.960
+Let's just do that. But we'll have to explain what that actually means.
+
+00:22:18.960 --> 00:22:21.180
+exactly what happens with docker run hello-world.
+
+00:22:22.940 --> 00:22:28.060
+So. By the way, anyone expecting something totally spectacular at this point,
+
+00:22:28.760 --> 00:22:32.020
+this is already very spectacular, but if you expect something else,
+
+00:22:32.780 --> 00:22:36.800
+Docker is of course brittle at first, because it's about server workload.
+
+00:22:36.800 --> 00:22:40.440
+You won't be shown any spectacular graphic surfaces or anything.
+
+00:22:40.840 --> 00:22:43.580
+This is not made for that, although it is conceivable.
+
+00:22:43.640 --> 00:22:44.480
+I'll come to that at the end.
+
+00:22:46.520 --> 00:22:51.000
+What happens when I call docker run hello-world? You have to go back three steps.
+
+00:22:51.400 --> 00:22:54.760
+The first thing you actually do is when you work with Docker,
+
+00:22:54.900 --> 00:22:58.920
+you go to the web, go to the website of the company Docker and have a look at
+
+00:22:58.920 --> 00:23:02.700
+an, what do they do? Then you'll automatically end up in the hub.
+
+00:23:03.000 --> 00:23:04.440
+The hub is basically the store.
+
+00:23:05.240 --> 00:23:08.700
+And then you enter things you are interested in. For example Drupal.
+
+00:23:09.660 --> 00:23:14.140
+Drupal, actually Dutch for droplets, is something most people speak very well.
+
+00:23:14.140 --> 00:23:16.359
+looks funny. And Drupal is, I think, correct.
+
+00:23:17.359 --> 00:23:21.560
+And then you see, there is a ready-made solution.
+
+00:23:21.880 --> 00:23:26.300
+Drupal is a content management system, similar to WordPress, a competitor product.
+
+00:23:26.820 --> 00:23:30.580
+And I personally think Drupal is very complicated to set up.
+
+00:23:31.040 --> 00:23:35.380
+It's much, much easier with containers. But Drupal is one of the
+
+00:23:35.380 --> 00:23:39.040
+many, many solutions that just need a database.
+
+00:23:39.740 --> 00:23:44.220
+Web server, the wildest configurations. And the basic idea is with containers,
+
+00:23:44.260 --> 00:23:49.140
+that it's not you as admin who provides that, and that's the really interesting one
+
+00:23:49.140 --> 00:23:51.740
+part, but that the manufacturer does it.
+
+00:23:51.740 --> 00:23:54.740
+That is, if there is a community that develops something like WordPress Triple,
+
+00:23:55.060 --> 00:23:59.240
+who know exactly what they need in terms of prerequisites,
+
+00:23:59.400 --> 00:24:05.500
+then just let them do the setup exe. Let me give you an analogy for a Windows admin.
+
+00:24:05.560 --> 00:24:09.840
+You know those setup exes that tell you, hey, you need
+
+00:24:09.840 --> 00:24:12.340
+a .NET framework, 43, one eighth.
+
+00:24:13.540 --> 00:24:20.119
+Cancel. And you think to yourself, then install it. There are also setup exe,
+
+00:24:20.240 --> 00:24:21.020
+they will bring it with them.
+
+00:24:22.460 --> 00:24:27.760
+And basically that's exactly what it is. They simply have what it takes.
+
+00:24:28.000 --> 00:24:30.840
+And that is naturally very, very easy with open source products.
+
+00:24:32.540 --> 00:24:36.020
+I'm not saying that this is fundamentally more complicated with closed source products.
+
+00:24:36.020 --> 00:24:38.240
+is, but with open source products it's easy at first, because things are
+
+00:24:38.240 --> 00:24:39.380
+are all reachable anyway.
+
+00:24:42.300 --> 00:24:45.340
+Now you can also go there and search for Microsoft.
+
+00:24:45.940 --> 00:24:52.040
+Then you realize, oh, but there are pages and pages.
+
+00:24:52.599 --> 00:24:55.359
+There's a lot of things now and you might notice,
+
+00:24:55.420 --> 00:24:57.580
+on the left, I'll show that in the Docker console in a moment.
+
+00:25:01.190 --> 00:25:04.010
+You notice on the left side it always says Microsoft, then here comes
+
+00:25:04.010 --> 00:25:07.710
+lots of identifiers. The same, let's take a look at that now,
+
+00:25:07.770 --> 00:25:08.849
+via the command line.
+
+00:25:10.230 --> 00:25:11.190
+Let's start with,
+
+00:25:13.849 --> 00:25:16.630
+docker search drupal.
+
+00:25:18.630 --> 00:25:21.390
+And then you can see very nicely what I have just done on the web.
+
+00:25:22.310 --> 00:25:27.150
+The command line clearly shows that there are many containers,
+
+00:25:27.230 --> 00:25:30.950
+that have anything to do with this CMS in the first place, but there is exactly one that is Official.
+
+00:25:31.790 --> 00:25:35.130
+And this is now important for the practice, because on the left side you can see
+
+00:25:35.130 --> 00:25:39.710
+man, at the moment when the Official is, you don't see any on the left side
+
+00:25:39.710 --> 00:25:41.990
+Prefix. The prefix is the user name.
+
+00:25:42.290 --> 00:25:45.550
+And if there is no user name, this is checked by Docker.
+
+00:25:45.650 --> 00:25:46.850
+And that is important again.
+
+00:25:49.530 --> 00:25:54.710
+Audited means that the developer pays Docker for it, this is their current
+
+00:25:54.710 --> 00:25:56.970
+Business model that they check.
+
+00:25:57.950 --> 00:26:01.330
+This is not developed by Docker itself. They just check it.
+
+00:26:01.530 --> 00:26:04.790
+And conversely, this means everything that is not official,
+
+00:26:05.970 --> 00:26:08.990
+will not be checked. This is at your own risk.
+
+00:26:11.370 --> 00:26:17.330
+Let's do the same with Microsoft. Docker Search. I'll do PowerShell directly.
+
+00:26:19.110 --> 00:26:23.370
+PowerShell, great topic. You were just in Holger's lecture.
+
+00:26:23.490 --> 00:26:27.170
+You want PowerShell. Maybe you've already shown it.
+
+00:26:28.430 --> 00:26:33.170
+You want to try out PowerShell and don't feel like installing anything.
+
+00:26:33.330 --> 00:26:37.590
+And then you see, oh look, there's a container called Microsoft PowerShell. So, exciting.
+
+00:26:38.470 --> 00:26:41.410
+And it's quite popular, as you can see over here, but you can also see,
+
+00:26:41.430 --> 00:26:44.270
+it's not official now. Well, it's just provided by Microsoft.
+
+00:26:44.470 --> 00:26:45.590
+So, that's the whole joke.
+
+00:26:46.450 --> 00:26:48.950
+Let's take a look at this solution.
+
+00:26:50.890 --> 00:26:54.250
+Just as I now search for PowerShell, I can also search for hello-world.
+
+00:26:54.530 --> 00:26:57.910
+And what I then realize is that there is an image that is called that,
+
+00:26:58.050 --> 00:27:01.470
+and I can then download this image. So let's do this as a final test.
+
+00:27:03.070 --> 00:27:10.330
+Docker hello- World. Zack. Docker search hello-world would also be a good idea.
+
+00:27:11.110 --> 00:27:15.110
+So, bang. And then you see, there is again - a lot of laughter - and
+
+00:27:15.110 --> 00:27:17.690
+up here you can see, ah yes, it really is exactly the same.
+
+00:27:17.690 --> 00:27:21.210
+So hello-world is on par with everything we've just seen.
+
+00:27:21.270 --> 00:27:23.070
+To drupal, to PowerShell, etc.
+
+00:27:23.450 --> 00:27:26.570
+So, how do I work with it now? I have now found something that interests me.
+
+00:27:27.910 --> 00:27:29.410
+And then I do that with docker-pull.
+
+00:27:31.950 --> 00:27:38.530
+Second. Docker pull. Yes, and now I can just download a Drupal.
+
+00:27:38.530 --> 00:27:41.450
+Then it downloads all the pre-requisites. Now it gets dangerous,
+
+00:27:41.450 --> 00:27:43.390
+because it can now be a longer download.
+
+00:27:45.610 --> 00:27:49.450
+And now you can see that it downloads things. And the charming thing is now,
+
+00:27:49.530 --> 00:27:53.870
+if you look at the file sizes that are flying across the web.
+
+00:27:55.050 --> 00:27:58.570
+Drupal is relatively large. I don't know exactly how big it is in
+
+00:27:58.570 --> 00:27:59.970
+is the total. We can take a look at that right now.
+
+00:28:01.510 --> 00:28:06.050
+You typically download things under Linux that are smaller than 20
+
+00:28:06.050 --> 00:28:09.310
+MB. Depending on what you do, it can of course be huge.
+
+00:28:10.050 --> 00:28:15.610
+But the interesting thing about this optimization is that you can leave out a lot of things as a container.
+
+00:28:15.770 --> 00:28:18.850
+That is, the idea behind the container is when we talk about server density,
+
+00:28:19.090 --> 00:28:23.350
+that we can of course also leave things out of the download,
+
+00:28:23.450 --> 00:28:25.050
+that we know are already here.
+
+00:28:25.050 --> 00:28:30.550
+If you transfer this via virtual machines, you also have the
+
+00:28:30.550 --> 00:28:34.310
+Feeling, why do I actually need a VMWare host on my VMWare host or on my
+
+00:28:34.310 --> 00:28:37.390
+Hyper-V host 35 times C\Windows\WinSXS?
+
+00:28:37.910 --> 00:28:39.030
+Couldn't that be left out?
+
+00:28:39.990 --> 00:28:43.250
+That's the same idea. So, and now you can see, I have Drupal here.
+
+00:28:44.550 --> 00:28:50.370
+I could start that right now. Let's do the same thing again with docker pull PowerShell.
+
+00:28:52.270 --> 00:28:56.750
+And I had already downloaded it once, so it could be very good now,
+
+00:28:56.870 --> 00:28:58.430
+very quickly if I hadn't mistyped.
+
+00:28:59.930 --> 00:29:03.250
+Microsoft, before that we write a good idea. Because there is nothing official,
+
+00:29:03.310 --> 00:29:04.050
+we have just seen.
+
+00:29:04.810 --> 00:29:07.630
+Thank you very much. And then you see Already Exists. That's why it's faster now.
+
+00:29:07.750 --> 00:29:10.150
+And now check if something is missing and download it.
+
+00:29:11.130 --> 00:29:13.530
+So, now I've downloaded a few things. You can see a bit
+
+00:29:13.530 --> 00:29:16.310
+compare. I always know that people are always looking for analogies,
+
+00:29:16.430 --> 00:29:17.410
+although they are dangerous.
+
+00:29:18.030 --> 00:29:20.550
+But if you want to install something in a Hyper-V console,
+
+00:29:20.630 --> 00:29:24.570
+then you download an ISO file beforehand. The only difference is that it is typically gigabytes in size.
+
+00:29:26.150 --> 00:29:30.070
+If I want to start this now, the way to start it is quite simple.
+
+00:29:30.150 --> 00:29:32.130
+You saw earlier, I don't even have to download it,
+
+00:29:32.210 --> 00:29:36.570
+because the Docker client automatically checks to see if I even have it and downloads everything.
+
+00:29:37.190 --> 00:29:39.730
+This is why you will only ever find docker run in most instructions,
+
+00:29:39.810 --> 00:29:41.230
+docker run, docker run, docker run.
+
+00:29:41.590 --> 00:29:44.170
+But if you know in advance that you're going somewhere where you don't have Internet
+
+00:29:44.170 --> 00:29:47.250
+then it would be a good idea to download it first.
+
+00:29:47.250 --> 00:29:49.750
+But this is only a tip for lecturers. The rest of the world doesn't care.
+
+00:29:50.950 --> 00:29:53.690
+So, now the question is, how do I start such a container?
+
+00:29:55.770 --> 00:29:58.490
+Let's start with something really classic and then I'll come straight to the
+
+00:29:58.490 --> 00:30:01.510
+PowerShell and then we take another look at Nginx and things like that and then
+
+00:30:01.510 --> 00:30:03.290
+we come straight to the Windows Server Containers.
+
+00:30:06.810 --> 00:30:08.530
+I start a container like this,
+
+00:30:10.650 --> 00:30:14.850
+in which I say, for example, Docker Run Ubuntu,
+
+00:30:16.170 --> 00:30:18.530
+The problem is, if I do that now, he'll check,
+
+00:30:18.650 --> 00:30:22.710
+I have an image of Ubuntu then it loads the But the problem is,
+
+00:30:22.730 --> 00:30:28.970
+then the container starts and nothing happens.
+
+00:30:29.050 --> 00:30:29.810
+What is the problem?
+
+00:30:31.430 --> 00:30:34.410
+Running Ubuntu in a container is a super atypical example,
+
+00:30:34.630 --> 00:30:41.390
+because Ubuntu is an operating system. But I want to install solutions.
+
+00:30:42.010 --> 00:30:45.330
+This means that Ubuntu is actually only intended for developers, who can now create their own
+
+00:30:45.330 --> 00:30:47.830
+want to create a container image and then do the following.
+
+00:30:48.310 --> 00:30:53.370
+They then go and say, why don't you start Ubuntu interactively?
+
+00:30:53.530 --> 00:30:55.850
+a bash, so that I can make changes there.
+
+00:30:57.390 --> 00:31:00.090
+And now you see very nicely, now we are for the first time,
+
+00:31:00.250 --> 00:31:02.450
+we are in a container.
+
+00:31:03.610 --> 00:31:07.210
+And who knows Jeffrey Snover's quote with the Cattles and Pets,
+
+00:31:07.350 --> 00:31:11.910
+who immediately knows what this is all about, is that this is exactly that approach.
+
+00:31:12.010 --> 00:31:16.110
+We no longer have a meaningful host name here,
+
+00:31:16.210 --> 00:31:20.790
+but we have numbers, because nobody is interested in the host names of containers.
+
+00:31:21.410 --> 00:31:26.230
+We have an optimization that means I don't even have that anymore
+
+00:31:26.230 --> 00:31:28.430
+like ifconfig, because what would I need that for?
+
+00:31:29.390 --> 00:31:32.450
+If I need that, I can install it. But then I have to do things like
+
+00:31:32.450 --> 00:31:37.830
+do like apt-get install, nope, I have to do apt-get update first,
+
+00:31:37.830 --> 00:31:40.090
+so that he first knows what I have.
+
+00:31:40.510 --> 00:31:43.490
+Then I can somehow do apt-get install net-tools.
+
+00:31:43.750 --> 00:31:46.390
+So a scary fiddle. But I'll say it again,
+
+00:31:46.590 --> 00:31:49.450
+That's not really your job as an admin. You launch ready-made solutions.
+
+00:31:49.510 --> 00:31:51.930
+I am now showing you what this actually means.
+
+00:31:52.810 --> 00:31:56.790
+So, now I'm in the container. Now I say here apt-get install net-tools.
+
+00:31:57.170 --> 00:31:59.170
+And now I have ifconfig.
+
+00:32:00.050 --> 00:32:03.350
+Most people say, yes, ifconfig is deprecated. That's why the
+
+00:32:03.350 --> 00:32:06.430
+I can't do that anymore. But I'm an old man. I want to have ifconfig.
+
+00:32:06.830 --> 00:32:11.090
+Now you see, now I have ifconfig. And if I now seriously use
+
+00:32:11.090 --> 00:32:14.890
+I would realize, I close the container, everything is gone.
+
+00:32:16.380 --> 00:32:19.020
+If I am now a developer who provides a ready-made solution,
+
+00:32:19.120 --> 00:32:21.740
+I would have to think about how exactly to proceed now?
+
+00:32:21.860 --> 00:32:27.180
+I could then commit this container, make it available somewhere and you could pull it.
+
+00:32:27.460 --> 00:32:29.520
+The problem is, this stuff becomes obsolete immediately.
+
+00:32:29.840 --> 00:32:33.400
+That's why it makes no sense to work like this, even if I do it now in this demo.
+
+00:32:34.200 --> 00:32:38.560
+But what you want is the Linux variant of desired state configuration.
+
+00:32:39.200 --> 00:32:42.500
+And this is a Docker file. This means that everything I have just done
+
+00:32:42.500 --> 00:32:45.400
+I write, I say for the Windows people, in a batch file.
+
+00:32:46.380 --> 00:32:50.240
+This is called a Dockerfile, but is actually very similar to a batch file.
+
+00:32:50.480 --> 00:32:53.360
+And then I write in there: run, apt-getinstall.
+
+00:32:53.840 --> 00:32:57.600
+And then all this happens. And this recipe, I put it on GitHub
+
+00:32:57.600 --> 00:32:59.280
+and everyone is happy. That's the point.
+
+00:32:59.600 --> 00:33:02.540
+That's how you want to work with it and you're just the consumer.
+
+00:33:03.060 --> 00:33:05.520
+And now I'm taking on the role of the consumer.
+
+00:33:09.220 --> 00:33:16.700
+Now we start docker run Microsoft Microsoft PowerShell and now the same thing again.
+
+00:33:16.880 --> 00:33:19.380
+Careful, I want to see something. Minus IT.
+
+00:33:21.840 --> 00:33:26.420
+And then you see, yo cool. PowerShell 6, I'm happy.
+
+00:33:27.800 --> 00:33:34.120
+All right. Wow. The only problem is, perhaps surprisingly for many.
+
+00:33:34.860 --> 00:33:36.460
+What kind of operating system do I have now?
+
+00:33:38.080 --> 00:33:46.300
+Linux. Because there is a very simple rule. Linux container hosts can virtualize Linux.
+
+00:33:46.840 --> 00:33:49.980
+Offer Linux as a container, but no other operating systems.
+
+00:33:50.080 --> 00:33:52.260
+No other operating systems in the sense of Windows.
+
+00:33:52.680 --> 00:33:56.760
+What you can already do under Docker is run a CentOS on an Ubuntu host.
+
+00:33:56.760 --> 00:33:59.260
+map. That works, but that is also both Linux.
+
+00:34:00.200 --> 00:34:04.600
+But you cannot run a Nano server. You cannot run a Windows server core
+
+00:34:04.600 --> 00:34:08.880
+or something like that, because it's a completely different operating system. Nobody wants that either.
+
+00:34:10.260 --> 00:34:14.600
+Except Microsoft. Because they've figured out that if we now go under
+
+00:34:14.600 --> 00:34:18.120
+Windows server containers, that's totally stupid,
+
+00:34:18.140 --> 00:34:20.520
+that we can't support this whole Linux world.
+
+00:34:20.680 --> 00:34:23.660
+And that is somehow a shortcoming. That's why you'll see
+
+00:34:23.660 --> 00:34:25.980
+see that Microsoft has a solution for this.
+
+00:34:26.380 --> 00:34:28.580
+At least in the future. This is currently under development.
+
+00:34:28.580 --> 00:34:31.940
+That under Windows, under certain conditions, you can use both Windows and
+
+00:34:31.940 --> 00:34:34.880
+you can also virtualize Linux in the sense of containers.
+
+00:34:34.920 --> 00:34:38.460
+That's a unique selling point. That will be exciting.
+
+00:34:38.460 --> 00:34:44.560
+So, let's do one last example so that you can see something again,
+
+00:34:44.580 --> 00:34:46.800
+which is really relatively true to life.
+
+00:34:46.900 --> 00:34:49.140
+I'll scroll down a bit so that you can see it at the back.
+
+00:34:49.320 --> 00:34:52.860
+There are a lot of examples here that you can click through,
+
+00:34:52.960 --> 00:34:59.180
+how to work with it and I want to show you one, which you can see quite well here.
+
+00:35:01.680 --> 00:35:07.219
+This part here. Because you can also, if you now simply use a service
+
+00:35:07.219 --> 00:35:10.160
+run something demonized. This is the normal case.
+
+00:35:11.120 --> 00:35:14.400
+And what you normally want to run is something like an Nginx.
+
+00:35:15.100 --> 00:35:17.960
+This is a web server. Apache would be another alternative.
+
+00:35:18.699 --> 00:35:22.140
+But now I have to consider one thing. If you have just looked very closely,
+
+00:35:22.180 --> 00:35:26.940
+did you see that the container has such a strange IP address? 172.17.
+
+00:35:28.820 --> 00:35:35.320
+That is a problem. And when I compare that with my host system,
+
+00:35:35.400 --> 00:35:37.480
+he has a completely different IP circle, then I will find out,
+
+00:35:37.600 --> 00:35:38.920
+by default the ge-nat-et.
+
+00:35:39.460 --> 00:35:43.140
+This means that the web server here is not necessarily visible to me.
+
+00:35:43.140 --> 00:35:47.260
+And that's why you typically do the following. You do a port forwarding
+
+00:35:47.260 --> 00:35:50.320
+and says that port 80 is off
+
+00:35:50.320 --> 00:35:54.520
+of the internal machine is forwarded to my host system with port 80.
+
+00:35:56.260 --> 00:36:00.260
+A container is then created. You can see that here. And now I can
+
+00:36:00.260 --> 00:36:03.800
+here and can say, I type in the IP address of my VM.
+
+00:36:04.300 --> 00:36:10.580
+I know which one that is, 192.168.0.253. And here is my NginX.
+
+00:36:11.460 --> 00:36:14.640
+Yes, and that would basically be exactly the same now with WordPress Drupal.
+
+00:36:14.640 --> 00:36:17.560
+You can instantly click, click, click, click, set this stuff up, be happy.
+
+00:36:18.400 --> 00:36:21.160
+What is still important to understand, but now I have to do a bit of
+
+00:36:21.160 --> 00:36:23.199
+and show it again up here.
+
+00:36:23.840 --> 00:36:26.340
+Now, of course, you don't want to stay with this standard website,
+
+00:36:26.420 --> 00:36:27.699
+but you want to deliver content.
+
+00:36:28.340 --> 00:36:31.140
+And you can do this in a very simple way. For example,
+
+00:36:31.219 --> 00:36:36.400
+I'm just showing this up here to save a bit of time,
+
+00:36:36.420 --> 00:36:41.080
+if you allow, I'll add "-v" to this command from just now.
+
+00:36:41.080 --> 00:36:48.199
+This means that I mount a directory from my real system
+
+00:36:48.199 --> 00:36:54.180
+into the container and can then simply place the website on the outside of my host system.
+
+00:36:54.180 --> 00:36:57.160
+This is the way to work with it.
+
+00:36:57.440 --> 00:37:00.540
+And if you try it yourself, you'll see that this is it,
+
+00:37:00.580 --> 00:37:03.239
+what works wonderfully. This is Docker.
+
+00:37:06.480 --> 00:37:10.219
+Many more examples in here. We could go on and on.
+
+00:37:11.180 --> 00:37:15.840
+But 45 minutes, it's a quick. It's a short time. So, and now we come to Windows.
+
+00:37:16.040 --> 00:37:18.380
+Now I can do this quickly because everything you just saw,
+
+00:37:18.420 --> 00:37:19.800
+you can type it in one to one.
+
+00:37:21.280 --> 00:37:26.560
+We have enormous amounts of data with Windows Server2016, as always.
+
+00:37:27.500 --> 00:37:32.199
+And we discover very quickly that if we now work with such giants as Windows with
+
+00:37:32.199 --> 00:37:35.060
+graphical user interface or Windows Core, if you compare,
+
+00:37:35.060 --> 00:37:38.100
+here green is core, that's more than half of the data,
+
+00:37:38.100 --> 00:37:39.239
+that such a graphical server has.
+
+00:37:40.480 --> 00:37:44.420
+If we work with this, it makes no sense in the container environment.
+
+00:37:44.440 --> 00:37:46.300
+We want to have miniaturized operating systems.
+
+00:37:46.440 --> 00:37:51.680
+And for this, essentially for this, Microsoft invented the nano server which
+
+00:37:51.680 --> 00:37:54.580
+is relatively small with a few hundred megabytes please,
+
+00:37:56.780 --> 00:37:59.320
+Not for containers, for containers he lives on, I'm getting there now.
+
+00:37:59.500 --> 00:38:03.080
+This means that in the context of containers, you definitely want to use the nano server
+
+00:38:03.080 --> 00:38:04.560
+work, that will be important now.
+
+00:38:06.560 --> 00:38:11.940
+That's what they developed it for. The Nano server is extremely functionally limited.
+
+00:38:11.960 --> 00:38:15.199
+Anyone who has looked at Windows Server 2016, in the normal way
+
+00:38:15.199 --> 00:38:18.540
+and wise, who knows that the thing makes little sense in this condition.
+
+00:38:18.540 --> 00:38:23.239
+For an admin, can't be a domain controller, you can't even activate it.
+
+00:38:23.560 --> 00:38:26.440
+Okay, you don't have to activate it. But it can't even do Windows updates
+
+00:38:26.440 --> 00:38:29.360
+import. This cannot be done automatically, you have to do it manually.
+
+00:38:32.300 --> 00:38:33.719
+Now Microsoft has obviously
+
+00:38:33.719 --> 00:38:37.699
+thought, well, we'll release it in the first version.
+
+00:38:38.020 --> 00:38:41.680
+The code name was Tuva. Tuva is a region in the former Soviet Union.
+
+00:38:42.640 --> 00:38:45.500
+And Tuva has 170,000 square meters, says Wikipedia.
+
+00:38:45.860 --> 00:38:49.900
+And I always thought to myself, there's more to it, isn't there?
+
+00:38:50.000 --> 00:38:51.100
+This is not the smallest country.
+
+00:38:51.480 --> 00:38:54.760
+And I always thought that thing should really be called Codename Vatican.
+
+00:38:55.860 --> 00:38:58.300
+And obviously someone at Microsoft has heard me.
+
+00:38:58.320 --> 00:39:01.400
+They thought that with the next release, which is now in October
+
+00:39:01.400 --> 00:39:07.060
+that the release is called 1709 because October is the ninth month, you know that.
+
+00:39:09.100 --> 00:39:12.400
+So with the next release of Windows Server there will be an updated
+
+00:39:12.400 --> 00:39:19.160
+version of the Nano server, which is much smaller and which is then used by these
+
+00:39:19.160 --> 00:39:22.940
+a few hundred megabytes again significantly reduces the whole thing. This is the future.
+
+00:39:23.199 --> 00:39:26.219
+I'll say code name Vatican. And now let's do it very quickly.
+
+00:39:28.320 --> 00:39:31.280
+Many say, well, Microsoft has now somehow moved away from Docker.
+
+00:39:31.280 --> 00:39:32.300
+adopted the technology.
+
+00:39:32.380 --> 00:39:37.320
+It is important to note that Microsoft developed the client together with Docker,
+
+00:39:37.620 --> 00:39:40.860
+respectively the client concept, the API adopted from Docker,
+
+00:39:40.900 --> 00:39:45.100
+because you had the thought, and it's a good one, if someone wants to use the Docker client
+
+00:39:45.100 --> 00:39:46.460
+can operate under Linux, then
+
+00:39:46.460 --> 00:39:49.280
+can also operate Docker directly under Windows, that's great.
+
+00:39:50.199 --> 00:39:54.520
+That's the idea behind it. And the engine, Microsoft already had that before.
+
+00:39:54.900 --> 00:39:59.960
+That means Hyper-V was invented in 2008. At least that has nothing to do with Docker.
+
+00:40:01.180 --> 00:40:05.460
+You then had this project Drawbridge, from which the Container Engine emerged
+
+00:40:05.460 --> 00:40:09.020
+is, to a certain extent. And then in2013 they started this partnership.
+
+00:40:10.000 --> 00:40:13.460
+I have a few conceptual slides in the talk on how this works,
+
+00:40:13.620 --> 00:40:15.140
+that this is also very different.
+
+00:40:15.840 --> 00:40:19.360
+But importantly, there is one thing that really matters.
+
+00:40:19.820 --> 00:40:23.600
+You can just say if your machine is also a Hyper-V host,
+
+00:40:24.520 --> 00:40:28.300
+that you want to have additional process isolation that goes beyond the normal
+
+00:40:28.300 --> 00:40:32.880
+measure and build a kind of mini-VM. That is the special feature.
+
+00:40:33.560 --> 00:40:38.460
+And if Microsoft also supports Linux workloads in the future,
+
+00:40:39.020 --> 00:40:42.960
+Then it will be the case that this requires Hyper-V mode, Hyper-V isolation.
+
+00:40:43.360 --> 00:40:46.080
+This is what has been announced, keyword Linux-Kit.
+
+00:40:47.739 --> 00:40:50.540
+How do you set the whole thing up? And now I have to say, if you look at the clock
+
+00:40:50.540 --> 00:40:52.699
+look, you know, I don't have that much time now. I have a little
+
+00:40:52.699 --> 00:40:55.560
+to get you drunk. I've been showing Linux the whole time, but I have one more trick.
+
+00:40:56.400 --> 00:41:00.660
+This is how you set up the Windows server containers. This is a very lengthy procedure.
+
+00:41:00.760 --> 00:41:05.840
+And the really special thing is when you install the containers,
+
+00:41:05.880 --> 00:41:07.620
+You're about to see that. Because I'm doing it now.
+
+00:41:09.020 --> 00:41:12.180
+Then you don't have a front end, but, attention.
+
+00:41:15.790 --> 00:41:22.830
+Greetings to the Nils. I have shot a video. I have also seen other colleagues.
+
+00:41:23.190 --> 00:41:29.030
+You can see me installing there in the video now. I am sorry,
+
+00:41:29.030 --> 00:41:31.150
+that now on the projector it's a bit cut off,
+
+00:41:31.210 --> 00:41:32.590
+but you can basically see what it's all about.
+
+00:41:33.290 --> 00:41:35.690
+The whole thing lasts in real time, depending on
+
+00:41:35.690 --> 00:41:39.310
+Internet line, I'll be careful and say at least 20 minutes.
+
+00:41:40.110 --> 00:41:44.430
+That's the reason I recorded this and that's now twelve times the speed.
+
+00:41:45.170 --> 00:41:51.630
+And what you see now is that I am installing two features via the Windows server,
+
+00:41:51.690 --> 00:41:53.410
+namely both containers and Hyper-V.
+
+00:41:53.510 --> 00:41:56.770
+Then the machine is about to reboot. The video runs for a total of two and a half
+
+00:41:56.770 --> 00:41:58.810
+minutes, so we can easily do that in our time.
+
+00:42:00.410 --> 00:42:04.489
+And now reboot the machine and then you will see,
+
+00:42:04.550 --> 00:42:07.070
+I have no front ends for administration. Nothing.
+
+00:42:08.150 --> 00:42:12.270
+No PowerShell commands. Nothing. Now I have to get something,
+
+00:42:12.310 --> 00:42:14.410
+with which I can manage this. There are two possibilities.
+
+00:42:14.670 --> 00:42:19.150
+The only sensible thing to do is to install docker.exe. That's what I'm doing now.
+
+00:42:20.370 --> 00:42:24.489
+I register the Microsoft provider via the Windows package management.
+
+00:42:24.610 --> 00:42:28.930
+You can get all this as scripts. Try it out. Then we have to reboot again.
+
+00:42:29.850 --> 00:42:35.530
+And at the end of the day, I have docker.exe. And at the end of the day, everything is exactly the same as on Linux.
+
+00:42:37.090 --> 00:42:40.330
+Only with the difference. Then I can just start the Nano server etc.
+
+00:42:41.969 --> 00:42:45.290
+Due to the advanced time, I could go into the server now and show you this.
+
+00:42:47.810 --> 00:42:50.610
+I hope you believe me that this is really exactly the same.
+
+00:42:52.750 --> 00:42:56.090
+We are rebooting now. We're about to see Docker-Exe. Then the movie is over
+
+00:42:56.090 --> 00:42:58.469
+Over. And then let's talk briefly about what happens next.
+
+00:43:01.110 --> 00:43:05.390
+You can see that now, I'm at the end. And now I'm looking for the command.
+
+00:43:06.170 --> 00:43:10.969
+There is docker.exe. When I type that in. You may look at the PowerShell ISE,
+
+00:43:11.610 --> 00:43:15.989
+at the ISE, however you pronounce it, you shouldn't be surprised,
+
+00:43:15.989 --> 00:43:18.270
+if the font is that funny red. That is not a mistake.
+
+00:43:18.670 --> 00:43:21.110
+It displays the help function a bit strangely.
+
+00:43:22.330 --> 00:43:27.250
+You have to be very, very careful using docker.exe in the ISE.
+
+00:43:27.710 --> 00:43:31.670
+Three quarters of the functions are dysfunctional. That is a very dangerous
+
+00:43:31.670 --> 00:43:33.350
+Undertaking. Holger is already nodding.
+
+00:43:34.810 --> 00:43:39.449
+Be very careful. Better do this locally. Do this with PowerShell.exe.
+
+00:43:40.110 --> 00:43:43.530
+That is, I say, not quite fully engineered.
+
+00:43:45.510 --> 00:43:51.270
+The Nano server, and this is the price we pay, is now dying, Microsoft has said.
+
+00:43:51.670 --> 00:43:55.489
+Because they are concentrating on the further development of the Nano server as a container.
+
+00:43:55.510 --> 00:43:58.370
+Hey, nano server is dead, long live the nano server.
+
+00:44:01.710 --> 00:44:04.430
+Not everyone likes that, I think it's a shame, but that's another story
+
+00:44:04.430 --> 00:44:08.330
+Topic. I would have liked to keep the Nano server for General Purpose.
+
+00:44:08.890 --> 00:44:12.469
+It lives on as a container, it will be reduced. And then the question is,
+
+00:44:12.530 --> 00:44:15.550
+you have to talk to the .NET developers, what do you do with it?
+
+00:44:16.370 --> 00:44:21.110
+Is PowerShell Core enough, is .NET Core enough to build useful applications?
+
+00:44:21.270 --> 00:44:22.890
+That's the next big question.
+
+00:44:24.170 --> 00:44:26.830
+We have then supposedly, that is not yet published,
+
+00:44:26.930 --> 00:44:28.690
+less than 50 percent in size.
+
+00:44:29.969 --> 00:44:32.850
+I'm very curious to see what will come of this. It's an unwieldy subject.
+
+00:44:33.370 --> 00:44:36.130
+And if you want to try out a bit, here are two tips. First tip,
+
+00:44:36.250 --> 00:44:37.830
+try this with Linux first.
+
+00:44:37.989 --> 00:44:40.430
+This is not a Linux advertisement, but it really is easier to understand.
+
+00:44:40.530 --> 00:44:44.650
+Second tip, there is a product for the desktop called Docker for Windows.
+
+00:44:45.449 --> 00:44:49.170
+This does everything automatically. However, this is only available for Windows 10 in the
+
+00:44:49.170 --> 00:44:52.130
+Form, not for the Windows Server. I can highly, highly recommend it.
+
+00:44:52.670 --> 00:44:55.390
+That makes everything much, much easier. This is what it looks like.
+
+00:44:55.550 --> 00:44:57.570
+I also have the scripts in the slide.
+
+00:44:58.390 --> 00:45:00.850
+And then my last point. I hope you still allow this.
+
+00:45:03.210 --> 00:45:05.550
+Yes, are there no PowerShell commandlets at all?
+
+00:45:08.430 --> 00:45:12.150
+Look at the version number and you know everything. Windows Server Container
+
+00:45:12.150 --> 00:45:15.449
+have been published for a year. It is still version 0.1 on GitHub.
+
+00:45:15.510 --> 00:45:18.449
+I personally think, my private opinion, this is going to die,
+
+00:45:18.489 --> 00:45:19.730
+if it is not already dead.
+
+00:45:19.730 --> 00:45:23.130
+That means eternal fame and praise for Holger Schwischenberg,
+
+00:45:23.250 --> 00:45:27.390
+who never tires of writing articles on hot developer and other sources,
+
+00:45:27.390 --> 00:45:30.930
+where he compares Docker.exe. Really big thanks, I would like to have the patience.
+
+00:45:31.810 --> 00:45:36.570
+I appreciate this very much, but the well-intentioned advice is to first look at Docker.exe
+
+00:45:36.570 --> 00:45:38.969
+to. Yes, thank you very much for that.
+
+00:45:39.250 --> 00:45:43.510
+The whole thing is still available in the client as Project Barcelona, as a keyword,
+
+00:45:43.510 --> 00:45:47.330
+where this is simply a security architecture in the background.
+
+00:45:47.670 --> 00:45:51.390
+And I'm curious to see if we'll be talking about this in a few years' time,
+
+00:45:51.489 --> 00:45:56.489
+how it went on, whether this is really the giant revolution.
+
+00:45:56.400 --> 00:46:07.520
+Music.
+
+

@@ -1,0 +1,15 @@
+00:00:06.309 Willkommen auf der True Metal Stage
+00:06:48.912 Grundprinzip von Containern
+00:09:06.292 Virtualisierung und deren Entwicklung
+00:11:58.094 Anwendungsfälle für Container
+00:13:32.909 Docker und seine Funktionsweise
+00:15:29.835 Docker als Einstiegspunkt
+00:20:07.310 Docker-Befehle und Nutzung
+00:24:45.443 Container-Images suchen und verwenden
+00:26:27.933 PowerShell im Containerumfeld
+00:31:03.109 Arbeiten im Container
+00:33:02.562 Der Sinn von Dockerfiles
+00:34:20.182 Windows Server Container und deren Zukunft
+00:37:10.681 Der Nano-Server und seine Rolle
+00:44:29.465 Tipps für den Einstieg in Container
+00:45:38.745 Ausblick auf die Zukunft von Containern
