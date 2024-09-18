@@ -15,5 +15,7 @@ IT Zentrum Lingen, 19.09.2024
   
 - Session recording: (soon)
 
-![WithTheBeatlesCIMLingen2024](.\WithTheBeatlesCIMLingen2024.png)
+![With the Beatles - CIM Lingen 2024 edition](WithTheBeatlesCIMLingen2024.png)
+
+
 
