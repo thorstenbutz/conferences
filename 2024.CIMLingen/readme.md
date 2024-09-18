@@ -1,6 +1,6 @@
 IT Zentrum Lingen, 19.09.2024
 
-- Slides: [With the Beatles - Thorsten Butz - CIM Lingen 2024.pdf]("./With the Beatles - Thorsten Butz - CIM Lingen 2024.pdf")
+- Slides: With the Beatles - Thorsten Butz - CIM Lingen 2024.pdf
 
 - Auphonic (folder): sample files from Auphonic processing including subtitles, summary, chapter marks
 
