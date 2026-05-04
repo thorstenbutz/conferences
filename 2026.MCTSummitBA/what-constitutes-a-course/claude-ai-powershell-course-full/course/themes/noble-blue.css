@@ -1,0 +1,206 @@
+/* @theme noble-blue
+ *
+ * Noble Blue — a minimal, code-friendly MARP theme for the
+ * "PowerShell 7 for IT Administrators" course.
+ *
+ * Primary color: PowerShell Noble Blue  rgb(1, 36, 86)  #012456
+ * Forked from MARP's built-in `default` theme.
+ *
+ * Usage (in a deck):
+ *   ---
+ *   marp: true
+ *   theme: noble-blue
+ *   paginate: true
+ *   ---
+ *
+ * Register the theme once with the MARP CLI:
+ *   marp --theme-set ./themes/noble-blue.css deck.md -o deck.pptx
+ */
+
+/* @import "default"; */
+
+:root {
+  --nb-noble:       #012456;   /* PowerShell Noble Blue          */
+  --nb-noble-soft:  #1a3a6e;   /* hover / subtle accents          */
+  --nb-gold:        #ffd166;   /* callout / highlight accent      */
+  --nb-fg:          #1b2733;   /* body text                       */
+  --nb-muted:       #5c6b7a;   /* secondary text                  */
+  --nb-bg:          #ffffff;   /* slide background                */
+  --nb-code-bg:     #012456;   /* PS console background           */
+  --nb-code-fg:     #f2f2f2;   /* PS console foreground           */
+  --nb-rule:        #d9dde2;   /* thin rules                      */
+}
+
+/* ──────────────────────────── base slide ──────────────────────────── */
+
+section {
+  background: var(--nb-bg);
+  color: var(--nb-fg);
+  font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.45;
+  padding: 64px 72px 56px 72px;
+  justify-content: flex-start;
+}
+
+/* accent bar on the left edge */
+section::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 10px;
+  background: var(--nb-noble);
+}
+
+/* ─────────────────────────────── headings ─────────────────────────── */
+
+h1, h2, h3, h4 {
+  color: var(--nb-noble);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em 0;
+}
+
+h1 { font-size: 1.9em; line-height: 1.15; }
+h2 { font-size: 1.4em; line-height: 1.2; border-bottom: 2px solid var(--nb-noble); padding-bottom: 0.2em; }
+h3 { font-size: 1.1em; color: var(--nb-noble-soft); }
+h4 { font-size: 1.0em; color: var(--nb-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* ────────────────────────────── code ──────────────────────────────── */
+
+code {
+  font-family: "Cascadia Code", "Consolas", "Fira Code", monospace;
+  font-size: 0.88em;
+}
+
+/* inline code */
+:not(pre) > code {
+  background: #eef2f7;
+  color: var(--nb-noble);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* code fences rendered as a PowerShell console */
+pre {
+  background: var(--nb-code-bg);
+  color: var(--nb-code-fg);
+  border-radius: 6px;
+  padding: 18px 22px;
+  line-height: 1.45;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+pre code { color: inherit; background: transparent; padding: 0; font-size: 22px; }
+
+/* ───────────────────────────── lists ──────────────────────────────── */
+
+ul, ol { margin: 0.2em 0 0.6em 1.1em; }
+li { margin: 0.15em 0; }
+ul li::marker { color: var(--nb-noble); }
+
+/* ───────────────────────── tables & rules ─────────────────────────── */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.82em;
+  margin: 0.4em 0;
+}
+th { background: var(--nb-noble); color: #fff; text-align: left; padding: 8px 12px; }
+td { border-bottom: 1px solid var(--nb-rule); padding: 6px 12px; vertical-align: top; }
+tr:nth-child(even) td { background: #f6f8fb; }
+
+hr { border: none; border-top: 1px solid var(--nb-rule); margin: 0.6em 0; }
+
+/* ───────────────────────── blockquote / notes ─────────────────────── */
+
+blockquote {
+  border-left: 4px solid var(--nb-gold);
+  background: #fff8e1;
+  color: var(--nb-fg);
+  padding: 10px 16px;
+  margin: 0.4em 0;
+  font-size: 0.92em;
+  border-radius: 0 6px 6px 0;
+}
+
+/* ──────────────────────────── pagination ──────────────────────────── */
+
+section::after {
+  color: var(--nb-muted);
+  font-size: 14px;
+}
+
+/* ──────────────────────────── title slide ─────────────────────────── */
+/*  Usage:  <!-- _class: title -->                                      */
+
+section.title {
+  background: var(--nb-noble);
+  color: #fff;
+  justify-content: center;
+  text-align: left;
+}
+section.title::before { background: var(--nb-gold); width: 14px; }
+section.title h1 { color: #fff; font-size: 2.6em; line-height: 1.05; }
+section.title h2 { color: var(--nb-gold); border: none; font-weight: 400; font-size: 1.2em; }
+section.title h3,
+section.title p  { color: rgba(255,255,255,0.85); }
+
+/* ──────────────────────────── section slide ───────────────────────── */
+/*  Usage:  <!-- _class: section -->  (chapter divider)                 */
+
+section.section {
+  background: var(--nb-noble);
+  color: #fff;
+  justify-content: center;
+}
+section.section::before { background: var(--nb-gold); }
+section.section h1 { color: #fff; font-size: 2.2em; }
+section.section h2 { color: var(--nb-gold); border: none; }
+
+/* ──────────────────────────── history note ────────────────────────── */
+/*  Usage:  <!-- _class: history -->                                    */
+
+section.history {
+  background: #fff8e1;
+}
+section.history::before { background: var(--nb-gold); }
+section.history h1,
+section.history h2 { color: #6b4a00; border-color: #6b4a00; }
+
+/* ──────────────────────────── gotcha / warning ────────────────────── */
+/*  Usage:  <!-- _class: gotcha -->                                     */
+
+section.gotcha {
+  background: #fff3f3;
+}
+section.gotcha::before { background: #b3261e; }
+section.gotcha h1,
+section.gotcha h2 { color: #b3261e; border-color: #b3261e; }
+
+/* ──────────────────────────── lab kickoff ─────────────────────────── */
+/*  Usage:  <!-- _class: lab -->                                        */
+
+section.lab {
+  background: #f4f7fb;
+}
+section.lab::before { background: var(--nb-noble); width: 14px; }
+section.lab h1 { color: var(--nb-noble); }
+section.lab h2 { color: var(--nb-noble-soft); border-color: var(--nb-noble-soft); }
+
+/* ─────────────────────────── two-column helper ────────────────────── */
+/*  Usage:  <!-- _class: split -->                                      */
+/*  then write markdown as two halves separated by `---` inside a       */
+/*  single slide via MARP's `<div class="columns">` pattern below.      */
+
+section.split .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* ─────────────────────────── images ───────────────────────────────── */
+
+img { border-radius: 6px; }

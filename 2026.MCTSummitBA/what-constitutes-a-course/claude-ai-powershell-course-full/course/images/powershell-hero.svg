@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Original homage illustration, CC0. Noble Blue (#012456) palette.
+     A shell-prompt-caped hero, intended as a course mascot replacement
+     for the retired Microsoft "PowerShell Hero" marketing comic. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600" role="img" aria-label="PowerShell Hero mascot">
+  <defs>
+    <linearGradient id="cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#012456"/>
+      <stop offset="100%" stop-color="#1a3a6e"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#e3e9f3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background disc -->
+  <rect width="480" height="600" fill="url(#bg)"/>
+  <circle cx="240" cy="300" r="220" fill="#ffffff" stroke="#012456" stroke-width="6"/>
+
+  <!-- cape -->
+  <path d="M120,220 Q240,420 360,220 L340,520 Q240,560 140,520 Z" fill="url(#cape)"/>
+
+  <!-- body (console block with shoulders) -->
+  <rect x="165" y="250" width="150" height="210" rx="18" fill="#012456"/>
+  <rect x="150" y="240" width="180" height="30" rx="10" fill="#012456"/>
+
+  <!-- chest emblem: PS> prompt -->
+  <rect x="185" y="285" width="110" height="55" rx="6" fill="#ffffff"/>
+  <text x="240" y="325" text-anchor="middle" font-family="Consolas,Cascadia Code,monospace"
+        font-size="30" font-weight="700" fill="#012456">PS&gt;_</text>
+
+  <!-- utility belt with a golden pipe symbol -->
+  <rect x="165" y="380" width="150" height="18" fill="#ffd166"/>
+  <text x="240" y="395" text-anchor="middle" font-family="Consolas,monospace"
+        font-size="18" font-weight="700" fill="#012456">|</text>
+
+  <!-- arms -->
+  <rect x="115" y="260" width="40" height="140" rx="14" fill="#012456"/>
+  <rect x="325" y="260" width="40" height="140" rx="14" fill="#012456"/>
+
+  <!-- head: round terminal with blinking cursor -->
+  <circle cx="240" cy="190" r="55" fill="#012456"/>
+  <rect x="215" y="175" width="50" height="6" fill="#ffd166"/>   <!-- visor -->
+  <rect x="228" y="200" width="10" height="18" fill="#ffd166"/>  <!-- cursor -->
+
+  <!-- legs -->
+  <rect x="185" y="460" width="40" height="80" rx="10" fill="#012456"/>
+  <rect x="255" y="460" width="40" height="80" rx="10" fill="#012456"/>
+
+  <!-- caption -->
+  <text x="240" y="570" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif"
+        font-size="18" font-weight="600" fill="#012456" letter-spacing="0.08em">POWERSHELL HERO</text>
+</svg>

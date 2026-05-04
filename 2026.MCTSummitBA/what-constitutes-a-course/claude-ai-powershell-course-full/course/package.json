@@ -1,0 +1,17 @@
+{
+  "name": "powershell-course-decks",
+  "version": "1.0.0",
+  "description": "MARP build chain for the PowerShell 7 for IT Administrators course.",
+  "private": true,
+  "scripts": {
+    "build": "marp --no-stdin --pptx decks/*.md -o out/",
+    "build-pdf": "marp --no-stdin --pdf decks/*.md -o out/",
+    "build-html": "marp --no-stdin --html decks/*.md -o out/",
+    "watch": "marp --watch --no-stdin --html decks/*.md -o out/",
+    "clean": "node -e \"require('fs').rmSync('out', { recursive: true, force: true })\""
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Monad → PowerShell timeline. Original work, CC0. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="PowerShell timeline">
+  <style>
+    .axis  { stroke:#012456; stroke-width:3; }
+    .tick  { stroke:#012456; stroke-width:2; }
+    .year  { font: 600 18px "Segoe UI", Arial, sans-serif; fill:#012456; }
+    .ev    { font: 500 16px "Segoe UI", Arial, sans-serif; fill:#1b2733; }
+    .hi    { font: 700 16px "Segoe UI", Arial, sans-serif; fill:#b3261e; }
+    .dot   { fill:#012456; }
+    .hl    { fill:#ffd166; }
+  </style>
+
+  <line class="axis" x1="40" y1="150" x2="1160" y2="150"/>
+
+  <!-- 2002 Monad Manifesto -->
+  <circle class="hl" cx="80" cy="150" r="10"/>
+  <line class="tick" x1="80" y1="140" x2="80" y2="60"/>
+  <text class="year" x="80" y="200" text-anchor="middle">2002</text>
+  <text class="ev"  x="80" y="55"  text-anchor="middle">Monad Manifesto</text>
+  <text class="ev"  x="80" y="75"  text-anchor="middle">(Jeffrey Snover)</text>
+
+  <!-- 2006 PS 1.0 -->
+  <circle class="dot" cx="250" cy="150" r="8"/>
+  <line class="tick" x1="250" y1="140" x2="250" y2="100"/>
+  <text class="year" x="250" y="200" text-anchor="middle">2006</text>
+  <text class="ev"  x="250" y="95"  text-anchor="middle">PowerShell 1.0</text>
+
+  <!-- 2009 PS 2.0 -->
+  <circle class="dot" cx="370" cy="150" r="8"/>
+  <line class="tick" x1="370" y1="140" x2="370" y2="110"/>
+  <text class="year" x="370" y="200" text-anchor="middle">2009</text>
+  <text class="ev"  x="370" y="105" text-anchor="middle">PS 2.0 + ISE</text>
+
+  <!-- 2012 PS 3.0 -->
+  <circle class="dot" cx="490" cy="150" r="8"/>
+  <line class="tick" x1="490" y1="140" x2="490" y2="100"/>
+  <text class="year" x="490" y="200" text-anchor="middle">2012</text>
+  <text class="ev"  x="490" y="95"  text-anchor="middle">PS 3.0</text>
+
+  <!-- 2016 PS 5.1 last WPS -->
+  <circle class="dot" cx="640" cy="150" r="8"/>
+  <line class="tick" x1="640" y1="140" x2="640" y2="40"/>
+  <text class="year" x="640" y="200" text-anchor="middle">2016</text>
+  <text class="ev"  x="640" y="55" text-anchor="middle">PS 5.1</text>
+  <text class="hi"  x="640" y="35" text-anchor="middle">last Windows PS</text>
+
+  <!-- 2016 open source -->
+  <circle class="hl" cx="760" cy="150" r="10"/>
+  <line class="tick" x1="760" y1="140" x2="760" y2="95"/>
+  <text class="year" x="760" y="230" text-anchor="middle">Aug 2016</text>
+  <text class="ev"  x="760" y="90"  text-anchor="middle">Open source,</text>
+  <text class="ev"  x="760" y="110" text-anchor="middle">cross-platform</text>
+
+  <!-- 2018 PS Core 6 -->
+  <circle class="dot" cx="880" cy="150" r="8"/>
+  <line class="tick" x1="880" y1="140" x2="880" y2="110"/>
+  <text class="year" x="880" y="200" text-anchor="middle">2018</text>
+  <text class="ev"  x="880" y="105" text-anchor="middle">PS Core 6</text>
+
+  <!-- 2020 PS 7 -->
+  <circle class="hl" cx="1020" cy="150" r="10"/>
+  <line class="tick" x1="1020" y1="140" x2="1020" y2="85"/>
+  <text class="year" x="1020" y="200" text-anchor="middle">2020</text>
+  <text class="ev"  x="1020" y="80"  text-anchor="middle">PowerShell 7</text>
+  <text class="ev"  x="1020" y="100" text-anchor="middle">(unified)</text>
+
+  <!-- today -->
+  <circle class="dot" cx="1140" cy="150" r="8"/>
+  <text class="year" x="1140" y="200" text-anchor="middle">today</text>
+  <text class="ev"  x="1140" y="105" text-anchor="middle">PS 7.5+</text>
+</svg>
